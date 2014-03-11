@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vmoves</title>
+  <title>Valdosta Moves</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
+<body class="<%= controller.controller_name %>">
+  <div id="mainbackground">
+  	<div class="container">
+      <%= image_tag("ValdostaMovesLogo.png") %>
+  	</div>
+  	<div id="banner">
+	  <%= @page_title || "Valdosta Moves" %>
+	
+	</div>
+	<div id="linksbar">
+	  <tr>
+        <td><a href="../home/index">Home</a></li>
+        <td><a href="../events">Events</a></li>
+        <td><a href="../health/index">Nutrition</a></li>
+        <td><a href="../exercise/index">Exercise</a></li>
+		<td><a href="../forums">Forums</a></li>
+		<td><a href="../gyms/index">Gyms</a></li>
+      </tr>
+	</div>	
+	
+  </div>	
 
 </body>
 </html>
