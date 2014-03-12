@@ -2,3 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#mydiv {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:50em;
+    height:25em;
+    margin-top: -12em; /*set to a negative number 1/2 of your height*/
+    margin-left: -25em; /*set to a negative number 1/2 of your width*/
+}
+
+#mydiv2 {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:80em;
+    height:25em;
+    margin-top: -12em; /*set to a negative number 1/2 of your height*/
+    margin-left: -40em; /*set to a negative number 1/2 of your width*/
+}
+
+#pgraph {
+  margin-bottom : 20em;
+  }
+  
+#tbl {
+  margin-right: 5em;
+  margin-left: 5em;
+  }
+  
+table.out {
+  width: 80%;
+  }
