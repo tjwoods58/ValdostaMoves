@@ -32,6 +32,17 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'bootstrap-sass'
+
+gem 'high_voltage'
+gem 'simple_form', github: 'wtfiwtz/simple_form_bootstrap3'
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'quiet_assets'
+  gem 'rails_layout'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
