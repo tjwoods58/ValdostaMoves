@@ -12,18 +12,20 @@
  *= require_tree .
  */
 
+html, body {
+  background-color: #B0B0B0;
+}
+
 #mainbackground {
 
   background: #B0B0B0;
   
   .container {
-    
     position: absolute;
-    width: 9%;
-    height: 5%;
-    margin-top: 2%;
-    margin-left: 3%;
-    
+    width: 12%;
+    height: 10%;
+    margin-top: auto;
+    margin-left: 1%;   
   }
   
   .container img {
@@ -32,11 +34,11 @@
   }
 
   #banner {
-    padding: 3%;
+    padding: 1%;
     margin-top: 1%;
-    margin-left:15%;
-    margin-right:15%;
-    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
     font: small-caps 30px/30px "Times New Roman", serif;
     text-align: center;
     color: black;
@@ -46,11 +48,11 @@
   }  
   
   #linksbar {
-    padding: 3%;
+    padding: 1%;
     width: 60%;
     margin-top: 1%;
-    margin-left:15%;
-    margin-right:15%;
+    margin-left: auto;
+    margin-right: auto;
     tr {height: 100px;}
     font: small-caps 16px/16px "Times New Roman", serif;
     text-align: center;
@@ -59,8 +61,6 @@
     border: solid;
     background: red;
     border-color: black;
-
   }
-
   
 }
