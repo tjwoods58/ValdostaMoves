@@ -1,0 +1,172 @@
+// import the CSS framework
+@import "bootstrap";
+
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+  }
+// override for the 'Home' navigation link
+.navbar-brand {
+  font-size: inherit;
+  }
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create your own classes
+// to make views framework-neutral
+.column {
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.form {
+  @extend .col-md-6;
+  }
+.form-centered {
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.submit {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+  }
+// apply styles to HTML elements
+// to make views framework-neutral
+//main {
+  //@extend .container;
+  //background-color: #eee;
+  //padding-bottom: 80px;
+  //width: 100%;
+  //margin-top: 51px; // accommodate the navbar
+  //}
+  
+  
+section {
+  @extend .row;
+  margin-top: 20px;
+  }
+  
+  html, body {
+  background-color: #B0B0B0;
+}
+
+#mainbackground {
+
+  background: #B0B0B0;
+  
+  .container {
+    position: absolute;
+    width: 12%;
+    height: 10%;
+    margin-top: auto;
+    margin-left: 1%;   
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+  #banner {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: red;
+    border: solid;
+    border-color: black;
+  }  
+  
+  #linksbar {
+    padding: 1%;
+    width: 60%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    tr {height: 100px;}
+    font: small-caps 16px/16px "Times New Roman", serif, bolder;
+    text-align: center;
+    word-spacing: 20px;
+    a:link {color: #000000;}
+    border: solid;
+    background: red;
+    border-color: black;
+  }
+  
+}
+
+.left carousel-control{
+  margin-left: 20%;
+}
+
+.carousel-inner {
+  width: 45%;
+  margin-left: 30em;
+  margin-top: 5em;
+  }
+  
+  fieldset {
+    border: 2px solid red;
+    background: #B0B0B0;
+    font: larger;
+    padding: 1em;
+  }
+  
+  .carousel-indicators {
+    margin-right: 50%;
+  }
+  
+  .gym {
+    margin-top: 1em;
+    margin-left: 20%;
+    font: bold black;
+  }
+  
+  .health {
+    margin-top: 10em;
+    margin-left: 15%;
+  }
+  
+  .list{
+    border: 2px solid red;
+    padding: 1.5em;
+    background-color: white;
+  }
+  
+  .carousel-control {
+    left: 23%;
+    width: 40px;
+    height: 40px;
+    margin-top: 12%;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 30px;
+    background: #222;
+    border: 3px solid #fff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+}
+
+.right.carousel-control {
+  right: 29%;
+    width: 40px;
+    height: 40px;
+    margin-top: 12%;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 30px;
+    background: #222;
+    border: 3px solid #fff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+    margin-top: -18px;   
+}

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Valdosta Moves</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div id="mainbackground">
+  <head>
+  	<title>Valdosta Moves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Vmoves" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Vmoves" %>">
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="mainbackground">
   	<div class="container">
       <%= image_tag("ValdostaMovesLogo.png") %>
   	</div>
@@ -22,14 +25,12 @@
         <td><a href="../health/index">Nutrition</a></li>
         <td><a href="../exercise/index">Exercise</a></li>
 		<td><a href="../forums">Forums</a></li>
-		<td><a href="../gyms/index">Gyms</a></li>
+		<td><a href="../gyms">Gyms</a></li>
       </tr>
-	</div>	
-
-	      <%= yield %>
-
-	
-  </div>	
-
-</body>
+	</div>
+    <main role="main">
+       <%= render 'layouts/messages' %>
+       <%= yield %>
+    </main>
+  </body>
 </html>

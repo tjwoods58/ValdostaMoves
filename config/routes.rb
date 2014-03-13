@@ -1,4 +1,7 @@
 Vmoves::Application.routes.draw do
+  resources :gyms
+
+  root :to => 'home#index'
   resources :tips
 
   get "recipes/index"

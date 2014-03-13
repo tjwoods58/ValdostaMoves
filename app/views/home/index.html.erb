@@ -1,2 +1,41 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<% content_for :title do %>Valdosta Moves<% end %>
+<% content_for :description do %>Valdosta Moves Version 1<% end %>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+<li data-target="#myCarousel" data-slide-to="3"></li>
+</ol>
+<div class="carousel-inner">
+<div class="item active">
+<%= image_tag '3ReasonsGains.png' %>
+<div class="carousel-caption text-center">
+<fieldset>3 Surprising Reasons You Aren't Seeing Results at the Gym </fieldset>
+</div>
+</div>
+<div class="item">
+<%= image_tag 'BadPersonalTrainer.png' %>
+<div class="carousel-caption text-center">
+<fieldset>How to Spot a Bad Trainer </fieldset>
+</div>
+</div>
+<div class="item">
+<%= image_tag 'protein.png' %>
+<div class="carousel-caption text-center">
+<fieldset>How Protien Becomes Muscle </fieldset>
+</div>
+</div>
+<div class="item">
+<%= image_tag 'trap-bar.png' %>
+<div class="carousel-caption text-center">
+<fieldset>The Best Abs Workout Ever </fieldset>
+</div>
+</div>
+</div>
+<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
+class="icon-prev"></span></a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next" margin-right="25%"><span
+class="icon-next"></a>
+</div>

@@ -1,37 +1,54 @@
 <h1 align="center">One Stop Health Tips</h1>
-
 <div style="display: inline";>
 <ul style="float:left;", position: absolute>
-	<li>
-		<a href="http://allrecipes.com/">Recipes</a>
-	</li>
-	<li>
-		<a href="http://www.nutrition.gov/">Nutritions</a>
-	</li>
-	<li>
+	<% content_for :title do %>Valdosta Moves<% end %>
+	<% content_for :description do %>Valdosta Moves Version 1<% end %>
+<div class="health">
+<ul class="list" style="float:left;", position: absolute>
 		<a href="http://www.webmd.com/fitness-exercise/guide/fitness-beginners-guide">Guild</a>
 	</li>
 	<li>
 		<a href="http://health.nih.gov/">Health</a>
 	</li>
-	
 </ul>
 </div>
-<div style="display: inline";>
-<fieldset align="center">
-  <legend align="center">
-    Health Tips:  
-  </legend>
-  <table style="float:right;" border="1" cellpadding="0" cellspacing="0" width="50" height="100">
-    <tr valign="center">
-      <td align="center"><%= image_tag("cookbook.jpg", :alt => "rss feed", size: "200x200")  %></td>
-      <td align="center"><%= image_tag("nfc01.gif", :alt => "rss feed", size: "200x200")  %></td>
-      <td align="center"><%= image_tag("IMG_1675.jpg", :alt => "rss feed", size: "200x200")  %></td>
-      <td align="center"><%= image_tag("healthrelcon.gif", :alt => "rss feed", size: "200x200")  %></td>
-	  <td align="center"><%= image_tag("img.jpg", :alt => "rss feed", size: "200x200")  %></td>
-	  <td align="center"><%= image_tag("5comps.jpg", :alt => "rss feed", size: "200x200")  %></td>
-    </tr>
-  </table>
-</fieldset>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+<li data-target="#myCarousel" data-slide-to="3"></li>
+</ol>
+<div class="carousel-inner">
+<div class="item active">
+<%= image_tag 'cookbook.png' %>
+<div class="carousel-caption text-center">
+<fieldset>Healthy Cookbook for a Healthy Life</fieldset>
+</div>
+</div>
+<div class="item">
+<%= image_tag 'ht.png' %>
+<div class="carousel-caption text-center">
+<fieldset>Healthy Tips to Live By.</fieldset>
+</div>
+</div>
+<div class="item">
+<%= image_tag 'bestfoods.png' %>
+<div class="carousel-caption text-center">
+<fieldset>Want Better Skin?</fieldset>
+</div>
+</div>
+<div class="item">
+<%= image_tag 'hp.png' %>
+<div class="carousel-caption text-center">
+<fieldset>Classic Health Pyramid</fieldset>
+</div>
+</div>
+</div>
+<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span
+class="icon-prev"></span></a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next" margin-right="25%"><span
+class="icon-next"></a>
 </div>
 
