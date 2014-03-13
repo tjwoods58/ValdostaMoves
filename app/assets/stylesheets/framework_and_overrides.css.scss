@@ -32,13 +32,15 @@ img {
   }
 // apply styles to HTML elements
 // to make views framework-neutral
-main {
-  @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
-  width: 100%;
-  margin-top: 51px; // accommodate the navbar
-  }
+//main {
+  //@extend .container;
+  //background-color: #eee;
+  //padding-bottom: 80px;
+  //width: 100%;
+  //margin-top: 51px; // accommodate the navbar
+  //}
+  
+  
 section {
   @extend .row;
   margin-top: 20px;
@@ -86,7 +88,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     tr {height: 100px;}
-    font: small-caps 16px/16px "Times New Roman", serif;
+    font: small-caps 16px/16px "Times New Roman", serif, bolder;
     text-align: center;
     word-spacing: 20px;
     a:link {color: #000000;}
@@ -97,3 +99,23 @@ section {
   
 }
 
+.left carousel-control{
+  margin-left: 20%;
+}
+
+.carousel-inner {
+  width: 45%;
+  margin-left: 30em;
+  margin-top: 5em;
+  }
+  
+  fieldset {
+    border: 2px solid red;
+    background: #B0B0B0;
+    font: black larger;
+    padding: 1em;
+  }
+  
+  .carousel-indicators {
+    margin-right: 50%;
+  }
