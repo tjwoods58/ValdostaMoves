@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140306224605) do
+ActiveRecord::Schema.define(version: 20140313022922) do
 
   create_table "events", force: true do |t|
     t.string   "sponser"
@@ -40,6 +40,14 @@ ActiveRecord::Schema.define(version: 20140306224605) do
 
   add_index "forums_posts", ["forums_id"], name: "index_forums_posts_on_forums_id"
   add_index "forums_posts", ["user_id"], name: "index_forums_posts_on_user_id"
+
+  create_table "gyms", force: true do |t|
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "tips", force: true do |t|
     t.string   "type"
