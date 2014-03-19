@@ -7,13 +7,30 @@
 
 <p>
   <strong>Creator:</strong>
-  <%= @forum.creator %>
+  <%= @forum.user.email %>
 </p>
 
-<p>
-  <strong>Creator:</strong>
-  <%= @forum.creator %>
-</p>
+<% @forums_posts.each do |p| %>
+  <p>
+    <strong>Description</strong>
+    <%= p.description %>
+  </p>
+
+  <p>
+    <strong>Creator:</strong>
+    <%= p.user.email %>
+  </p>
+<% end %>
+
+<%= form_for @forums_post do |f| %>
+  <p>
+    <%= f.label :description %>
+  </p>
+  <p>
+    <%= f.text_area :description %>
+  </p>
+<% end %>
+
 
 <%= link_to 'Edit', edit_forum_path(@forum) %> |
 <%= link_to 'Back', forums_path %>

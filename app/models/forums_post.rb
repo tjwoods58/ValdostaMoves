@@ -1,4 +1,4 @@
 class ForumsPost < ActiveRecord::Base
   belongs_to :user
-  belongs_to :forums
+  belongs_to :forum
 end

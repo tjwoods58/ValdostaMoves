@@ -1,5 +1,8 @@
 class ForumsController < ApplicationController
-  before_action :set_forum, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource except: :create
+  authorize_resource only: :create
+
+  # before_action :set_forum, only: [:show, :edit, :update, :destroy]
 
   # GET /forums
   # GET /forums.json
@@ -10,6 +13,8 @@ class ForumsController < ApplicationController
   # GET /forums/1
   # GET /forums/1.json
   def show
+    @forums_posts = @forum.forums_posts
+    @forums_post = ForumsPost.new
   end
 
   # GET /forums/new
@@ -25,7 +30,7 @@ class ForumsController < ApplicationController
   # POST /forums.json
   def create
     @forum = Forum.new(forum_params)
-
+    @forum.user = current_user
     respond_to do |format|
       if @forum.save
         format.html { redirect_to @forum, notice: 'Forum was successfully created.' }
@@ -63,9 +68,9 @@ class ForumsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_forum
-      @forum = Forum.find(params[:id])
-    end
+    # def set_forum
+    #   @forum = Forum.find(params[:id])
+    # end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def forum_params
