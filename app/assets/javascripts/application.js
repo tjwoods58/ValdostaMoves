@@ -16,4 +16,6 @@
 //= require bootstrap
 //= require underscore
 //= require gmaps/google
+//= require jquery.themepunch.plugins.min
+//= require jquery.themepunch.revolution.min
 //= require_tree .
