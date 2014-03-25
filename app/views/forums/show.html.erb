@@ -1,8 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Topic:</strong>
-  <%= @forum.topic %>
+  <h2><%= @forum.topic %></h2>
 </p>
 
 <p>
@@ -10,25 +8,29 @@
   <%= @forum.user.email %>
 </p>
 
+<hr>
+
 <% @forums_posts.each do |p| %>
   <p>
     <strong>Description</strong>
     <%= p.description %>
   </p>
-
   <p>
     <strong>Creator:</strong>
     <%= p.user.email %>
   </p>
+  <hr>
 <% end %>
 
 <%= form_for @forums_post do |f| %>
+  <%= f.hidden_field :forum_id, value: @forum.id %>
   <p>
     <%= f.label :description %>
   </p>
   <p>
     <%= f.text_area :description %>
   </p>
+  <%= f.submit "Post" %>
 <% end %>
 
 

@@ -1,5 +1,6 @@
 class ForumsPostsController < ApplicationController
-  before_action :set_forums_post, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource except: :create
+  authorize_resource only: :create
 
   # GET /forums_posts
   # GET /forums_posts.json
@@ -25,13 +26,14 @@ class ForumsPostsController < ApplicationController
   # POST /forums_posts.json
   def create
     @forums_post = ForumsPost.new(forums_post_params)
-
+    @forums_post.user = current_user
     respond_to do |format|
       if @forums_post.save
-        format.html { redirect_to @forums_post, notice: 'Forums post was successfully created.' }
+        format.html { redirect_to forum_path(@forums_post.forum_id), notice: 'Forums post was successfully created.' }
         format.json { render action: 'show', status: :created, location: @forums_post }
       else
-        format.html { render action: 'new' }
+        flash[:error] = 'Forums post was not successful.'
+        format.html { redirect_to forum_path(@forums_post.forum_id) }
         format.json { render json: @forums_post.errors, status: :unprocessable_entity }
       end
     end
@@ -62,13 +64,8 @@ class ForumsPostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_forums_post
-      @forums_post = ForumsPost.find(params[:id])
-    end
-
     # Never trust parameters from the scary internet, only allow the white list through.
     def forums_post_params
-      params.require(:forums_post).permit(:user_id, :forums_id, :description)
+      params.require(:forums_post).permit(:forum_id, :description)
     end
 end
