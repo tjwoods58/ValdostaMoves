@@ -1,22 +1,23 @@
 <p>
-  <strong>Topic:</strong>
+  
   <h2><%= @forum.topic %></h2>
 </p>
 
 <p>
-  <strong>Creator:</strong>
+  <strong>Forum Creator:</strong>
   <%= @forum.user.email %>
 </p>
 
 <hr>
+<hr>
 
 <% @forums_posts.each do |p| %>
   <p>
-    <strong>Description</strong>
+    <strong>Post:</strong>
     <%= p.description %>
   </p>
   <p>
-    <strong>Creator:</strong>
+    <strong>User:</strong>
     <%= p.user.email %>
   </p>
   <hr>
