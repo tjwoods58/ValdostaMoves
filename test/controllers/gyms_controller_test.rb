@@ -18,7 +18,7 @@ class GymsControllerTest < ActionController::TestCase
 
   test "should create gym" do
     assert_difference('Gym.count') do
-      post :create, gym: { address: @gym.address, latitude: @gym.latitude, longitude: @gym.longitude }
+      post :create, gym: { address: @gym.address, description: @gym.description, latitude: @gym.latitude, longitude: @gym.longitude, title: @gym.title }
     end
 
     assert_redirected_to gym_path(assigns(:gym))
@@ -35,7 +35,7 @@ class GymsControllerTest < ActionController::TestCase
   end
 
   test "should update gym" do
-    patch :update, id: @gym, gym: { address: @gym.address, latitude: @gym.latitude, longitude: @gym.longitude }
+    patch :update, id: @gym, gym: { address: @gym.address, description: @gym.description, latitude: @gym.latitude, longitude: @gym.longitude, title: @gym.title }
     assert_redirected_to gym_path(assigns(:gym))
   end
 

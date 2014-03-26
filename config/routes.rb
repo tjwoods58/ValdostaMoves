@@ -1,12 +1,15 @@
 Vmoves::Application.routes.draw do
+  resources :gyms
+
   devise_for :users
   resources :gyms
 
   root :to => 'home#index'
+  
   resources :tips
 
   get "recipes/index"
-  get "gyms/index"
+  
   resources :forums_posts
 
   resources :forums
@@ -18,6 +21,7 @@ Vmoves::Application.routes.draw do
   get "home/index"
 
   resources :users, only: [:index, :edit, :update, :destroy, :show]
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

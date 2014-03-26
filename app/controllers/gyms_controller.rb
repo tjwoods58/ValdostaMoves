@@ -8,6 +8,7 @@ class GymsController < ApplicationController
     @hash = Gmaps4rails.build_markers(@gyms) do |gym, marker|
       marker.lat gym.latitude
       marker.lng gym.longitude
+      marker.title gym.title
     end
   end
 
@@ -73,6 +74,6 @@ class GymsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gym_params
-      params.require(:gym).permit(:address, :latitude, :longitude)
+      params.require(:gym).permit(:title, :address, :latitude, :longitude)
     end
 end
