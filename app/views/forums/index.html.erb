@@ -20,6 +20,7 @@
         <td><%= forum.topic %></td>
         <td><%= forum.user.email %></td>
         <td><%= forum.created_at %></td>
+        <center>
         <td><%= link_to 'Enter Forum', forum, class: 'btn btn-info' %>
         	<% if can? :edit, Forum %>
         <%= link_to 'Edit', edit_forum_path(forum), class: 'btn btn-primary' %>
@@ -27,6 +28,7 @@
         <% if can? :edit, Forum %>
         <%= link_to 'Destroy', forum, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
         <%end %>
+        </center>
       </tr>
     <% end %>
   </tbody>
