@@ -23,12 +23,12 @@ ActiveRecord::Schema.define(version: 20140319000821) do
 
   create_table "forums", force: true do |t|
     t.string   "topic"
-    t.integer  "user_id"
+    t.integer  "users_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "forums", ["user_id"], name: "index_forums_on_user_id"
+  add_index "forums", ["users_id"], name: "index_forums_on_users_id"
 
   create_table "forums_posts", force: true do |t|
     t.integer  "user_id"
