@@ -1,13 +1,16 @@
+<div id= "forum_align">
+
+
 <h1>Listing forums</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Topic</th>
       <th>Creator</th>
+      <th>Creation Date</th>
       <th></th>
-      <th></th>
-      <th></th>
+      
     </tr>
   </thead>
 
@@ -16,9 +19,16 @@
       <tr>
         <td><%= forum.topic %></td>
         <td><%= forum.user.email %></td>
-        <td><%= link_to 'Show', forum %></td>
-        <td><%= link_to 'Edit', edit_forum_path(forum) %></td>
-        <td><%= link_to 'Destroy', forum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= forum.created_at %></td>
+        <center>
+        <td><%= link_to 'Enter Forum', forum, class: 'btn btn-info' %>
+        	<% if can? :edit, Forum %>
+        <%= link_to 'Edit', edit_forum_path(forum), class: 'btn btn-primary' %>
+        <%end %>
+        <% if can? :edit, Forum %>
+        <%= link_to 'Destroy', forum, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        <%end %>
+        </center>
       </tr>
     <% end %>
   </tbody>
@@ -28,3 +38,4 @@
 <% if can? :create, Forum %>
   <%= link_to 'New Forum', new_forum_path %>
 <% end %>
+</div>

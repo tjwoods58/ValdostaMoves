@@ -20,4 +20,12 @@ class User < ActiveRecord::Base
       false
     end
   end
+
+  def category_name
+    if admin?
+      "Admin"
+    else
+      "Regular"
+    end
+  end 
 end

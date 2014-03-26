@@ -1,36 +1,48 @@
-<p id="notice"><%= notice %></p>
 
+<div id= "forum_align">
 <p>
-  <strong>Topic:</strong>
-  <%= @forum.topic %>
+  
+  <h2><%= @forum.topic %></h2>
 </p>
 
 <p>
-  <strong>Creator:</strong>
+  <strong>Thread Creator:</strong>
   <%= @forum.user.email %>
 </p>
 
+<hr>
+<hr>
+
 <% @forums_posts.each do |p| %>
   <p>
-    <strong>Description</strong>
+    <strong>Post:</strong>
     <%= p.description %>
   </p>
-
   <p>
-    <strong>Creator:</strong>
-    <%= p.user.email %>
+    <small>User:</small>
+    <small><%= p.user.email %></small>
   </p>
+  <p>
+  	<small>Post Time:</small>
+  	<small><%= p.created_at %></small>
+  </p>
+  
+  <hr>
 <% end %>
 
 <%= form_for @forums_post do |f| %>
+  <%= f.hidden_field :forum_id, value: @forum.id %>
   <p>
     <%= f.label :description %>
   </p>
   <p>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :cols => "100", :rows => "10" %>
   </p>
+  <%= f.submit "Post" %>
 <% end %>
 
 
 <%= link_to 'Edit', edit_forum_path(@forum) %> |
-<%= link_to 'Back', forums_path %>
+<%= link_to 'Back to Forums', forums_path %>
+
+</div>
