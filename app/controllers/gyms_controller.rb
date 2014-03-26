@@ -74,6 +74,6 @@ class GymsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gym_params
-      params.require(:gym).permit(:title, :address, :latitude, :longitude)
+      params.require(:gym).permit(:title, :address, :latitude, :longitude, :description)
     end
 end

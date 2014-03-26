@@ -31,7 +31,7 @@
         <td><a href="../health/index">Nutrition</a></li>
         <td><a href="../exercise/index">Exercise</a></li>
 		<td><a href="../forums">Forums</a></li>
-		<td><a href="../gyms">Gyms</a></li>
+		<td><%= link_to 'Gyms' , gyms_path, 'data-no-turbolink' => true %></li>
 		<td> 
 			<% if user_signed_in? %>
   
