@@ -1,3 +1,5 @@
+
+<div id= "forum_align">
 <p>
   
   <h2><%= @forum.topic %></h2>
@@ -20,6 +22,11 @@
     <strong>User:</strong>
     <%= p.user.email %>
   </p>
+  <p>
+  	<strong>Post Time:</strong>
+  	<%= p.created_at %>
+  </p>
+  
   <hr>
 <% end %>
 
@@ -29,11 +36,13 @@
     <%= f.label :description %>
   </p>
   <p>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :cols => "100", :rows => "10" %>
   </p>
   <%= f.submit "Post" %>
 <% end %>
 
 
 <%= link_to 'Edit', edit_forum_path(@forum) %> |
-<%= link_to 'Back', forums_path %>
+<%= link_to 'Back to Forums', forums_path %>
+
+</div>

@@ -5,6 +5,7 @@
     <tr>
       <th>Topic</th>
       <th>Creator</th>
+      <th>Creation Date</th>
       <th></th>
       
     </tr>
@@ -15,9 +16,14 @@
       <tr>
         <td><%= forum.topic %></td>
         <td><%= forum.user.email %></td>
-        <td><%= link_to 'Show', forum, class: 'btn btn-info' %>
+        <td><%= forum.created_at %></td>
+        <td><%= link_to 'Enter Forum', forum, class: 'btn btn-info' %>
+        	<% if can? :edit, Forum %>
         <%= link_to 'Edit', edit_forum_path(forum), class: 'btn btn-primary' %>
+        <%end %>
+        <% if can? :edit, Forum %>
         <%= link_to 'Destroy', forum, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        <%end %>
       </tr>
     <% end %>
   </tbody>
