@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  <strong>Forum Creator:</strong>
+  <strong>Thread Creator:</strong>
   <%= @forum.user.email %>
 </p>
 
@@ -19,12 +19,12 @@
     <%= p.description %>
   </p>
   <p>
-    <strong>User:</strong>
-    <%= p.user.email %>
+    <small>User:</small>
+    <small><%= p.user.email %></small>
   </p>
   <p>
-  	<strong>Post Time:</strong>
-  	<%= p.created_at %>
+  	<small>Post Time:</small>
+  	<small><%= p.created_at %></small>
   </p>
   
   <hr>
