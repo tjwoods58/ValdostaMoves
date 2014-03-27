@@ -16,6 +16,14 @@ ActiveRecord::Schema.define(version: 20140326163251) do
   create_table "events", force: true do |t|
     t.string   "sponser"
     t.string   "type"
+    t.string   "title"
+    t.datetime "eventdate"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "address"
+    t.string   "contactphone"
+    t.string   "description"
+    t.string   "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "rate"
@@ -23,12 +31,12 @@ ActiveRecord::Schema.define(version: 20140326163251) do
 
   create_table "forums", force: true do |t|
     t.string   "topic"
-    t.integer  "users_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "forums", ["users_id"], name: "index_forums_on_users_id"
+  add_index "forums", ["user_id"], name: "index_forums_on_user_id"
 
   create_table "forums_posts", force: true do |t|
     t.integer  "user_id"

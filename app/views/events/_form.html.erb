@@ -12,16 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :id %><br>
-    <%= f.text_field :id %>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
   </div>
   <div class="field">
     <%= f.label :sponser %><br>
     <%= f.text_field :sponser %>
   </div>
   <div class="field">
-    <%= f.label :type %><br>
-    <%= f.text_field :type %>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, rows: 6 %>
+  </div>
+  <div class="field">
+    <%= f.label :eventdate %><br>
+    <%= f.datetime_field :eventdate %>
+  </div>
+  <div class="field">
+    <%= f.label :contactphone %><br>
+    <%= f.text_field :contactphone %>
+  </div>
+  <div class="field">
+    <%= f.label :image_url %><br>
+    <%= f.text_field :image_url %>
   </div>
   <div class="actions">
     <%= f.submit %>
