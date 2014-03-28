@@ -28,11 +28,14 @@
 	  <tr class="nav nav-pills">
         <td><a href="../home/index">Home</a></li>
         <td><a href="../events">Events</a></li>
-        <td><a href="../health/index">Nutrition</a></li>
+        <td><%= link_to "Nutrition", recipes_path%>
         <td><a href="../exercise/index">Exercise</a></li>
 		<td><a href="../forums">Forums</a></li>
-		<td><%= link_to 'Gyms' , gyms_path, 'data-no-turbolink' => true %></li>
-		<td> 
+    <td><%= link_to 'Gyms' , gyms_path, 'data-no-turbolink' => true %></li>
+		<% if can? :manage, User %>
+      <td><%= link_to 'Users' , users_path %></li>
+		<% end %>
+    <td> 
 			<% if user_signed_in? %>
   
   			<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
@@ -52,15 +55,7 @@
     </main>
   </body>
   
-  <div id="wrap">
-  <div id="main">
-    <p>CopyRight VMoves 2014</p>
-    <p>Alrights Reserved</p>
-    <p>Contact us @ 229-848-0101</p>
-    <p>2014 Valdosta Moves.Inc  1700 N. Patterson St., Valdosta, GA 31698</p>
-  </div>
-</div>
-<footer class="footer"></footer>
+
 
 </html>
 

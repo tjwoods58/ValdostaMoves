@@ -9,9 +9,11 @@ class Ability
     elsif user.regular?
       can [:create, :read], ForumsPost
       can [:read], Forum
+      can [:read], Recipe
     else
       can [:read], ForumsPost
       can [:read], Forum
+      can [:read], Recipe
     end
 
     # Define abilities for the passed in user here. For example:

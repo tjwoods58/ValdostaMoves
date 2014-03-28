@@ -26,6 +26,10 @@
   	<small>Post Time:</small>
   	<small><%= p.created_at %></small>
   </p>
+
+  <% if can? :destroy, ForumsPost %>
+    <%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+  <%end %>
   
   <hr>
 <% end %>

@@ -1,4 +1,6 @@
 Vmoves::Application.routes.draw do
+  resources :recipes
+
   resources :gyms
 
   devise_for :users
@@ -7,15 +9,13 @@ Vmoves::Application.routes.draw do
   root :to => 'home#index'
   
   resources :tips
-
-  get "recipes/index"
   
   resources :forums_posts
 
   resources :forums
 
   get "exercise/index"
-  get "health/index"
+  
   resources :events
 
   get "home/index"

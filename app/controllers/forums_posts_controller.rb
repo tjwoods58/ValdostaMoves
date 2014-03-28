@@ -58,7 +58,7 @@ class ForumsPostsController < ApplicationController
   def destroy
     @forums_post.destroy
     respond_to do |format|
-      format.html { redirect_to forums_posts_url }
+      format.html { redirect_to forum_url(@forums_post.forum_id) }
       format.json { head :no_content }
     end
   end
