@@ -3,7 +3,8 @@ Vmoves::Application.routes.draw do
 
   resources :gyms
 
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
+  
   resources :gyms
 
   root :to => 'home#index'
