@@ -21,6 +21,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    clear_facebook_session_information
     @user.destroy
     redirect_to users_path
   end 

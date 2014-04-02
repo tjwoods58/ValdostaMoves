@@ -1,3 +1,15 @@
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script language="javascript" type="text/javascript">
+FB.init({
+appId: 736465209706941,
+xfbml: true,
+cookie: true,
+oauth: true
+});
+ 
+</script>
+
+
 <h2>Sign in</h2>
 
 <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
@@ -13,5 +25,7 @@
     <%= f.button :submit, "Sign in" %>
   </div>
 <% end %>
+
+
 
 <%= render "devise/shared/links" %>
