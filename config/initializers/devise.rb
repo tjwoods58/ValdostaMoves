@@ -234,6 +234,9 @@ Devise.setup do |config|
 
   require 'omniauth-twitter'
   config.omniauth :twitter, "aFq42NYS2YGaCgpn6zjLraP01", "mVkjHkfVTjdtOZQ6J7LwtdJGZwBoCSIiznu1j3jI3NZs7VTIze"
+  
+  require 'omniauth-linkedin'
+  config.omniauth :linkedin, "77u0vqwx61bdeo", "nuwvnmzsVIeWcuGR"
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
