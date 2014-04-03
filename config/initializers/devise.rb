@@ -237,6 +237,9 @@ Devise.setup do |config|
   
   require 'omniauth-linkedin'
   config.omniauth :linkedin, "77u0vqwx61bdeo", "nuwvnmzsVIeWcuGR"
+  
+  require 'omniauth-google-oauth2'
+  config.omniauth :google_oauth2, "316552875465-lpiq2sb962g4skh0iuk48g63f4e3mtt0.apps.googleusercontent.com", "xEZQProfafIPBliP5ypiGRKi", { access_type: "offline", approval_prompt: "" }
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.

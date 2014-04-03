@@ -32,6 +32,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-linkedin'
+gem 'omniauth-google-oauth2'
 
 gem 'cancan'
 
