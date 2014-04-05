@@ -18,4 +18,15 @@
 //= require gmaps/google
 //= require jquery.themepunch.plugins.min
 //= require jquery.themepunch.revolution.min
+//= require fullcalendar
 //= require_tree .
+
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        // put your options and callbacks here
+    })
+
+});
