@@ -1,6 +1,8 @@
 .fc {
   direction: ltr;
   text-align: left;
+  width: 90%;
+  margin-left: 5%;
   }
   
 .fc table {
@@ -101,8 +103,10 @@ html .fc,
   }
   
 .fc-view {
-  width: 100%;
+
   overflow: hidden;
+  margin-left: auto;
+  
   }
   
   
