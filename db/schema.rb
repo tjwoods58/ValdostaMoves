@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20140406004243) do
     t.string   "contactphone"
     t.string   "description"
     t.string   "image_url"
+    t.boolean  "allday"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "rate"

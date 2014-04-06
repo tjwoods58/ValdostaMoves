@@ -11,7 +11,7 @@ class CreateEvents < ActiveRecord::Migration
       t.string :contactphone
       t.string :description
       t.string :image_url
-
+      t.boolean :allday
       t.timestamps
     end
   end
