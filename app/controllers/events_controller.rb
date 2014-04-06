@@ -11,7 +11,6 @@ class EventsController < ApplicationController
       marker.title event.title
       end
   end
-
   # GET /events/1
   # GET /events/1.json
   def show

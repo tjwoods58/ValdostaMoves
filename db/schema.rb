@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20140406004243) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "rate"
-    t.datetime "start"
-    t.datetime "end"
+    t.date     "start"
+    t.date     "end"
   end
 
   create_table "forums", force: true do |t|
