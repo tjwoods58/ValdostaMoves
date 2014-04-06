@@ -32,7 +32,7 @@
           }
         });
       });
-
+	  
       $('#calendar').fullCalendar({
           editable: true,
           header: {
@@ -43,13 +43,24 @@
           defaultView: 'month',
           height: 500,
           slotMinutes: 15,
-          loading: function(bool){
-              if (bool) 
-                  $('#loading').show();
-              else 
-                  $('#loading').hide();
+          
+          events: [
+          {
+          	title: event.title,
+          	start: '2014-04-16'
           },
-          events: "/events/get_events",
+        {
+            title: 'Event1',
+            start: '2014-04-14'
+        },
+        {
+            title: 'Event2',
+            start: '2014-04-15'
+        }
+        // etc...
+    ],
+
+
           timeFormat: 'h:mm t{ - h:mm t} ',
           dragOpacity: "0.5",
           eventDrop: function(event, dayDelta, minuteDelta, allDay, revertFunc){
