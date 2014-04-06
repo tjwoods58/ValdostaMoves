@@ -4,7 +4,7 @@ class CreateEvents < ActiveRecord::Migration
       t.string :sponser
       t.string :type
       t.string :title
-      t.datetime :eventdate
+      t.date :eventdate
       t.float :latitude
       t.float :longitude
       t.string :address

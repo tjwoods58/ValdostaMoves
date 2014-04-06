@@ -29,8 +29,17 @@
   </div>
   <div class="field">
     <%= f.label :eventdate %><br>
-    <%= f.datetime_field :eventdate %>
+    <%= f.date_field :eventdate %>
   </div>
+  <div class="field">
+    <%= f.label :start %><br>
+    <%= f.datetime_field :start %>
+  </div>
+  <div class="field">
+    <%= f.label :end %><br>
+    <%= f.datetime_field :end %>
+  </div>
+  
   <div class="field">
     <%= f.label :contactphone %><br>
     <%= f.text_field :contactphone %>

@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140331175504) do
+ActiveRecord::Schema.define(version: 20140406004243) do
 
   create_table "events", force: true do |t|
     t.string   "sponser"
     t.string   "type"
     t.string   "title"
-    t.datetime "eventdate"
+    t.date     "eventdate"
     t.float    "latitude"
     t.float    "longitude"
     t.string   "address"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20140331175504) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "rate"
+    t.datetime "start"
+    t.datetime "end"
   end
 
   create_table "forums", force: true do |t|
