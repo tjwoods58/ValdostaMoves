@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Title:</strong>
   <%= @event.title %>
 </p>
 <p>
@@ -26,11 +27,11 @@
 </p>
 <p>
   <strong>Start Time:</strong>
-  <%= @event.start %>
+  <%= @event.start.strftime("%I:%M %p") %>
 </p>
 <p>
   <strong>End Time:</strong>
-  <%= @event.end %>
+  <%= @event.end.strftime("%I:%M %p") %>
 </p>
 <p>
   <strong>Contact Phone:</strong>
