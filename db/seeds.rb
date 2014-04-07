@@ -6,6 +6,60 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 # user = User.first 
+Event.delete_all
+Event.create!(
+  title: 'Valdosta Picnic',
+  sponser: 'Valdosta State University',
+  address: '1116 Slater Street Valdosta, GA',
+  description: 'This is going to be a fun time. Food and Drinks included!',
+  allday: false,
+  start: '2014-04-18 13:00:00.000000',
+  end: '2014-04-18 16:00:00.000000', 
+  contactphone: 1234567891,
+)
+Event.create!(
+  title: 'Basketball Tournament',
+  sponser: 'Atlanta Hawks',
+  address: '1000 Peachtree Street Atlanta, GA',
+  description: 'Fun pick up basketball games!',
+  allday: false,
+  start: '2014-04-28 8:00:00.000000',
+  end: '2014-04-28 20:00:00.000000', 
+  contactphone: 1234567891,
+)
+Event.create!(
+  title: 'NY Marathon',
+  sponser: 'NYC',
+  address: '2000 Main Street New York, NY',
+  description: 'Get ready to run!',
+  allday: false,
+  start: '2014-04-22 7:00:00.000000',
+  end: '2014-04-22 14:00:00.000000', 
+  contactphone: 1234567891,
+)
+Event.create!(
+  title: 'Surfing Competition',
+  sponser: 'LA Lakers',
+  address: '1000 Hollywood Drive Los Angeles, CA',
+  description: 'Surf boards provided!',
+  allday: false,
+  start: '2014-05-02 8:00:00.000000',
+  end: '2014-05-02 16:00:00.000000', 
+  contactphone: 1234567891,
+)
+Event.create!(
+  title: 'Glow in the dark golf',
+  sponser: 'Florida State University',
+  address: '2020 Main Street Tallahassee, FL',
+  description: 'Golf clubs NOT provided!',
+  allday: false,
+  start: '2014-04-30 17:00:00.000000',
+  end: '2014-04-30 22:00:00.000000', 
+  contactphone: 1234567891,
+)
+
+
+User.delete_all
 user = User.create!(
   email: 'jpkeen@valdosta.edu',
   password: 'password',
@@ -34,12 +88,6 @@ user = User.create!(
   email: 'tjwoods@valdosta.edu',
   password: 'password',
   password_confirmation: 'password'
-)
-
-user = User.create!(
-  email: 'admin@admin.com',
-  password: 'adminadmin',
-  password_confirmation: 'adminadmin'
 )
 
 user = User.create!(

@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20140406004243) do
     t.string   "sponser"
     t.string   "type"
     t.string   "title"
-    t.date     "eventdate"
     t.float    "latitude"
     t.float    "longitude"
     t.string   "address"
@@ -28,8 +27,8 @@ ActiveRecord::Schema.define(version: 20140406004243) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "rate"
-    t.time     "start"
-    t.time     "end"
+    t.datetime "start"
+    t.datetime "end"
   end
 
   create_table "forums", force: true do |t|

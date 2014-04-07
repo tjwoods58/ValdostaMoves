@@ -51,13 +51,13 @@
 
           timeFormat: 'h:mm t{ - h:mm t} ',
           dragOpacity: "0.5",
-          eventDrop: function(event, dayDelta, minuteDelta, allDay, revertFunc){
-//              if (confirm("Are you sure about this change?")) {
-                  moveEvent(event, dayDelta, minuteDelta, allDay);
-//              }
-//              else {
-//                  revertFunc();
-//              }
+          eventDrop: function(event, dayDelta, minuteDelta, allday, revertFunc){
+              if (confirm("Are you sure about this change?")) {
+                moveEvent(event, dayDelta, minuteDelta, allDay);
+              }
+              else {
+                revertFunc();
+              }
           },
           
           eventResize: function(event, dayDelta, minuteDelta, revertFunc){
@@ -72,10 +72,16 @@
           eventClick: function(event, jsEvent, view){
               showEventDetails(event);
           },
-      
-      
-      
-      
+          
+          dayClick: function(date, allDay, jsEvent, view){
+            if (allDay) {
+              alert('Clicked on the entire day: ' + date);
+            }
+            else{
+              alert('Clicked on the slot: ' + date);
+            }
+          }
+          
       });
   }); 
   
@@ -96,6 +102,8 @@
       <th>Address</th>
       <th>Description</th>
       <th>Event Date</th>
+      <th>Start Time</th>
+      <th>End Time</th>
       <th>Contact Phone#</th>
     </tr>
   </thead>
@@ -107,7 +115,9 @@
         <td><%= event.sponser %></td>
         <td><%= event.address %></td>
         <td><%= event.description %></td>
-        <td><%= event.eventdate %></td>
+        <td><%= event.start.strftime("%m / %d / %Y") %></td>
+        <td><%= event.start.strftime("%I:%M %p") %></td>
+        <td><%= event.end.strftime("%I:%M %p") %></td>
         <td><%= event.contactphone %></td>
         <td><%= link_to 'Show', event, class: 'btn btn-info' %></td>
         <td><%= link_to 'Edit', edit_event_path(event), class: 'btn btn-primary' %></td>

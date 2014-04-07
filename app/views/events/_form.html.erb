@@ -29,16 +29,12 @@
     <%= f.text_area :description, rows: 6 %>
   </div>
   <div class="field">
-    <%= f.label :eventdate %><br>
-    <%= f.date_field :eventdate %>
-  </div>
-  <div class="field">
     <%= f.label :start %><br>
-    <%= f.time_field :start %>
+    <%= f.datetime_select :start %>
   </div>
   <div class="field">
     <%= f.label :end %><br>
-    <%= f.time_field :end %>
+    <%= f.datetime_select :end %>
   </div>
   
   <div class="field">

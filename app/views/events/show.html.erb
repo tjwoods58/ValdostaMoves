@@ -21,7 +21,7 @@
         <td><%= @event.sponser %></td>
         <td><%= @event.address %></td>
         <td><%= @event.description %></td>
-        <td><%= @event.eventdate %></td>
+        <td><%= @event.start.strftime("%m / %d / %Y") %></td>
         <td><%= @event.start.strftime("%I:%M %p") %></td>
         <td><%= @event.end.strftime("%I:%M %p") %></td>
         <td><%= @event.contactphone %></td>
