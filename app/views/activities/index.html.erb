@@ -1,0 +1,57 @@
+<script type="text/javascript">
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+</script>
+<div id= "forum_align">
+<p>
+  
+  <h3>Report your daily activities and win prizes! The more active you are the better chance you have of winning prizes.</h3>
+</p>
+
+<hr>
+<hr>
+
+<% @activities.each do |p| %>
+  <p>
+    <p><strong>Activity/Exercise:</strong>
+    <%= p.posts %> <br /></p>
+    <p><strong>Duration:</strong>
+    <%= p.duration %> minutes</p> 
+  </p>
+  <p>
+    <small>User:</small>
+    <small><%= p.user.email %></small>
+  </p>
+  <p>
+  	<small>Post Time:</small>
+  	<small><%= p.created_at %></small>
+  </p>
+
+  <% if can? :destroy, Activity %>
+    <%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+  <%end %>
+  
+  <hr>
+<% end %>
+
+<%= form_for Activity.new do |f| %>
+  <p>
+    <%= f.label :"What was your Activity/Exercise ?" %>
+  </p>
+  <p>
+    <%= f.text_area :posts, :cols => "100", :rows => "10" %>
+  </p>
+  <p>
+    <%= f.label :"How Long Did You Do This?" %>
+    <%= f.select :duration, options_for_select(%w[15 30 45 60]) %> 
+      	
+  </p>
+  <%= f.submit "Post" %>
+<% end %>
+
+
+<%= link_to 'Edit', edit_activity_path(@activities) %> |
+<%= link_to 'Back', activities_path %>
+
+</div>

@@ -1,4 +1,6 @@
 Vmoves::Application.routes.draw do
+  resources :activities
+
   resources :recipes
 
   resources :gyms

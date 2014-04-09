@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140406004243) do
+ActiveRecord::Schema.define(version: 20140409002300) do
+
+  create_table "activities", force: true do |t|
+    t.string   "posts"
+    t.decimal  "duration"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "activities", ["user_id"], name: "index_activities_on_user_id"
 
   create_table "events", force: true do |t|
     t.string   "sponser"
@@ -96,6 +106,9 @@ ActiveRecord::Schema.define(version: 20140406004243) do
     t.integer  "category",               default: 0,  null: false
     t.string   "provider"
     t.string   "uid"
+    t.decimal  "points"
+    t.decimal  "event_points"
+    t.decimal  "rep"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
