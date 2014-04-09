@@ -1,6 +1,5 @@
 class ActivitiesController < ApplicationController
-  load_and_authorize_resource except: :create
-  authorize_resource only: :create
+  
 
   # GET /activities
   # GET /activities.json
@@ -43,7 +42,7 @@ class ActivitiesController < ApplicationController
         format.html { redirect_to action: 'index', notice: 'Activity was successfully created.' }
         format.json { render action: 'show', status: :created, location: @activity }
       else
-        flash[:error] = 'Activity post was not successful. Have to be signed in to post.'
+        flash[:error] = 'Activity post was not successful. Must be signed in to post.'
         format.html { redirect_to action: 'index' }
         format.json { render json: @activity.errors, status: :unprocessable_entity }
       end

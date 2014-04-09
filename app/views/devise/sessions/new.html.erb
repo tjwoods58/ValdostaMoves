@@ -9,7 +9,11 @@ oauth: true
  
 </script>
 
-
+<script type="text/javascript">
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+</script>
 <h2>Sign in</h2>
 
 <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>

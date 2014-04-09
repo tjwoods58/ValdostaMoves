@@ -4,6 +4,13 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, :omniauth_providers => [ :facebook, :twitter, :linkedin, :google_oauth2]
+  after_initialize :init
+  
+  def init
+    self.points ||= 0.0 
+    self.event_points ||= 0.0
+    self.rep ||= 0.0
+  end
 
   def admin?
     if category == 1

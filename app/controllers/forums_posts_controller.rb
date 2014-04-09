@@ -32,7 +32,7 @@ class ForumsPostsController < ApplicationController
         format.html { redirect_to forum_path(@forums_post.forum_id), notice: 'Forums post was successfully created.' }
         format.json { render action: 'show', status: :created, location: @forums_post }
       else
-        flash[:error] = 'Forums post was not successful.'
+        flash[:error] = 'Forums post was not successful. Must be signed in to post'
         format.html { redirect_to forum_path(@forums_post.forum_id) }
         format.json { render json: @forums_post.errors, status: :unprocessable_entity }
       end
