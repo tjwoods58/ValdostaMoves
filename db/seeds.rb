@@ -63,37 +63,55 @@ User.delete_all
 user = User.create!(
   email: 'jpkeen@valdosta.edu',
   password: 'password',
-  password_confirmation: 'password'
+  password_confirmation: 'password',
+  points: 0,
+  event_points: 0,
+  rep:0
 )
 
 user = User.create!(
   email: 'leajones@valdosta.edu',
   password: 'password',
-  password_confirmation: 'password'
+  password_confirmation: 'password',
+  points: 0,
+  event_points: 0,
+  rep: 0
 )
 
 user = User.create!(
   email: 'johnmjones@valdosta.edu',
   password: 'password',
-  password_confirmation: 'password'
+  password_confirmation: 'password',
+  points: 0,
+  event_points: 0,
+  rep:0
 )
 
 user = User.create!(
   email: 'pdnguyen@valdosta.edu',
   password: 'password',
-  password_confirmation: 'password'
+  password_confirmation: 'password',
+  points: 0,
+  event_points: 0,
+  rep:0
 )
 
 user = User.create!(
   email: 'tjwoods@valdosta.edu',
   password: 'password',
-  password_confirmation: 'password'
+  password_confirmation: 'password',
+  points: 0,
+  event_points: 0,
+  rep:0
 )
 
 user = User.create!(
   email: 'admin@admin.com',
   password: 'adminadmin',
-  password_confirmation: 'adminadmin'
+  password_confirmation: 'adminadmin',
+  points: 0,
+  event_points: 0,
+  rep:0
 )
 
 

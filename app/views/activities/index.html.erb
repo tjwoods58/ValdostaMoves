@@ -12,6 +12,7 @@
 <hr>
 <hr>
 
+
 <% @activities.each do |p| %>
   <p>
     <p><strong>Activity/Exercise:</strong>
@@ -34,7 +35,8 @@
   
   <hr>
 <% end %>
-
+<% @user = current_user %>
+<% if @user != nil %>
 <%= form_for Activity.new do |f| %>
   <p>
     <%= f.label :"What was your Activity/Exercise ?" %>
@@ -53,5 +55,8 @@
 
 <%= link_to 'Edit', edit_activity_path(@activities) %> |
 <%= link_to 'Back', activities_path %>
+<% else %>
+<h4>You have to be logged in to post. If you're not a member, sign up for a chance to win prizes!</h4>
+<% end %>
 
 </div>
