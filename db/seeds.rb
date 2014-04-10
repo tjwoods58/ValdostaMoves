@@ -58,6 +58,16 @@ Event.create!(
   contactphone: 1234567891,
 )
 
+Event.create!(
+  title: 'Hey this is a past event',
+  sponser: 'Valdosta State Univerity',
+  address: 'Valdosta State University, GA',
+  description: 'Why look in the past?',
+  allday: false,
+  start: '2014-04-07 17:00:00.000000',
+  end: '2014-04-07 22:00:00.000000', 
+  contactphone: 1234567891,
+)
 
 User.delete_all
 user = User.create!(

@@ -63,6 +63,7 @@ end
 
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'letsrate'
 
 group :production do
   gem 'pg', '0.15.1'
