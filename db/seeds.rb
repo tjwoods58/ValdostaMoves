@@ -66,7 +66,8 @@ user = User.create!(
   password_confirmation: 'password',
   points: 0,
   event_points: 0,
-  rep:0
+  rep:0,
+  category: 1
 )
 
 user = User.create!(
@@ -75,7 +76,8 @@ user = User.create!(
   password_confirmation: 'password',
   points: 0,
   event_points: 0,
-  rep: 0
+  rep: 0,
+  category: 1
 )
 
 user = User.create!(
@@ -84,7 +86,8 @@ user = User.create!(
   password_confirmation: 'password',
   points: 0,
   event_points: 0,
-  rep:0
+  rep:0,
+  category: 1
 )
 
 user = User.create!(
@@ -93,7 +96,8 @@ user = User.create!(
   password_confirmation: 'password',
   points: 0,
   event_points: 0,
-  rep:0
+  rep:0,
+  category: 1
 )
 
 user = User.create!(
@@ -102,7 +106,8 @@ user = User.create!(
   password_confirmation: 'password',
   points: 0,
   event_points: 0,
-  rep:0
+  rep:0,
+  category: 1
 )
 
 user = User.create!(
@@ -111,7 +116,8 @@ user = User.create!(
   password_confirmation: 'adminadmin',
   points: 0,
   event_points: 0,
-  rep:0
+  rep:0,
+  category: 1
 )
 
 

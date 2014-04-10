@@ -11,6 +11,7 @@ class CreateEvents < ActiveRecord::Migration
       t.string :description
       t.string :image_url
       t.boolean :allday
+      t.integer :rating
       t.timestamps
     end
   end

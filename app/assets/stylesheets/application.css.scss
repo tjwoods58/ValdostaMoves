@@ -17,6 +17,18 @@ html, body {
   background-color: #B0B0B0;
 }
 
+.table-striped td {
+  background-color: beige;
+  text-align: center;
+  font-size: .50em;
+  
+}
+.table-striped th {
+  text-align: center;
+  color: black;
+  font-size: .65em;
+}
+
 #mainbackground {
 
   background: #B0B0B0;
@@ -61,6 +73,21 @@ html, body {
     border: solid;
     border-color: black;
   }
+  
+  #newevent2 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  
   #neweventchoose {
     padding: 1%;
     margin-top: 1%;

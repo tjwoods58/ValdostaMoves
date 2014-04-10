@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20140409002300) do
     t.string   "description"
     t.string   "image_url"
     t.boolean  "allday"
+    t.integer  "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "rate"
