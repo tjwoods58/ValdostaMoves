@@ -9,7 +9,7 @@ class Ability
       can [:create, :read], ForumsPost
       can [:read], Forum
       can [:read], Recipe
-      can [:read]. Category
+      can [:read], Category
     else
       can [:read], ForumsPost
       can [:read], Forum
