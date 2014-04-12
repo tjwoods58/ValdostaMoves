@@ -7,7 +7,7 @@
 <div id= "forum_align">
 <h1>Listing recipes</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -27,13 +27,13 @@
         <td><%= recipe.user.email %></td>
         <td><%= recipe.description %></td>
         <td><%= recipe.instructions %></td>
-        <td><%= link_to 'Show', category_recipe_path(@category, recipe) %></td>
-        <td>
+        <td><%= link_to 'Show', category_recipe_path(@category, recipe) %>
+        
           <% if can? :update, Recipe %>
             <%= link_to 'Edit', edit_category_recipe_path(@category, recipe) %>
           <% end %>
-        </td>
-        <td>
+        
+        
           <% if can? :destroy, Recipe %>
             <%= link_to 'Destroy', category_recipe_path(@category, recipe), method: :delete, data: { confirm: 'Are you sure?' } %>
           <% end %>
