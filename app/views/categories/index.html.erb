@@ -15,7 +15,7 @@
   <tbody>
     <% @categories.each do |category| %>
       <tr>
-      	<td><%= image_tag(category.imagesrc, class: 'list_image') %></td>
+      	<td><%= image_tag(category.imagesrc, class: 'list_image_categ') %></td>
         <td><%= category.name %></td>
         <td><%= link_to 'Show', category_recipes_path(category), class: 'btn btn-info' %>
         	<% if can? :edit, Category %>
