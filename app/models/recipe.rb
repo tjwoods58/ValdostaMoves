@@ -1,4 +1,5 @@
 class Recipe < ActiveRecord::Base
+  mount_uploader :imagesrc, ImagesrcUploader
   belongs_to :user
   belongs_to :category
   validates :name,

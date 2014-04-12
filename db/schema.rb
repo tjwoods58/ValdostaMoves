@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140412011852) do
+ActiveRecord::Schema.define(version: 20140412060832) do
 
   create_table "activities", force: true do |t|
     t.string   "posts"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20140412011852) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "imagesrc"
   end
 
   create_table "events", force: true do |t|
@@ -110,6 +111,7 @@ ActiveRecord::Schema.define(version: 20140412011852) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "category_id"
+    t.string   "imagesrc"
   end
 
   add_index "recipes", ["category_id"], name: "index_recipes_on_category_id"

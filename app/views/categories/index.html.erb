@@ -5,6 +5,7 @@
 <table class="table table-bordered">
   <thead>
     <tr>
+      <th>Image</th>	
       <th>Name</th>
       <th></th>
       
@@ -14,6 +15,7 @@
   <tbody>
     <% @categories.each do |category| %>
       <tr>
+      	<td><%= image_tag(category.imagesrc, class: 'list_image') %></td>
         <td><%= category.name %></td>
         <td><%= link_to 'Show', category_recipes_path(category) %>
         <%= link_to 'Edit', edit_category_path(category) %>

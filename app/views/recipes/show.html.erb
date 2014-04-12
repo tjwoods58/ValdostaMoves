@@ -8,6 +8,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+	
+  <%= image_tag(@recipe.imagesrc, class: 'list_image') %>
+</p>
+<hr>
+<p>
   <strong>Name:</strong>
   <%= @recipe.name %>
 </p>
