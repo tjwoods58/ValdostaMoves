@@ -3,6 +3,8 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
+
+<div id= "forum_align">
 <h1>Listing recipes</h1>
 
 <table>
@@ -45,3 +47,5 @@
 <% if can? :create, Recipe %>
   <%= link_to 'New Recipe', new_category_recipe_path(@category) %>
 <% end %>
+
+</div>

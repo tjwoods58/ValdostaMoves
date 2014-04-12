@@ -3,9 +3,13 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
+
+<div id= "forum_align">
 <h1>Editing recipe</h1>
 
 <%= render 'form' %>
 
 <%= link_to 'Show', category_recipe_path(@category, @recipe) %> |
 <%= link_to 'Back', category_recipes_path(@category) %>
+
+</div>
