@@ -7,7 +7,7 @@ class RecipesController < ApplicationController
   # GET /recipes.json
   def index
    
-    @recipes = @category.recipes.paginate(page: params[:page], per_page: 5)
+    @recipes = @category.recipes.paginate(page: params[:page], per_page: 4)
   end
 
   # GET /recipes/1
