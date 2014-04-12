@@ -46,6 +46,10 @@ gem 'certified'
 
 gem 'carrierwave'
 
+gem 'will_paginate', '~> 3.0'
+
+gem 'bootstrap-will_paginate'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.......
   gem 'sdoc', require: false
