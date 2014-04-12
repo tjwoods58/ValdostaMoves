@@ -14,15 +14,21 @@ oauth: true
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
+<div id= "forum_align">
 <h2>Sign in</h2>
 
 <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
   <div class="form-inputs">
-  	
+  	<div class = "row">
     <%= f.input :email, :required => false, :autofocus => true %>
+    </div>
+    <div class = "row">
     <%= f.input :password, :required => false %>
+    </div>
+    <br>
+    <div class = "row">
     <%= f.input :remember_me, :as => :boolean if devise_mapping.rememberable? %>
-    
+    </div>
   </div>
 
   <div class="form-actions">
@@ -33,3 +39,6 @@ oauth: true
 
 
 <%= render "devise/shared/links" %>
+
+
+</div>
