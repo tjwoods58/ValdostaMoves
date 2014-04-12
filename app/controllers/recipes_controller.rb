@@ -1,11 +1,12 @@
 class RecipesController < ApplicationController
   load_and_authorize_resource except: :create
   authorize_resource only: :create
+  before_filter :find_category
   
   # GET /recipes
   # GET /recipes.json
   def index
-    @recipes = Recipe.all
+    @recipes = @category.recipes
   end
 
   # GET /recipes/1
@@ -27,10 +28,11 @@ class RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(recipe_params)
     @recipe.user = current_user
+    @recipe.category = @category
 
     respond_to do |format|
       if @recipe.save
-        format.html { redirect_to @recipe, notice: 'Recipe was successfully created.' }
+        format.html { redirect_to category_recipe_path(@category, @recipe), notice: 'Recipe was successfully created.' }
         format.json { render action: 'show', status: :created, location: @recipe }
       else
         puts @recipe.errors.full_messages
@@ -45,7 +47,7 @@ class RecipesController < ApplicationController
   def update
     respond_to do |format|
       if @recipe.update(recipe_params)
-        format.html { redirect_to @recipe, notice: 'Recipe was successfully updated.' }
+        format.html { redirect_to category_recipe_path(@category, @recipe), notice: 'Recipe was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -59,7 +61,7 @@ class RecipesController < ApplicationController
   def destroy
     @recipe.destroy
     respond_to do |format|
-      format.html { redirect_to recipes_url }
+      format.html { redirect_to category_recipes_path(@category)}
       format.json { head :no_content }
     end
   end
@@ -69,4 +71,9 @@ class RecipesController < ApplicationController
     def recipe_params
       params.require(:recipe).permit(:name, :description, :instructions)
     end
+    
+    def find_category
+      @category = Category.find(params[:category_id])
+    end
+    
 end

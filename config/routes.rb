@@ -1,8 +1,10 @@
 Vmoves::Application.routes.draw do
+  resources :categories, except: :show do
+    resources :recipes
+  end
+  
   post '/rate' => 'rater#create', :as => 'rate'
   resources :activities
-
-  resources :recipes
 
   resources :gyms
   

@@ -3,7 +3,7 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
-<%= simple_form_for(@recipe) do |f| %>
+<%= simple_form_for([@category, @recipe]) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
