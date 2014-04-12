@@ -17,9 +17,15 @@
       <tr>
       	<td><%= image_tag(category.imagesrc, class: 'list_image') %></td>
         <td><%= category.name %></td>
-        <td><%= link_to 'Show', category_recipes_path(category) %>
-        <%= link_to 'Edit', edit_category_path(category) %>
-        <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', category_recipes_path(category), class: 'btn btn-info' %>
+        	<% if can? :edit, Category %>
+        <%= link_to 'Edit', edit_category_path(category), class: 'btn btn-primary' %>
+        <%end %>
+        <% if can? :destroy, Category %>
+          <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        <%end %>
+       
+        
       </tr>
     <% end %>
   </tbody>
