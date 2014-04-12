@@ -1,4 +1,6 @@
 Vmoves::Application.routes.draw do
+  
+  
   resources :categories, except: :show do
     resources :recipes
   end
