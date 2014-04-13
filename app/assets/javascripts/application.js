@@ -19,9 +19,7 @@
 //= require jquery.themepunch.plugins.min
 //= require jquery.themepunch.revolution.min
 //= require fullcalendar
-//= require jquery-easing-1.3.pack
-//= require jquery-easing-compatibility.1.2.pack
-//= require jquery.js
+
 //= require_tree .
 
 

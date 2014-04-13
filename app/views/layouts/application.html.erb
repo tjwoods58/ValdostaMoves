@@ -3,10 +3,10 @@
   <head>
   	<!-- get jQuery from the google apis -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
-		
+
 		<!-- GOOGLE FONTS -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800' rel='stylesheet' type='text/css'>
-	
+
   	<title>Valdosta Moves</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Vmoves" %></title>
@@ -19,46 +19,55 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
-<script type="text/javascript">
-$(document).ready(function () {
-
-  // find the elements to be eased and hook the hover event
-  $('div.jimgMenu ul li a').hover(function() {
-    
-    // if the element is currently being animated (to a easeOut)...
-    if ($(this).is(':animated')) {
-      $(this).stop().animate({width: "310px"}, {duration: 450, easing:"easeOutQuad"});
-    } else {
-      // ease in quickly
-      $(this).stop().animate({width: "310px"}, {duration: 400, easing:"easeOutQuad"});
-    }
-  }, function () {
-    // on hovering out, ease the element out
-    if ($(this).is(':animated')) {
-      $(this).stop().animate({width: "78px"}, {duration: 400, easing:"easeInOutQuad"})
-    } else {
-      // ease out slowly
-      $(this).stop('animated:').animate({width: "78px"}, {duration: 450, easing:"easeInOutQuad"});
-    }
-  });
-});
-</script>
-
   </head>
   <body>
-      <script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="js/jquery-easing-1.3.pack.js"></script><script type="text/javascript" src="js/jquery-easing-compatibility.1.2.pack.js"></script>
+    <div id="mainbackground">
+  	<div class="container">
+     <a href="../home/index"> <%= image_tag("ValdostaMovesLogo.png") %> </a>
+  	</div>
+  	<% @user = current_user %>
+  	<% if @user != nil %>
+  		<div class="points">
+  		<a href="../activities"><button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Earn points by getting out the house, playing, and staying healthy. If you run, play football, practice yoga, do a few push ups, or anything to keep yourself in shape we want to hear about it. Whatever activity or exercise you do for the day come back and report on our activities page. The more you do the more points you earn! You can also earn points by going to one of the user created events and coming back after it and rating the events. Everytime you rate an event you'll also earn points. Users with the most points at the end of each week will get prizes from local gyms and restaurants! Click on this button to go to our Activites page.">You have <%= pluralize @user.points + @user.event_points, 'point' %> this week  <br /><span class="hover">(hover over this to see how to earn more points)</span></button></a>
+  		</div>
+  	<% else %>
+  		<div class="points">
+  		<a href="../activities"><button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Earn points by getting out the house, playing, and staying healthy. If you run, play football, practice yoga, do a few push ups, or anything to keep yourself in shape we want to hear about it. Whatever activity or exercise you do for the day come back and report on our activities page. The more you do the more points you earn! You can also earn points by going to one of the user created events and coming back after it and rating the events. Everytime you rate an event you'll also earn points. Users with the most points at the end of each week will get prizes from local gyms and restaurants! Click on this button to go to our Activites page.">You have 0.0 points this week  <br /><span class="hover">(hover over this to see how to earn more points)</span></button></a>
+  		</div>
+  	<% end %>
+    
+  	<div id="banner">
+	  <%= @page_title || "Valdosta Moves" %>
 
-	<div class="jimgMenu">
-	  <ul>
-        <li class="landscapes"><a href="../home/index">Home</a></li>
-        <li class="people"><a href="../events">Events</a></li>
-        <li class="nature"><%= link_to "Nutrition", categories_path %>
-        <li class="abstract"><a href="../exercise/index">Exercise</a></li>
-		<li class="urban"><a href="../forums">Forums</a></li>
-        
+	</div>
+	<div id="linksbar">
+	<div class="linkbar">
+	  <ul class="nav nav-pills custom">
+        <li><a href="../home/index">Home</a></li>
+        <li><a href="../events">Events</a></li>
+        <li><%= link_to "Nutrition", categories_path %>
+        <li><a href="../exercise/index">Exercise</a></li>
+		<li><a href="../forums">Forums</a></li>
+        <li><%= link_to 'Gyms' , gyms_path, 'data-no-turbolink' => true %></li>
+		<% if can? :manage, User %>
+      <li><%= link_to 'Users' , users_path %></li>
+		<% end %>
+    <li> 
+			<% if user_signed_in? %>
+  
+  			<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+ 
+			<% else %>
+  
+ 			 <%= link_to('Login', new_user_session_path)  %>
+ 	 			 
+		<% end %>  
+</li>
       </ul>
-    </div>
-	
+      </div>
+      
+	</div>
+
     <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
@@ -69,5 +78,3 @@ $(document).ready(function () {
 
 
 </html>
-
-
