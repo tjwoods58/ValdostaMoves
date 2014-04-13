@@ -43,11 +43,11 @@
 	<div id="linksbar">
 	<div class="linkbar">
 	  <ul class="nav nav-pills custom">
-        <li><a href="../home/index">Home</a></li>
-        <li><a href="../events">Events</a></li>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'Events', events_path %></li>
         <li><%= link_to "Nutrition", categories_path %>
-        <li><a href="../exercise/index">Exercise</a></li>
-		<li><a href="../forums">Forums</a></li>
+        <li><%= link_to "Exercise",exercise_index_path %> </li>
+		<li><%= link_to 'Forums', forums_path %></li>
         <li><%= link_to 'Gyms' , gyms_path, 'data-no-turbolink' => true %></li>
 		<% if can? :manage, User %>
       <li><%= link_to 'Users' , users_path %></li>
