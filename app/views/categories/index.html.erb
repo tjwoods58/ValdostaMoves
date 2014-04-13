@@ -15,7 +15,7 @@
   <tbody>
     <% @categories.each do |category| %>
       <tr>
-      	<td><%= link_to image_tag(category.imagesrc, class: 'list_image_categ'), category_recipes_path(category) %></td>
+      	<td><%= link_to image_tag(category.imagesrc, class: 'list_image_categ'), category_recipes_path(category), 'data-no-turbolink' => true %></td>
         <td><h3><%= category.name %></h3></td>
         <td><%= link_to 'Show', category_recipes_path(category), class: 'btn btn-info', 'data-no-turbolink' => true %>
         	<% if can? :edit, Category %>
