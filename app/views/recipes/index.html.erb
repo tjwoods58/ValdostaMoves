@@ -12,7 +12,6 @@
     <tr>
       <th>Recipe Image</th>	
       <th>Name</th>
-      <th>Added By</th>
       <th>Ingredients</th>
       <th>Instructions</th>
       <th>Rating</th>
@@ -24,9 +23,9 @@
   <tbody>
     <% @recipes.each do |recipe| %>
       <tr>
-      	<td style="width:200px;"><%= image_tag(recipe.imagesrc, class: 'list_image') %></td>
+      
+      	<td style="width:200px;"><%= link_to image_tag(recipe.imagesrc, class: 'list_image'), category_recipe_path(@category, recipe) %></td>
         <td style="width:150px;"><strong><%= recipe.name %></strong></td>
-        <td><%= recipe.user.email %></td>
         <td><%= recipe.description %></td>
         <td><%= recipe.instructions %></td>
         <td><%= rating_for recipe, "recipe", 'data-no-turbolink' => true %></td>
@@ -56,6 +55,6 @@
 </div>
 <div id= "forum_align">
 
-<%= will_paginate @recipes %>
+<%= will_paginate @recipes, 'data-no-turbolink' => true %>
 
 </div>
