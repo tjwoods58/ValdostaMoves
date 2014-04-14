@@ -1,5 +1,5 @@
 <div id= "forum_align">
-
+<div id="categories">
 <h1>Listing categories</h1>
 
 <table class="table table-bordered">
@@ -33,12 +33,12 @@
 
 <br>
 
-<%= link_to 'New Category', new_category_path %>
-
-
+<button type="button" class="btn btn-success"><%= link_to 'New Category', new_category_path %></button>
+</div>
 
 </div>>
 <div id= "forum_align">
 
 <%= will_paginate @categories %>
+</div>
 </div>

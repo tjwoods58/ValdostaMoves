@@ -76,7 +76,7 @@ html, body {
     font: small-caps 30px/30px "Times New Roman", serif;
     text-align: center;
     color: black;
-    background: cyan;
+    background: #00FF99;
     border: solid;
     border-color: black;
   }
@@ -94,6 +94,32 @@ html, body {
     border: solid;
     border-color: black;
   }
+  #categories {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 20px/20px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #forums {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 20px/20px "Times New Roman", serif;
+    text-align: center;
+    color: #00FF99;
+    background: black;
+    border: solid;
+    border-color: #00FF99;
+  }
   #newevent3 {
     padding: 1%;
     margin-top: 1%;
@@ -107,13 +133,60 @@ html, body {
     border: solid;
     border-color: black;
   }
+  #ratings {
+    margin-top: 2%;
+  }
+  
+  #eventtable {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+    float: left;
+    margin-left: 1%;
+    display: table;
+  }
+  #newevent4 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #twitter {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+    float: center;
+  }
   
   #neweventchoose {
     padding: 1%;
     margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
-    width: 67%;
+    width: 40%;
     font: small-caps 20px/20px "Times New Roman", serif;
     text-align: center;
     color: black;
@@ -149,6 +222,19 @@ html, body {
     border: solid;
     border-color: black;
 
+    
+  }
+  #gmaps2 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 400px;
+    background: beige;
+    border: solid;
+    border-color: black;
+    text-align: center;
     
   }
   
