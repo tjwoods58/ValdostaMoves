@@ -1,1 +1,38 @@
 
+
+
+<nav class="nav" role="navigation">
+   <div class="navbar-header">
+       <%= link_to image_tag('VMlogo2.png'), root_path %>
+   </div>
+   <div class="navbar-header">
+       <%= link_to image_tag('VMlogowords.png'), root_path %>
+   </div>
+</nav>
+
+
+<nav class="navbar navbar-default" role="navigation">
+   
+   <div>
+      <ul class="nav navbar-nav">
+      	 
+         <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to 'HOME', root_path %></li>
+         <li class="<%= 'active' if current_page?(events_path) %>"><%= link_to 'EVENTS', events_path, 'data-no-turbolink' => true %></li>
+         <li class="<%= 'active' if current_page?(categories_path) %>"><%= link_to "NUTRITION", categories_path %>
+         <li class="<%= 'active' if current_page?(exercise_index_path) %>"><%= link_to "EXERCISE",exercise_index_path %> </li>
+         <li class="<%= 'active' if current_page?(forums_path) %>"><%= link_to 'FORUMS', forums_path %></li>
+         <li class="<%= 'active' if current_page?(gyms_path) %>"><%= link_to 'GYMS' , gyms_path, 'data-no-turbolink' => true %></li>
+         <% if can? :manage, User %>
+      	   <li><%= link_to 'USERS' , users_path %></li>
+		 <% end %>
+         <li> 
+		   <% if user_signed_in? %>
+  		     <%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %>        
+ 		   <% else %>
+  			 <%= link_to('LOGIN', new_user_session_path)  %>
+ 	 	   <% end %>  
+         </li>
+
+      </ul>
+   </div>
+</nav>

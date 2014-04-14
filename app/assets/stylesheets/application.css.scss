@@ -15,7 +15,10 @@
  *= require_tree .
  */
 html, body {
-  background-color: #B0B0B0;
+  background-color: #5F5F5F;
+  display:block;
+  margin:0;
+  padding:0;
 }
 
 .table-striped td {
@@ -32,7 +35,10 @@ html, body {
 
 #mainbackground {
 
-  background: #B0B0B0;
+  background-color: #5F5F5F;
+  display:block;
+  margin:0;
+  padding:0;
   
   .container {
     position: absolute;
@@ -81,6 +87,19 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     width: 67%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #newevent3 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 87%;
     font: small-caps 30px/30px "Times New Roman", serif;
     text-align: center;
     color: black;

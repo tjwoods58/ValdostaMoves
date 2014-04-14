@@ -10,7 +10,9 @@ img {
   }
 // override for the 'Home' navigation link
 .navbar-brand {
-  font-size: inherit;
+    font-size: inherit;
+    color: #FF3300 !important;
+    float: right;
   }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
@@ -32,6 +34,51 @@ img {
   @extend .btn-primary;
   @extend .btn-lg;
   }
+  
+.navbar .nav > li > a {
+
+    color:  #CCCCCC;
+    padding-left:30px;
+    padding-right:30px;
+    
+}
+  @media (min-width: 768px){
+.navbar-nav{
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+}
+.navbar {
+    margin-bottom: 0;
+     width: 80%;
+
+     margin-left: 9%;
+}
+
+  .navbar-default {
+    background-image: -webkit-linear-gradient(top, #5F5F5F 0%, #1A1A1A 100%);
+    background-image: linear-gradient(to bottom, #5F5F5F 0%, #1A1A1A 100%);
+    background-repeat: repeat-x;
+    border-color: #5F5F5F;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);
+  }
+  .navbar-default .navbar-nav > .active{
+    color: #000;
+   background: #d65c14;
+ }
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #00FF99 !important;
+    background-image: -webkit-linear-gradient(top, #5F5F5F 0%, #1A1A1A 100%);
+ }
+  ul.navbar-nav a:hover { 
+    color: #00FF99 !important;
+    background-color: #767676 !important;
+   }
 // apply styles to HTML elements
 // to make views framework-neutral
 //main {
@@ -49,12 +96,12 @@ section {
   }
   
   html, body {
-  background-color: #B0B0B0;
+  background-color: #5F5F5F;
 }
 
 #mainbackground {
 
-  background: #B0B0B0;
+  background-color: #5F5F5F;
   
   .container {
     position: absolute;
