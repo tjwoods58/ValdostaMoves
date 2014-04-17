@@ -36,12 +36,16 @@
         </center>
       </tr>
     <% end %>
+   
   </tbody>
+   
 </table>
+<% if can? :create, Forum %>
+  
+  <button type="button" class="btn btn-success"><%= link_to 'New Forum', new_forum_path %></button>
+
+<% end %>
 </div>
 
 <br>
-<% if can? :create, Forum %>
-  <%= link_to 'New Forum', new_forum_path %>
-<% end %>
 </div>

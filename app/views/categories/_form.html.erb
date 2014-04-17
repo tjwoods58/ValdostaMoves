@@ -1,6 +1,7 @@
 <%= simple_form_for(@category) do |f| %>
   <%= f.error_notification %>
 
+<div id="newcategory">
   <div class="form-inputs">
 	<div class = "row">
     <%= f.input :name %>
@@ -12,8 +13,9 @@
 
   <div class="form-actions">
   	<br>
-  	<div class = "row">
-    <%= f.button :submit %>
+  	<div class = "action">
+      <%= f.submit "Submit", class: 'btn btn-success' %>
    </div>
   </div>
+</div>
 <% end %>

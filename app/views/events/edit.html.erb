@@ -3,9 +3,13 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
+<div id="newevent">
 <h1>Editing event</h1>
+</div>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @event %> |
-<%= link_to 'Back', events_path %>
+<div id="newevent">
+<%= link_to 'Edit', edit_event_path(@event), class: 'btn btn-primary' %> | 
+<%= link_to 'Back to Events', events_path, class: 'btn btn-primary' %>
+</div>

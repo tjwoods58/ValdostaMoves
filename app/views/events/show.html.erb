@@ -6,7 +6,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<div id="newevent2">
+<div id="showevent">
 <table class="table table-striped">
   <thead>
     <tr>
@@ -33,7 +33,7 @@
         <td><%= @event.end.strftime("%I:%M %p") %></td>
         <td><%= @event.contactphone %></td>
         <% if can? :manage, User %>
-        <td><%= link_to 'Edit', edit_event_path(@event), class: 'btn btn-primary' %></td>
+        <td><%= link_to 'Edit', edit_event_path(@event), class: 'btn btn-primary'%></td>
         <td><%= link_to 'Destroy', @event, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
         <% end %>
       </tr>
@@ -81,6 +81,8 @@
   });
 </script>
 <br>
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<div id="newevent">
+<%= link_to 'Edit', edit_event_path(@event), class: 'btn btn-primary' %> | 
+<%= link_to 'Back to Events', events_path, class: 'btn btn-primary' %>
+</div>
 </div>

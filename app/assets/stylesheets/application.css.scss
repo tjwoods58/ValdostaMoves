@@ -80,6 +80,19 @@ html, body {
     border: solid;
     border-color: black;
   }
+  #newcategory {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 23px/23px "Times New Roman", serif;
+    text-align: left;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
   
   #newevent2 {
     padding: 1%;
@@ -87,6 +100,58 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     width: 67%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #exercise {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 620px;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #showevent {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font: small-caps 20px/20px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #listusers {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #forumsshow {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     font: small-caps 30px/30px "Times New Roman", serif;
     text-align: center;
     color: black;
@@ -132,9 +197,6 @@ html, body {
     background: beige;
     border: solid;
     border-color: black;
-  }
-  #ratings {
-    margin-top: 2%;
   }
   
   #eventtable {
