@@ -69,8 +69,8 @@ class TopicsController < ApplicationController
   def create
     @topic = Topic.new(topic_params)
     @post = @topic.posts.build(post_params)
-    @topic.user_id  = current_user
-    @post.user_id = current_user
+    @topic.user  = current_user
+    @post.user = current_user
     @topic.forum = @forum
 
     respond_to do |format|

@@ -16,7 +16,7 @@
     
     <td>
     	<%= topic.posts.find(:last).created_at %><br />
-      by 
+      by <%= topic.posts.find(:last).user.email %>
     </td>
     <td>
       <%= topic.posts.count - 1 %>
