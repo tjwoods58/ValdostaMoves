@@ -39,7 +39,8 @@
 		   <% if user_signed_in? %>
   		     <%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %>        
  		   <% else %>
-  			 <%= link_to('LOGIN', new_user_session_path)  %>
+  			 <%= link_to('LOGIN', '#login', data: { toggle: "modal", target: "#login" } )  %>
+  			 <li><%= link_to('SIGN-UP', '#sign_up', data: { toggle: "modal", target: "#sign_up" } )  %></li>
  	 	   <% end %>  
          </li>
       </ul>     
