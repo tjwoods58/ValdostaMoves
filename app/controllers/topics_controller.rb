@@ -30,7 +30,7 @@ class TopicsController < ApplicationController
   
   def reply
     @topic = Topic.find(params[:id])
-    @post = @topic.posts.build
+    @post = @topic.posts.build(post_params)
     
     respond_to do |format|
       format.html #reply.html.erb
@@ -46,7 +46,8 @@ class TopicsController < ApplicationController
     if Topic.exists?(params[:id])
       @topic = Topic.find(params[:id])
       @post = @topic.posts.build(post_params)
-      @topic.user_id = current_user
+      @topic.user = current_user
+      @post.user = current_user
     else
       redirect_to(forums_path, :notice =>"Please specify a valid forum")
     end

@@ -4,12 +4,18 @@
 <table>
   <tr>
     <th align="left">Title</th>
+    <th>Creator</th>
+    <th>Topic Counts</th>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
     <% @forums.each do |forum| %>
       <tr>
       	
         <td><%= link_to forum.title, forum %></td>
         <td><%= forum.user.email %></td>
+        <td><%= forum.topics.count %></td>
         <td><%= link_to 'Show', forum %></td>
         <td><%= link_to 'Edit', edit_forum_path(forum) %></td>
         <td><%= link_to 'Destroy', forum, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -6,13 +6,15 @@ class Ability
     if user.admin?
       can :manage, :all
     elsif user.regular?
-      can [:create, :read], ForumsPost
+      can [:create, :read], Post
       can [:read], Forum
+      can [:read], Topic
       can [:read], Recipe
       can [:read], Category
     else
-      can [:read], ForumsPost
+      can [:read], Post
       can [:read], Forum
+      can [:read], Topic
       can [:read], Recipe
       can [:read], Category
     end

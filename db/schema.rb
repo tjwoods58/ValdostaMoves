@@ -55,6 +55,8 @@ ActiveRecord::Schema.define(version: 20140417210306) do
     t.datetime "updated_at"
   end
 
+  add_index "forums", ["user_id"], name: "index_forums_on_user_id"
+
   create_table "gyms", force: true do |t|
     t.float    "latitude"
     t.float    "longitude"
