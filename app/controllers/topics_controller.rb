@@ -52,7 +52,7 @@ class TopicsController < ApplicationController
     end
         
     respond_to do |format|
-      if current_user && @comment.save
+      if current_user && @post.save
         format.html { redirect_to(forum_path(@forum), :notice => 'Your reply was posted') }
       else
         format.html { render :action => "new" }
