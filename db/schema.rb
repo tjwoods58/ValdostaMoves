@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140412060832) do
+ActiveRecord::Schema.define(version: 20140417210306) do
 
   create_table "activities", force: true do |t|
     t.string   "posts"
@@ -49,24 +49,11 @@ ActiveRecord::Schema.define(version: 20140412060832) do
   end
 
   create_table "forums", force: true do |t|
-    t.string   "topic"
+    t.string   "title"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "forums", ["user_id"], name: "index_forums_on_user_id"
-
-  create_table "forums_posts", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "forum_id"
-    t.string   "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "forums_posts", ["forum_id"], name: "index_forums_posts_on_forum_id"
-  add_index "forums_posts", ["user_id"], name: "index_forums_posts_on_user_id"
 
   create_table "gyms", force: true do |t|
     t.float    "latitude"
@@ -77,6 +64,18 @@ ActiveRecord::Schema.define(version: 20140412060832) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "posts", force: true do |t|
+    t.string   "title"
+    t.integer  "user_id"
+    t.integer  "topic_id"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "posts", ["topic_id"], name: "index_posts_on_topic_id"
+  add_index "posts", ["user_id"], name: "index_posts_on_user_id"
 
   create_table "rates", force: true do |t|
     t.integer  "rater_id"
@@ -124,6 +123,17 @@ ActiveRecord::Schema.define(version: 20140412060832) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "topics", force: true do |t|
+    t.string   "title"
+    t.integer  "forum_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "topics", ["forum_id"], name: "index_topics_on_forum_id"
+  add_index "topics", ["user_id"], name: "index_topics_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

@@ -18,7 +18,7 @@ class ForumsControllerTest < ActionController::TestCase
 
   test "should create forum" do
     assert_difference('Forum.count') do
-      post :create, forum: { creator: @forum.creator, creator_id: @forum.creator_id, topic: @forum.topic }
+      post :create, forum: { title: @forum.title, user_id: @forum.user_id }
     end
 
     assert_redirected_to forum_path(assigns(:forum))
@@ -35,7 +35,7 @@ class ForumsControllerTest < ActionController::TestCase
   end
 
   test "should update forum" do
-    patch :update, id: @forum, forum: { creator: @forum.creator, creator_id: @forum.creator_id, topic: @forum.topic }
+    patch :update, id: @forum, forum: { title: @forum.title, user_id: @forum.user_id }
     assert_redirected_to forum_path(assigns(:forum))
   end
 

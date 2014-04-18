@@ -6,6 +6,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, :omniauth_providers => [ :facebook, :twitter, :linkedin, :google_oauth2]
   after_initialize :init
+  has_many :forums
+  has_many :topics
+  has_many :posts
   
   def init
     self.points ||= 0.0 

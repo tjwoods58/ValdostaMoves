@@ -1,6 +1,16 @@
 Vmoves::Application.routes.draw do
   
+  get '/forums/:forum_id/topics/:id/reply' => "topics#reply", :as => :reply_forum_topic
+ post '/forums/:forum_id/topics/:id/reply' => "topics#save_reply", :as => :save_reply_forum_topic
   
+  resources :posts
+
+  resources :topics
+
+  resources :forums do 
+    resources :topics
+  end
+
   resources :categories, except: :show do
     resources :recipes
   end
@@ -19,10 +29,6 @@ Vmoves::Application.routes.draw do
   
   resources :tips
   
-  resources :forums_posts
-
-  resources :forums
-
   get "exercise/index"
   
   resources :events

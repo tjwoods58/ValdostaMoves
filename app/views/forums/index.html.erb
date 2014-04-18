@@ -1,51 +1,23 @@
-<script type="text/javascript">
-    $(function () {
-        $("[data-toggle='tooltip']").tooltip();
-    });
-</script>
-<div id= "forum_align">
-
-<div id="forums">
-<h1>Listing forums</h1>
-
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Topic</th>
-      <th>Creator</th>
-      <th>Creation Date</th>
-      <th></th>
-      
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="list">
+<h1 id="page_title">Message Boards</h1>
+<p id="notice"><%= notice %></p>
+<table>
+  <tr>
+    <th align="left">Title</th>
+  </tr>
     <% @forums.each do |forum| %>
       <tr>
-        <td><%= forum.topic %></td>
+      	
+        <td><%= link_to forum.title, forum %></td>
         <td><%= forum.user.email %></td>
-        <td><%= forum.created_at %></td>
-        <center>
-        <td><%= link_to 'Enter Forum', forum, class: 'btn btn-info' %>
-        	<% if can? :edit, Forum %>
-        <%= link_to 'Edit', edit_forum_path(forum), class: 'btn btn-primary' %>
-        <%end %>
-        <% if can? :destroy, Forum %>
-          <%= link_to 'Destroy', forum, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
-        <%end %>
-        </center>
+        <td><%= link_to 'Show', forum %></td>
+        <td><%= link_to 'Edit', edit_forum_path(forum) %></td>
+        <td><%= link_to 'Destroy', forum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
       </tr>
     <% end %>
-   
-  </tbody>
-   
 </table>
-<% if can? :create, Forum %>
-  
-  <button type="button" class="btn btn-success"><%= link_to 'New Forum', new_forum_path %></button>
-
-<% end %>
 </div>
-
 <br>
-</div>
+
+<%= link_to 'New Forum', new_forum_path %>

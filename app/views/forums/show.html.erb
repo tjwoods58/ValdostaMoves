@@ -1,56 +1,29 @@
-<script type="text/javascript">
-    $(function () {
-        $("[data-toggle='tooltip']").tooltip();
-    });
-</script>
-<div id= "forum_align">
-<div id= "forumsshow">
-<p>
-  
-  <h2><%= @forum.topic %></h2>
-</p>
+<h1 id="page_title"><%= @forum.title %></h1>
 
-<p>
-  <strong>Thread Creator:</strong>
-  <%= @forum.user.email %>
-</p>
-
-
-<% @forums_posts.each do |p| %>
-  <p>
-    <strong>Post:</strong>
-    <%= p.description %>
-  </p>
-  <p>
-    <small>User:</small>
-    <small><%= p.user.email %></small>
-  </p>
-  <p>
-  	<small>Post Time:</small>
-  	<small><%= p.created_at %></small>
-  </p>
-
-  
-  
+<p id="notice"><%= notice %></p>
+<%= link_to 'Forums', forums_path %> &gt; <%= link_to @forum.title, @forum %> <br />
+<table>
+  <tr>
+    <th>Post / Author</th>
+    <th>Last Reply</th>
+    <th>Number of Replies</th>
+  </tr>
+<% @forum.topics.each do |topic| %>
+  <tr>
+    <td>
+      <p FONT COLOR="#00FF00"><%= link_to topic.title, forum_topic_path(:forum_id => @forum, :id => topic) %><br /></p>
+    </td>
+    
+    <td>
+    	<%= topic.posts.find(:last).created_at %><br />
+      by 
+    </td>
+    <td>
+      <%= topic.posts.count - 1 %>
+    </td>
+  </tr>
 <% end %>
-
-<%= form_for @forums_post do |f| %>
-  <%= f.hidden_field :forum_id, value: @forum.id %>
-  <p>
-    <%= f.label :description %>
-  </p>
-  <p>
-    <%= f.text_area :description, :cols => "50", :rows => "10", :resize => "none" %>
-  </p>
-  <%= f.submit "Post", class: 'btn btn-success'%> | 
-  <%= link_to 'Edit', edit_forum_path(@forum), class: 'btn btn-primary' %> | 
-<% if can? :destroy, ForumsPost %>
-    <%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
-  <%end %>
-<% end %>
-
-  </br>
-  <hr>
-<%= link_to 'Back to Forums', forums_path, class: 'btn btn-primary' %>
-</div>
-</div>
+</table>
+<%= link_to 'New topic',  new_forum_topic_path(@forum) %>
+<%= link_to 'Edit', edit_forum_path(@forum) %> |
+<%= link_to 'Back', forums_path %>
