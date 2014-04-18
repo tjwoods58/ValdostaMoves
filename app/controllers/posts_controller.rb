@@ -26,6 +26,8 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user_id = current_user
+    #user.count = user.count + 1
+    #user.update_attributes(:count => user.count)
 
     respond_to do |format|
       if @post.save

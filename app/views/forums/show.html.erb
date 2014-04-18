@@ -1,29 +1,36 @@
-<h1 id="page_title"><%= @forum.title %></h1>
-
 <p id="notice"><%= notice %></p>
-<%= link_to 'Forums', forums_path %> &gt; <%= link_to @forum.title, @forum %> <br />
-<table>
+
+<div class="mainbackground">
+<div id="forumsshow">
+<h1 align="text-left"><%= @forum.title %></h1>
+
+<table class="table forum-striped">
   <tr>
     <th>Post / Author</th>
     <th>Last Reply</th>
     <th>Number of Replies</th>
   </tr>
-<% @forum.topics.each do |topic| %>
-  <tr>
-    <td>
-      <p FONT COLOR="#00FF00"><%= link_to topic.title, forum_topic_path(:forum_id => @forum, :id => topic) %><br /></p>
-    </td>
+	<% @forum.topics.each do |topic| %>
+  		<tr>
+    		<td>
+      			<%= link_to topic.title, forum_topic_path(:forum_id => @forum, :id => topic) %>
+    		</td>
     
-    <td>
-    	<%= topic.posts.find(:last).created_at %><br />
-      by <%= topic.posts.find(:last).user.email %>
-    </td>
-    <td>
-      <%= topic.posts.count - 1 %>
-    </td>
-  </tr>
-<% end %>
+    		<td>
+    			<%= topic.posts.find(:last).created_at %>
+      			by <%= topic.posts.find(:last).user.email %>
+    		</td>
+    		<td>
+      			<%= topic.posts.count - 1 %>
+    		</td>
+  		</tr>
+	<% end %>
 </table>
-<%= link_to 'New topic',  new_forum_topic_path(@forum) %>
-<%= link_to 'Edit', edit_forum_path(@forum) %> |
-<%= link_to 'Back', forums_path %>
+<button type="button" class="btn btn-success"><%= link_to 'New topic',  new_forum_topic_path(@forum) %></button>
+	<button type="button" class="btn btn-success"><%= link_to 'Edit', edit_forum_path(@forum) %></button>
+		<button type="button" class="btn btn-success"><%= link_to 'Back', forums_path %></button>
+</div>
+</div>
+
+ |
+

@@ -12,6 +12,7 @@
  *= require navstylechange 
  *= require settings 
  *= require fullcalendar 
+ *= require hopscotch
  *= require_tree .
  */
 html, body {
@@ -28,8 +29,22 @@ html, body {
   
 }
 .table-striped th {
+  background-color: beige;
   text-align: center;
   color: black;
+  font-size: .65em;
+}
+.forum-striped td {
+  background-color: beige;
+  color: black;
+  text-align: center;
+  font-size: .50em;
+  
+}
+.forum-striped th {
+  background-color: lightgrey;
+  text-align: center;
+  color: blue;
   font-size: .65em;
 }
 
@@ -158,7 +173,9 @@ html, body {
     background: beige;
     border: solid;
     border-color: black;
+    //column-width: 70%;
   }
+
   #categories {
     padding: 1%;
     margin-top: 1%;

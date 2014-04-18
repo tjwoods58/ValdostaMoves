@@ -39,7 +39,7 @@ class TopicsController < ApplicationController
   
   def save_reply
     if !current_user
-      redirect_to(:login, :notice =>"Please login before posting")
+      redirect_to(home_index_path, :notice =>"Please login before posting")
       return 1;
     end
     

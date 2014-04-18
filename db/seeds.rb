@@ -131,5 +131,6 @@ user = User.create!(
 )
 
 
-forum = Forum.create!(topic: 'I am a Forum', user: user)
-ForumsPost.create!(description: 'I am a Post', user: user, forum: forum)
+forum = Forum.create!(title: 'I am a Forum', user: user)
+topic = Topic.create!(title: 'I am a Topic', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post', user: user, topic: topic)

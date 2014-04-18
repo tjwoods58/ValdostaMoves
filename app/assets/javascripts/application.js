@@ -19,6 +19,7 @@
 //= require jquery.themepunch.plugins.min
 //= require jquery.themepunch.revolution.min
 //= require fullcalendar
+//= require hopscotch
 
 //= require_tree .
 
@@ -146,4 +147,5 @@ $(document).ready(function(){
     }
   });
 });
+
 
