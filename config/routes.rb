@@ -1,5 +1,7 @@
 Vmoves::Application.routes.draw do
   
+  resources :comments
+
   get '/forums/:forum_id/topics/:id/reply' => "topics#reply", :as => :reply_forum_topic
  post '/forums/:forum_id/topics/:id/reply' => "topics#save_reply", :as => :save_reply_forum_topic
   

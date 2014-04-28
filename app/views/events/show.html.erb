@@ -72,6 +72,40 @@
 
 <br>
 
+<div id="newevent2">
+	<% @comments.each do |p| %>
+  <p>
+    <strong>Comment:</strong>
+    <%= p.comment %>
+  </p>
+  <p>
+    <small>User:</small>
+    <small><%= p.user.email %></small>
+  </p>
+  <p>
+  	<small>Post Time:</small>
+  	<small><%= p.created_at %></small>
+  </p>
+
+  <% if can? :destroy, Comment %>
+    <%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+  <%end %>
+  
+  <hr>
+<% end %>
+
+<%= form_for @comment do |f| %>
+  <%= f.hidden_field :event_id, value: @event.id %>
+  <p>
+    <%= f.label :comment %>
+  </p>
+  <p>
+    <%= f.text_area :comment, :cols => "100", :rows => "10" %>
+  </p>
+  <%= f.submit "Post" %>
+<% end %>
+</div>
+
 <script type="text/javascript">
   handler = Gmaps.build('Google');
   handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
