@@ -27,9 +27,11 @@ class CategoriesController < ApplicationController
     respond_to do |format|
       if @category.save
         format.html { redirect_to categories_url, notice: 'Category was successfully created.' }
+        format.mobile { redirect_to categories_url, notice: 'Category was successfully created.' }
         format.json { render action: 'show', status: :created, location: @category }
       else
         format.html { render action: 'new' }
+        format.mobile { render action: 'new' }
         format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end
@@ -41,9 +43,11 @@ class CategoriesController < ApplicationController
     respond_to do |format|
       if @category.update(category_params)
         format.html { redirect_to categories_url, notice: 'Category was successfully updated.' }
+        formatmobile { redirect_to categories_url, notice: 'Category was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
+        format.mobile { render action: 'edit' }
         format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end
@@ -55,6 +59,7 @@ class CategoriesController < ApplicationController
     @category.destroy
     respond_to do |format|
       format.html { redirect_to categories_url }
+      format.mobile { redirect_to categories_url }
       format.json { head :no_content }
     end
   end

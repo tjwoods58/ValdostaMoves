@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'fullcalendar-rails'
 
 gem 'devise'
+gem 'mobylette'
+gem 'jquery_mobile_rails'
 
 gem 'omniauth'
 gem 'omniauth-facebook'
@@ -71,6 +73,8 @@ end
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'letsrate'
+
+
 
 group :production do
   gem 'pg', '0.15.1'

@@ -31,9 +31,11 @@ class ForumsController < ApplicationController
     respond_to do |format|
       if @forum.save
         format.html { redirect_to @forum, notice: 'Forum was successfully created.' }
+        format.mobile { redirect_to @forum, notice: 'Forum was successfully created.' }
         format.json { render action: 'show', status: :created, location: @forum }
       else
         format.html { render action: 'new' }
+        format.mobile { render action: 'new' }
         format.json { render json: @forum.errors, status: :unprocessable_entity }
       end
     end
@@ -45,9 +47,11 @@ class ForumsController < ApplicationController
     respond_to do |format|
       if @forum.update(forum_params)
         format.html { redirect_to @forum, notice: 'Forum was successfully updated.' }
+        format.mobile { redirect_to @forum, notice: 'Forum was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
+        format.mobile { render action: 'edit' }
         format.json { render json: @forum.errors, status: :unprocessable_entity }
       end
     end
@@ -59,6 +63,7 @@ class ForumsController < ApplicationController
     @forum.destroy
     respond_to do |format|
       format.html { redirect_to forums_url }
+      format.mobile { redirect_to forums_url }
       format.json { head :no_content }
     end
   end

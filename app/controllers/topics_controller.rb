@@ -8,6 +8,7 @@ class TopicsController < ApplicationController
     @topics = Topic.all
     respond_to do |format|
       format.html # index.html.erb
+      format.mobile
       format.xml  { render :xml => @topics }
     end
   end
@@ -25,6 +26,7 @@ class TopicsController < ApplicationController
  
     respond_to do |format|
       format.html # new.html.erb
+      format.mobile
     end
   end
   
@@ -34,6 +36,7 @@ class TopicsController < ApplicationController
     
     respond_to do |format|
       format.html #reply.html.erb
+      format.mobile
     end
   end
   
@@ -55,8 +58,10 @@ class TopicsController < ApplicationController
     respond_to do |format|
       if current_user && @post.save
         format.html { redirect_to(forum_path(@forum), :notice => 'Your reply was posted') }
+        format.mobile { redirect_to(forum_path(@forum), :notice => 'Your reply was posted') }
       else
         format.html { render :action => "new" }
+        format.mobile { render :action => "new" }
       end
     end
   end
@@ -77,9 +82,11 @@ class TopicsController < ApplicationController
     respond_to do |format|
       if @topic.save
         format.html { redirect_to @forum, notice: 'Topic was successfully created.' }
+        format.mobile { redirect_to @forum, notice: 'Topic was successfully created.' }
         format.json { render action: 'show', status: :created, location: @topic }
       else
         format.html { render action: 'new' }
+        format.mobile { render action: 'new' }
         format.json { render json: @topic.errors, status: :unprocessable_entity }
       end
     end
@@ -91,9 +98,11 @@ class TopicsController < ApplicationController
     respond_to do |format|
       if @topic.update(topic_params)
         format.html { redirect_to @topic, notice: 'Topic was successfully updated.' }
+        forma.mobile { redirect_to @topic, notice: 'Topic was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
+        format.mobile { render action: 'edit' }
         format.json { render json: @topic.errors, status: :unprocessable_entity }
       end
     end
@@ -105,6 +114,7 @@ class TopicsController < ApplicationController
     @topic.destroy
     respond_to do |format|
       format.html { redirect_to topics_url }
+      format.mobile { redirect_to topics_url }
       format.json { head :no_content }
     end
   end

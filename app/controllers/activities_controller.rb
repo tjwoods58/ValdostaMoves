@@ -40,10 +40,12 @@ class ActivitiesController < ApplicationController
     respond_to do |format|
       if @activity.save
         format.html { redirect_to action: 'index', notice: 'Activity was successfully created.' }
+        format.mobile { redirect_to action: 'index', notice: 'Activity was successfully created.' }
         format.json { render action: 'show', status: :created, location: @activity }
       else
         flash[:error] = 'Activity post was not successful. Must be signed in to post.'
         format.html { redirect_to action: 'index' }
+        format.mobile { redirect_to action: 'index' }
         format.json { render json: @activity.errors, status: :unprocessable_entity }
       end
     end
@@ -55,9 +57,11 @@ class ActivitiesController < ApplicationController
     respond_to do |format|
       if @activity.update(activity_params)
         format.html { redirect_to @activity, notice: 'Activity was successfully updated.' }
+        format.mobile { redirect_to @activity, notice: 'Activity was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
+        format.mobile {render action: 'edit' }
         format.json { render json: @activity.errors, status: :unprocessable_entity }
       end
     end
@@ -70,6 +74,7 @@ class ActivitiesController < ApplicationController
     @activity.destroy
     respond_to do |format|
       format.html { redirect_to activities_url }
+      format.mobile { redirect_to activities_url }
       format.json { head :no_content }
     end
   end

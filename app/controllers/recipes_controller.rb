@@ -34,10 +34,12 @@ class RecipesController < ApplicationController
     respond_to do |format|
       if @recipe.save
         format.html { redirect_to category_recipe_path(@category, @recipe), notice: 'Recipe was successfully created.' }
+        format.mobile { redirect_to category_recipe_path(@category, @recipe), notice: 'Recipe ws successfully created.' }
         format.json { render action: 'show', status: :created, location: @recipe }
       else
         puts @recipe.errors.full_messages
         format.html { render action: 'new' }
+        format.mobile { render action: 'new' }
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
       end
     end
@@ -49,9 +51,11 @@ class RecipesController < ApplicationController
     respond_to do |format|
       if @recipe.update(recipe_params)
         format.html { redirect_to category_recipe_path(@category, @recipe), notice: 'Recipe was successfully updated.' }
+        format.mobile { redirect_to category_recipe_pathO(@category, @recipe), notice: 'Recipe was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
+        format.mobile { render action 'edit' }
         format.json { render json: @recipe.errors, status: :unprocessable_entity }
       end
     end
@@ -63,6 +67,7 @@ class RecipesController < ApplicationController
     @recipe.destroy
     respond_to do |format|
       format.html { redirect_to category_recipes_path(@category)}
+      format.mobile { redirect_to category_recipes_path(@category)}
       format.json { head :no_content }
     end
   end
