@@ -82,8 +82,10 @@ GEM
     hashie (2.0.5)
     high_voltage (2.1.0)
     hike (1.2.3)
-    hopscotch-rails (0.1.2.1)
     i18n (0.6.9)
+    introjs-rails (0.5.0)
+      sass-rails (>= 3.2)
+      thor (~> 0.14)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
@@ -224,7 +226,7 @@ DEPENDENCIES
   geocoder
   gmaps4rails
   high_voltage
-  hopscotch-rails
+  introjs-rails
   jbuilder (~> 1.2)
   jquery-rails
   jquery_mobile_rails

@@ -19,7 +19,7 @@
 //= require jquery.themepunch.plugins.min
 //= require jquery.themepunch.revolution.min
 //= require fullcalendar
-//= require hopscotch
+//= require introjs
 
 //= require_tree .
 
