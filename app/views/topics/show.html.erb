@@ -7,7 +7,7 @@
 	<table class="table forum-striped">
   	<tr>
     	<th><%= @topic.title %></th>
-    	<th>Body</th>
+    	<th></th>
   	</tr>
   	<% @topic.posts.each do |post| %>
   	<tr>
@@ -22,9 +22,8 @@
   <% end %>
 </table>
 <%= link_to 'Reply', reply_forum_topic_path(:forum_id=>@forum, :id=>@topic)%>|
-	<%= link_to 'Edit', edit_topic_path(@topic) %>|
-		<%= link_to 'Back', topics_path %>|
-			<%= link_to @topic.forum.title, @topic.forum%>
+		<%= link_to 'Back', forum_path(:id=> @topic.forum_id) %>|
+			<!--<%= link_to @topic.forum.title, @topic.forum%>-->
 </div>
 </div>
  

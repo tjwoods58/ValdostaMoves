@@ -9,6 +9,8 @@
     <th>Post / Author</th>
     <th>Last Reply</th>
     <th>Number of Replies</th>
+    <th></th>
+    <th></th>
   </tr>
 	<% @forum.topics.each do |topic| %>
   		<tr>
@@ -23,11 +25,13 @@
     		<td>
       			<%= topic.posts.count - 1 %>
     		</td>
+    		<td><%= link_to 'edit', edit_forum_topic_path(:forum_id => @forum, :id => topic)%></td>
+    		<td><%= link_to 'destroy', forum_topic_path(:forum_id =>@forum, :id => topic), method: :delete, data: { confirm: 'Are you sure?' } %></td>
   		</tr>
 	<% end %>
 </table>
 <button type="button" class="btn btn-success"><%= link_to 'New topic',  new_forum_topic_path(@forum) %></button>
-	<button type="button" class="btn btn-success"><%= link_to 'Edit', edit_forum_path(@forum) %></button>
+	<!--<button type="button" class="btn btn-success"><!--<%= link_to 'Edit', edit_forum_path(@forum) %></button>-->
 		<button type="button" class="btn btn-success"><%= link_to 'Back', forums_path %></button>
 </div>
 </div>

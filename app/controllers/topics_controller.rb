@@ -97,8 +97,8 @@ class TopicsController < ApplicationController
   def update
     respond_to do |format|
       if @topic.update(topic_params)
-        format.html { redirect_to @topic, notice: 'Topic was successfully updated.' }
-        forma.mobile { redirect_to @topic, notice: 'Topic was successfully updated.' }
+        format.html { redirect_to forum_path(:id => @forum), notice: 'Topic was successfully updated.' }
+        format.mobile { redirect_to forum_path(:id => @forum), notice: 'Topic was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -113,8 +113,8 @@ class TopicsController < ApplicationController
   def destroy
     @topic.destroy
     respond_to do |format|
-      format.html { redirect_to topics_url }
-      format.mobile { redirect_to topics_url }
+      format.html { redirect_to forum_url(:id=>@forum) }
+      format.mobile { redirect_to forum_url(:id=>@forum) }
       format.json { head :no_content }
     end
   end
