@@ -21,8 +21,10 @@
   	</tr>
   <% end %>
 </table>
+<% if can? :manage, User %>
 <%= link_to 'Reply', reply_forum_topic_path(:forum_id=>@forum, :id=>@topic)%>|
-		<%= link_to 'Back', forum_path(:id=> @topic.forum_id) %>|
+<% end %>
+		<%= link_to 'Back', forum_path(:id=> @topic.forum_id) %>
 			<!--<%= link_to @topic.forum.title, @topic.forum%>-->
 </div>
 </div>

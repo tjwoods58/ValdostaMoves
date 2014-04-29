@@ -1,4 +1,4 @@
-<%= form_for(@topic, :url => forum_topic_path) do |f| %>
+<%= simple_form_for(@topic, :url => forum_topic_path) do |f| %>
   <% if @topic.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@topic.errors.count, "error") %> prohibited this conversation from being saved:</h2>
@@ -11,12 +11,11 @@
     </div>
   <% end %>
  
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
+  <div class="form-inputs">
+    <%= f.input :title %>
   </div>
   
-  <div class="actions">
-    <%= f.submit :as => "Create Post"%>
+  <div class="form-actions">
+    <%= f.button :submit %>
   </div>
 <% end %>
