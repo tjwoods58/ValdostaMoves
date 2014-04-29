@@ -225,12 +225,7 @@ section {
     margin-left: 65%;
 }
 
-.table-hover {
-  width: 15%;
-  position: absolute;
-    margin-top: auto;
-    margin-left: 2%;
-}
+
 
 .custom > li > a:hover {
     color: black;
@@ -252,3 +247,33 @@ section {
 .work {
   margin-left: 0 auto;
 }
+
+.table-hover > tr:hover {
+  background-color: #00FF99;
+}
+
+#eventbtn {
+  float: left;
+  margin-left: 6%;
+  margin-top: 2%;
+}
+
+#twitterbtn {
+  float: left;
+  margin-left: 65%;
+  margin-top: 2%;
+}
+
+#act {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: #00FF99;
+    border: solid;
+    border-color: black;
+  }

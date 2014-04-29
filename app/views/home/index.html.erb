@@ -6,6 +6,34 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
+ <script>
+        $(document).ready(function () {
+            $("#twitterbtn").click(function () {
+                $(twitter).fadeToggle(2000);
+                if ($(twitter).is(':visible')) {
+                	$("html, body").animate({scrollTop: $(twitter).offset().top});
+                }
+            });
+        });
+    </script>
+ <script>
+        $(document).ready(function () {
+            $("#eventbtn").click(function () {
+                $(eventtable).fadeToggle(2000);
+                if ($(eventtable).is(':visible')) {
+                	$("html, body").animate({scrollTop: $(eventtable).offset().top});
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#googlebtn").click(function () {
+                $("div").fadeToggle(2000);
+            });
+        });
+    </script>
+
 <article class="boxedcontainer">
 
 	<!--
@@ -409,14 +437,13 @@
 	<div id="basic-options">basic options </div>
 	</article>
 	</br>-->
-	
-<div align="center">	
-    <a class="twitter-timeline" href="https://twitter.com/search?q=%40ValdostaMoves" data-widget-id="448236534693502978">Tweets about "@ValdostaMoves"</a>
-  </div>
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<!--
-<div id="eventtable">
+<div id="eventbtn">
+	<button class="btn btn-warning">Upcomig Events</button>
+</div>
+<div id="twitterbtn">
+	<button class="btn btn-warning">VM Tweets</button>
+</div>	
+<div id="eventtable" align="left">
   <table class="table table-hover table-bordered">
     <thead>
       <tr>
@@ -435,5 +462,12 @@
     </tbody>
   </table>
 </div>
--->
+	
+<div id="twitter">	
+    <a class="twitter-timeline" href="https://twitter.com/search?q=%40ValdostaMoves" data-widget-id="448236534693502978">Tweets about "@ValdostaMoves"</a>
+  </div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
 </div>

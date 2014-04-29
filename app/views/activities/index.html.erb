@@ -3,17 +3,16 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
-<div id= "forum_align">
+<div id= "newevent">
 <p>
   
   <h3>Report your daily activities and win prizes! The more active you are the better chance you have of winning prizes.</h3>
 </p>
-
-<hr>
-<hr>
+</div>
 
 
 <% @activities.each do |p| %>
+<div id="newevent2">
   <p>
     <p><strong>Activity/Exercise:</strong>
     <%= p.posts %> <br /></p>
@@ -33,8 +32,11 @@
     <%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
   <%end %>
   
-  <hr>
+</div>  
 <% end %>
+
+
+<div id="newevent2">
 <% @user = current_user %>
 <% if @user != nil %>
 <%= form_for Activity.new do |f| %>
@@ -55,8 +57,9 @@
 
 <%= link_to 'Edit', edit_activity_path(@activities) %> |
 <%= link_to 'Back', activities_path %>
-<% else %>
-<h4>You have to be logged in to post. If you're not a member, sign up for a chance to win prizes!</h4>
-<% end %>
-
 </div>
+<% else %>
+<div id="newevent">
+<h4>You have to be logged in to post. If you're not a member, sign up for a chance to win prizes!</h4>
+</div>
+<% end %>

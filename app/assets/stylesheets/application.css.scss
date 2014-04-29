@@ -122,6 +122,21 @@ html, body {
     border: solid;
     border-color: black;
   }
+  
+  #newevent8 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+    clear: left;
+  }
   #exercise {
     padding: 1%;
     margin-top: 1%;
@@ -134,6 +149,59 @@ html, body {
     background: beige;
     border: solid;
     border-color: black;
+  }
+  
+  #newevent6 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: 16.5%;
+    margin-right: 0%;
+    width: 15%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+    float: left;
+  }
+  
+  #newevent7 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: auto;
+    margin-bottom: 2%;
+    width: 50%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+    float: left;
+  }
+  
+  #newevent9 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: 16.5%;
+    margin-right: auto;
+    margin-bottom: 2%;
+    width: 50%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+    float: left;
+  }
+  
+  #rat {
+    font-size: x-small;
+    color: black;
+    font: "Times New Roman", serif;
   }
   #showevent {
     padding: 1%;
@@ -218,24 +286,25 @@ html, body {
   
   #eventtable {
     padding: 1%;
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 18%;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 2%;
+    width: 45%;
     font: small-caps 30px/30px "Times New Roman", serif;
     text-align: center;
     color: black;
-    background: beige;
+    background: #00FF99;
     border: solid;
     border-color: black;
     float: left;
-    margin-left: 1%;
     display: table;
+    clear: left;
+    display: none;
   }
   #newevent4 {
     padding: 1%;
     margin-top: 1%;
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: auto;
     width: 67%;
     font: small-caps 30px/30px "Times New Roman", serif;
@@ -244,20 +313,22 @@ html, body {
     background: beige;
     border: solid;
     border-color: black;
+    float: left;
   }
   #twitter {
     padding: 1%;
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-top: 2%;
+    width: 45%;
     font: small-caps 30px/30px "Times New Roman", serif;
     text-align: center;
     color: black;
     background: beige;
     border: solid;
     border-color: black;
-    float: center;
+    float: right;
+    display: none;
+    
+    
   }
   
   #neweventchoose {
