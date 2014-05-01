@@ -8,6 +8,7 @@
   <tr>
     <th>Post / Author</th>
     <th>Last Reply</th>
+    <th>User</th>
     <th>Number of Replies</th>
     <th></th>
     <th></th>
@@ -19,9 +20,12 @@
     		</td>
     
     		<td>
-    			<%= topic.posts.find(:last).created_at %>
-      			by <%= topic.posts.find(:last).user.email %>
+    			<%= topic.posts.find(:last).created_at.strftime("%m / %d / %Y") %>
+    			</br>
+    			<%= topic.posts.find(:last).created_at.strftime("%I:%M %p") %>
+
     		</td>
+    		<td><%= topic.posts.find(:last).user.email %></td>
     		<td>
       			<%= topic.posts.count - 1 %>
     		</td>

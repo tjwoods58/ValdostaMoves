@@ -461,4 +461,17 @@ html, body {
     border-color: black;
   }
   
+  .myTwitterButton{
+    background:url(./images/but.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+  }
+
+  .myFacebookButton  /* use Dot here */
+  {   
+    background:url(./images/facebook.png) no-repeat;
+  }
+  
 }
