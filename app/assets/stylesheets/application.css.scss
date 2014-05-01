@@ -95,6 +95,34 @@ html, body {
     border: solid;
     border-color: black;
   }
+  
+  #showusers {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #editusers {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  
   #newcategory {
     padding: 1%;
     margin-top: 1%;
@@ -103,6 +131,19 @@ html, body {
     width: 67%;
     font: small-caps 23px/23px "Times New Roman", serif;
     text-align: left;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #newgym {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 23px/23px "Times New Roman", serif;
+    text-align: center;
     color: black;
     background: beige;
     border: solid;
@@ -173,6 +214,7 @@ html, body {
     margin-right: auto;
     margin-bottom: 2%;
     width: 50%;
+    height: 365px;
     font: small-caps 30px/30px "Times New Roman", serif;
     text-align: center;
     color: black;
@@ -180,6 +222,13 @@ html, body {
     border: solid;
     border-color: black;
     float: left;
+    textarea {
+      width: 80%;
+      height: 250px;
+      max-width: 80%; 
+      max-height: 250px;
+      
+    }
   }
   
   #newevent9 {
@@ -340,7 +389,7 @@ html, body {
     font: small-caps 20px/20px "Times New Roman", serif;
     text-align: center;
     color: black;
-    background: grey;
+    background: beige;
     border: solid;
     border-color: black;
   }

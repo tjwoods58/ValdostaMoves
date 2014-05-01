@@ -3,6 +3,7 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
+<div id="showusers">
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -15,5 +16,8 @@
   <%= @user.category_name %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<td><%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-primary' %> </td>
+
+<td><%= link_to 'Back', users_path, class: 'btn btn-primary'%></td>
+
+</div>
