@@ -131,7 +131,10 @@
     <% end %>
   </tbody>
 </table>
+<% @user = current_user %>
+<% if @user != nil %>
 <%= link_to 'New Event', new_event_path, class: "btn btn-success" %>
+<% end %>
 </div>
 
 <div id = "desc_dialog" class="dialog" style ="display:none;">
