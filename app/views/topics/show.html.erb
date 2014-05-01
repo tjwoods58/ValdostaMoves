@@ -24,7 +24,7 @@
 <% if can? :manage, User %>
 <%= link_to 'Reply', reply_forum_topic_path(:forum_id=>@forum, :id=>@topic)%>|
 <% end %>
-		<%= link_to 'Back', forum_path(:id=> @topic.forum_id) %>
+		<%= link_to 'Back', forum_path(:id=> @topic.forum_id), class: 'btn btn-primary' %>
 			<!--<%= link_to @topic.forum.title, @topic.forum%>-->
 </div>
 </div>

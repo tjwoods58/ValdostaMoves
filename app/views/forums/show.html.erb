@@ -36,7 +36,7 @@
 <button type="button" class="btn btn-success"><%= link_to 'New topic',  new_forum_topic_path(@forum) %></button>
 <% end %>
 	<!--<button type="button" class="btn btn-success"><!--<%= link_to 'Edit', edit_forum_path(@forum) %></button>-->
-		<button type="button" class="btn btn-success"><%= link_to 'Back', forums_path %></button>
+		<%= link_to 'Back', forums_path, class: 'btn btn-primary' %></button>
 </div>
 </div>
 

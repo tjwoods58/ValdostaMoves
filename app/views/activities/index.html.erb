@@ -13,25 +13,34 @@
 
 <% @activities.each do |p| %>
 <div id="newevent2">
-  <p>
-    <p><strong>Activity/Exercise:</strong>
-    <%= p.posts %> <br /></p>
-    <p><strong>Duration:</strong>
-    <%= p.duration %> minutes</p> 
-  </p>
-  <p>
-    <small>User:</small>
-    <small><%= p.user.email %></small>
-  </p>
-  <p>
-  	<small>Post Time:</small>
-  	<small><%= p.created_at %></small>
-  </p>
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Activity</th>
+      <th>Duration</th>
+      <th>User</th>
+      <th>Date</th>
+      <th>Time</th>
+    </tr>
+  </thead>
 
-  <% if can? :destroy, Activity %>
-    <%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
-  <%end %>
-  
+  <tbody id="changetable">
+    <% @activities.each do |p| %>
+      <tr>
+      	
+        <td><%= p.posts %></td>
+        <td><%= p.duration %> minutes</td>
+        <td><%= p.user.email %> minutes</td>
+        <td><%= p.created_at.strftime("%m / %d / %Y") %></td>
+        <td><%= p.created_at.strftime("%I:%M %p") %></td>
+        <td><% if can? :destroy, Activity %>
+    	<%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+  		<%end %>
+  		</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 </div>  
 <% end %>
 
@@ -51,12 +60,11 @@
     <%= f.select :duration, options_for_select(%w[15 30 45 60]) %> 
       	
   </p>
-  <%= f.submit "Post" %>
+  <%= f.submit "Post", class: 'btn btn-success' %>
+  <%= link_to 'Edit', edit_activity_path(@activities), class: 'btn btn-primary' %>
+  <%= link_to 'Back', activities_path, class: 'btn btn-danger' %>
 <% end %>
 
-
-<%= link_to 'Edit', edit_activity_path(@activities) %> |
-<%= link_to 'Back', activities_path %>
 </div>
 <% else %>
 <div id="newevent">
