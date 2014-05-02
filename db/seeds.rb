@@ -532,3 +532,121 @@ Comment.create!(
   created_at: '2014-04-24 12:44:00.000000',
   updated_at: '2014-04-24 12:44:00.000000'
 )
+
+Category.delete_all
+Category.create(
+  id: 1,
+  name: 'Juicing Recipes',
+  created_at: '2014-04-24 12:44:00.000000',
+  updated_at: '2014-04-24 12:44:00.000000',
+  imagesrc: open('app/assets/images/juicingCategory.jpeg')
+  )
+  
+  Category.create(
+  id: 2,
+  name: 'Vegetarian Recipes',
+  created_at: '2014-04-24 12:44:00.000002',
+  updated_at: '2014-04-24 12:44:00.000002',
+  imagesrc: open('app/assets/images/vegetarianCategory.jpeg')
+  )
+  
+  Category.create(
+  id: 3,
+  name: 'Healthy Fish Recipes',
+  created_at: '2014-04-24 12:44:00.000003',
+  updated_at: '2014-04-24 12:44:00.000003',
+  imagesrc: open('app/assets/images/fishCategory.jpg')
+  )
+  
+  Recipe.delete_all
+  Recipe.create(
+  id: 1,
+  name: 'Fishermans Stoup',
+  user_id: 6,
+  description: 'For the seafood base: Place the red onion, chile pepper, lemon zest, garlic, parsley, thyme, and bay leaves in a food processor and process ingredients into paste.
+
+For the soup base: In a Dutch oven, heat the extra-virgin olive oil and anchovies over medium-high heat, when the anchovies melt into the oil add the seafood base and stir 3 to 4 minutes then add the celery, potatoes, and red pepper and cover the pot 4 to 5 minutes to sweat them out, stirring occasionally. Deglaze the pot with beer. Add tomatoes and chicken stock and bring to a boil, simmer for 20 minutes or until it has reduced by a third, then turn off the heat, cool and store for a make-ahead meal.
+
+To reheat: Reheat over medium-high heat. Crust up and warm bread in a hot oven. When the stoup comes to a boil, fold or nestle the cod and scallops into the liquid, and return to a bubble, cook for 5 to 6 minutes, until the fish is opaque and cooked through, then turn off the heat. Serve immediately with lots of bread for mopping. ',
+  instructions: 'Seafood Base
+1 medium red onion, coarsely chopped
+1 Fresno chile pepper, chopped
+1 tablespoon fresh lemon zest
+2 cloves garlic, grated
+1/2 cup flat leaf parsley, a couple of handfuls
+2 tablespoons fresh thyme leaves
+2 fresh bay leaves
+Fresh flat-leaf parsley
+Soup base
+1/4 cup extra-virgin olive oil
+6 anchovy filets
+4 small ribs celery, chopped
+2 starchy potatoes, peeled and chopped into small dice
+1 red pepper, cored and finely chopped
+1/2 bottle lager beer (about 6 ounces)
+1 (28-ounce) can diced tomatoes or chunky-style crushed tomatoes
+2 cups chicken stock
+1 pound cod, cut into chunks
+1 pound sea scallops
+1 loaf ciabatta or other crusty bread of choice, for serving',
+  created_at: '2014-04-24 12:44:00.000003',
+  updated_at: '2014-04-24 12:44:00.000003',
+  category_id: 3,
+  imagesrc: open('app/assets/images/clamSoup.jpeg')
+  )  
+
+  Recipe.create(
+  id: 2,
+  name: 'Halibut with Pepitas',
+  user_id: 6,
+  description: 'In a small, dry skillet over medium-low heat, toast the pepitas lightly. Dont allow them to brown. As soon as you begin to smell them, remove the pan from the heat and transfer to a large plate. Set aside.
+
+Preheat the oven to 400 degrees F.
+
+Sprinkle the halibut on both sides with 1 teaspoon of the salt and the pepper. Heat the oil in a large skillet with an ovenproof handle over medium-high heat until it begins to shimmer but is not smoking. Place the fillets skin side up in the hot oil and sear until the fish begins to turn color, 2 to 3 minutes. Turn the fillets and add the lemon juice, wine, and butter to the pan. As soon as the butter melts and becomes foamy, add the capers and tomatoes and simmer until the tomatoes release some juices, about 1 minute.
+
+Place the pan in the oven until the fish is cooked through, 7 to 10 minutes. Baste the fish with some of the juices and transfer to serving plates. Add the cup torn basil, pepitas, and the remaining teaspoon of salt to the pan juices and stir until the basil is slightly wilted. Spoon the mixture over the fish, garnish with fresh basil leaves, and serve.
+
+This is a restaurant-style dish that boasts a lot of flavor thanks to a tomato-basil sauce with bursts of capers and the crunch of toasted pepitas.
+ ',
+  instructions: '2 tablespoons pepitas (pumpkin seeds)
+4 6 -ounce halibut fillets
+2 teaspoons kosher salt
+1/2 teaspoon freshly ground black pepper
+2 tablespoons extra-virgin olive oil
+2 tablespoons fresh lemon juice
+1 cup dry white wine
+2 tablespoons unsalted butter
+1 1/2 tablespoons capers, drained and rinsed
+1/2 cup halved cherry tomatoes (quartered if theyre big)
+1/4 cup torn fresh basil, plus a handful of small leaves for garnish',
+  created_at: '2014-04-24 12:44:00.000004',
+  updated_at: '2014-04-24 12:44:00.000004',
+  category_id: 3,
+  imagesrc: open('app/assets/images/halibutRecipe.jpeg')
+  )  
+  
+  Recipe.create(
+  id: 3,
+  name: 'Mahi Mahi with Cauliflower',
+  user_id: 6,
+  description: 'Preheat the oven to 375 degrees F. Season the fish with salt and pepper. Heat 1 tablespoon butter in a large nonstick skillet over medium-high heat. Sear the fish until golden brown on one side, about 3 minutes. Transfer to a rimmed baking sheet, cooked-side up, and roast in the oven until just cooked through, about 10 minutes.
+
+Meanwhile, melt the remaining 3 tablespoons butter in the skillet over medium-high heat. Add the cauliflower and cook, stirring, until golden brown and crisp-tender, about 6 minutes. Add the almonds, raisins, coriander, 1/4 teaspoon salt, and pepper to taste; cook until the almonds are golden, about 2 minutes. Remove from the heat and stir in the lemon juice and parsley.
+
+Divide the fish among plates and serve with the cauliflower and lemon wedges.',
+  instructions: '4 6 -ounce skinless mahi mahi fillets (about 3/4 inch thick)
+Kosher salt and freshly ground pepper
+4 tablespoons unsalted butter
+1/2 head cauliflower, florets cut into 1/2-inch pieces
+1/4 cup sliced almonds
+1/4 cup golden raisins
+1/4 teaspoon ground coriander
+1 tablespoon fresh lemon juice
+1/4 cup chopped fresh parsley
+Lemon wedges, for serving',
+  created_at: '2014-04-24 12:44:00.000005',
+  updated_at: '2014-04-24 12:44:00.000005',
+  category_id: 3,
+  imagesrc: open('app/assets/images/mahiCauliflower.jpeg')
+  )  

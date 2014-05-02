@@ -5,11 +5,12 @@
 </script>
 
 <div id= "forum_align">
+<div id= "newrecipe">
 <h1>Editing recipe</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', category_recipe_path(@category, @recipe) %> |
-<%= link_to 'Back', category_recipes_path(@category) %>
+<%= link_to 'Back', category_recipes_path(@category), class: "btn btn-primary" %>
 
+</div>
 </div>
