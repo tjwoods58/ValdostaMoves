@@ -30,8 +30,8 @@
       			<%= topic.posts.count - 1 %>
     		</td>
     		<% if can? :manage, User %>
-    		<td><%= link_to 'edit', edit_forum_topic_path(:forum_id => @forum, :id => topic)%></td>
-    		<td><%= link_to 'destroy', forum_topic_path(:forum_id =>@forum, :id => topic), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    		<td><%= link_to 'edit', edit_forum_topic_path(:forum_id => @forum, :id => topic), class: "btn btn-primary" %></td>
+    		<td><%= link_to 'destroy', forum_topic_path(:forum_id =>@forum, :id => topic), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
     		<% end %>
   		</tr>
 	<% end %>

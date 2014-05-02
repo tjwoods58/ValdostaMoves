@@ -5,6 +5,7 @@
 </script>
 
 <div id= "forum_align">
+<div id= "recipeshow">
 <h1>Listing recipes</h1>
 
 <table class="table table-bordered">
@@ -47,11 +48,11 @@
 
 <br>
 <% if can? :create, Recipe %>
-  <%= link_to 'New Recipe', new_category_recipe_path(@category) %>
+  <%= link_to 'New Recipe', new_category_recipe_path(@category), class: "btn btn-success" %>
 <% end %>
-|<%= link_to ' Back', categories_path %>
+<%= link_to ' Back', categories_path, class: "btn btn-primary" %>
 
-
+</div>
 </div>
 <div id= "forum_align">
 

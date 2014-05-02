@@ -68,6 +68,16 @@ html, body {
     height: auto;
   }
 
+  #forumtitle {
+    color: black;
+    font: small-caps 40px/40px "Times New Roman", serif;
+
+  }
+  #topictitle {
+    color: black;
+    font: small-caps 30px/30px "Times New Roman", serif;
+
+  }
   #banner {
     padding: 1%;
     margin-top: 1%;
@@ -292,7 +302,40 @@ html, body {
     border: solid;
     border-color: black;
   }
+  #newrecipe {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font: small-caps 17px/17px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+    
+    textarea {
+      height: 50px;
+      max-height: 100px;
+      
+    }
+  }
   #forumsshow {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+    //column-width: 70%;
+  }
+  #recipeshow {
     padding: 1%;
     margin-top: 1%;
     margin-left: auto;

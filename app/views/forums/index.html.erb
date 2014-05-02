@@ -24,7 +24,7 @@
     <% end %>
 </table>
 <% if can? :manage, User %>
-<button type="button" class="btn btn-success"><%= link_to 'New Forum', new_forum_path %></button>
+<%= link_to 'New Forum', new_forum_path, class: "btn btn-success" %>
 <% end %>
 </div>
 

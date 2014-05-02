@@ -3,48 +3,47 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
+<div id= "forum_align">
+<div id= "recipeshow">
+<h1>Recipe</h1>
 
-<div id= "recipes_align">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Recipe Image</th>	
+      <th>Name</th>
+      <th>Added by</th>
+      <th>Ingredients</th>
+      <th>Instructions</th>
+      <th>Rating</th>
+      <th></th>
+      
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      
+      	<td style="width:200px;"><%= link_to image_tag(@recipe.imagesrc, class: 'list_image'), category_recipe_path(@category, @recipe), 'data-no-turbolink' => true %></td>
+        <td><%= @recipe.name %></td>
+        <td><%= @recipe.user.email %></td>
+        <td><%= @recipe.description %></td>
+        <td><%= @recipe.instructions %></td>
+        <td><%= rating_for @recipe, "recipe", 'data-no-turbolink' => true %></td>
+        <td><%= link_to 'Show', category_recipe_path(@category, @recipe), class: 'btn btn-info', 'data-no-turbolink' => true %>
+        </br>
+        </br>
+          <% if can? :update, Recipe %>
+            <%= link_to 'Edit', edit_category_recipe_path(@category, @recipe), class: 'btn btn-primary' %>
+          <% end %>
+          </br></br>
+        
+        
+          <% if can? :destroy, Recipe %>
+            <%= link_to 'Destroy', category_recipe_path(@category, @recipe), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+          <% end %>
+        </td>
+      </tr>
 
-
-<p>
-	
-  <%= image_tag(@recipe.imagesrc, class: 'list_image_recipe_show') %>
-</p>
-<hr>
-<p>
-  <strong>Name:</strong>
-  <%= @recipe.name %>
-</p>
-<hr>
-<p>
-  <strong>Added By:</strong>
-  <%= @recipe.user.email %>
-</p>
-
-<hr>
-
-<p>
-  <strong>Ingredients:</strong>
- <%= @recipe.description %>
-</p>
-
-<hr>
-
-<p>
-  <strong>Instructions:</strong>
-  <%= @recipe.instructions %>
-</p>
-
-<hr>
-<p>
-<strong>Rating</strong>
-<%= rating_for @recipe, "recipe" %>
-</p>
-
-<hr>
-
-<%= link_to 'Edit', edit_category_recipe_path(@category, @recipe) %> |
-<%= link_to 'Back', category_recipes_path(@category) %>
-
+  </tbody>
+  </table>
 </div>
