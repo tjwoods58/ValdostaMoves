@@ -107,6 +107,85 @@ html, body {
     border: solid;
     border-color: black;
   }
+  #mobileheader {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font: small-caps 20px/20px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: #00FF99;
+    border: solid;
+    border-color: black;
+  }
+  #eventcomment {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font: small-caps 14px/14px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: #00FF99;
+    border: solid;
+    border-color: black;
+  }
+  
+  #normalmobile {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    font: small-caps 17px/17px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #mobilenutrition {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font: small-caps 14px/14px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #mobilerecipes {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font: small-caps 14px/14px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #mobilecomments {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font: small-caps 17px/17px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
   
   #showusers {
     padding: 1%;
@@ -391,6 +470,19 @@ html, body {
     border: solid;
     border-color: black;
   }
+  #newevent3mobile {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
   
   #eventtable {
     padding: 1%;
@@ -405,9 +497,36 @@ html, body {
     border: solid;
     border-color: black;
     float: left;
-    display: table;
-    clear: left;
+        clear: left;
     display: none;
+  }
+   #eventtablemobile {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font: small-caps 19px/19px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+    display: none;
+  }
+  #navmobilebackground {
+    padding: 1%;
+    margin-top: 1%;
+    width: 90%;
+    font: small-caps 19px/19px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background-image: -webkit-linear-gradient(top, #5F5F5F 0%, #1A1A1A 100%);
+    background-image: linear-gradient(to bottom, #5F5F5F 0%, #1A1A1A 100%);
+    border: solid;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
   }
   #newevent4 {
     padding: 1%;
@@ -434,6 +553,22 @@ html, body {
     border: solid;
     border-color: black;
     float: right;
+    display: none;
+    
+    
+  }
+  #twittermobile {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font: small-caps 30px/30px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
     display: none;
     
     
