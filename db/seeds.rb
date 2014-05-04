@@ -617,6 +617,14 @@ Category.create(
   imagesrc: open('app/assets/images/fishCategory.jpg')
   )
   
+  Category.create(
+  id: 4,
+  name: 'Recipes for the Kids',
+  created_at: '2014-04-24 12:44:00.000004',
+  updated_at: '2014-04-24 12:44:00.000004',
+  imagesrc: open('app/assets/images/chickenTortillaSoup.jpeg')
+  )
+  
   Recipe.delete_all
   Recipe.create(
   id: 1,
@@ -950,3 +958,265 @@ Freshly ground pepper',
   category_id: 3,
   imagesrc: open('app/assets/images/tilapiaHashBrowns.jpeg')
   )  
+
+Recipe.create(
+  id: 13,
+  name: 'Chicken Tortilla Soup',
+  user_id: 6,
+  instructions: 'Place the chicken, tomatoes (and juices), beans, broth, water, onion, garlic, jalapeno, cumin, and chili powder in a slow cooker. Cover and cook on high for
+   3 to 4 hours or on low for 6 to 8 hours.
+Uncover the slow cooker and use tongs to remove the chicken from the pot. Once cool enough to handle, remove the meat from the bones and shred, then return the
+ meat to the pot. Stir in the lemon juice. Crumble a few tortilla chips into each bowl and cover with some soup. Serve sprinkled with cilantro and grated cheese.',
+  description: '3 chicken thighs, skin removed
+10 -ounce can diced tomatoes
+with green chiles
+1 1/2 cups cooked black beans
+1 1/2 cups chicken broth
+1 1/2 cups water
+1 yellow onion, finely chopped
+3 garlic cloves, finely minced
+1 jalapeno, finely chopped
+1/2 teaspoon ground cumin
+1/2 teaspoon chili powder
+Juice of 1/2 lemon
+20 tortilla chips
+3 tablespoons finely chopped fresh cilantro
+1/2 cup shredded Monterey Jack cheese
+',
+  created_at: '2014-04-24 12:44:00.0000013',
+  updated_at: '2014-04-24 12:44:00.0000013',
+  category_id: 4,
+  imagesrc: open('app/assets/images/chickenTortillaSoup.jpeg')
+  )  
+  
+  Recipe.create(
+  id: 14,
+  name: 'Parmesan Fish Sticks',
+  user_id: 6,
+  instructions: 'Preheat the oven to 450 degrees F.
+
+Rinse the salmon fillet and pat dry with paper towels. Cut the fish in half to make 2 fillets each about 4 by 4 1/2-inches in size. Starting on the longest edge, 
+slice the fillets into 1/2-inch pieces. Lay the widest pieces, from the center, cut side down, and slice in half lengthways so all the pieces are equally about 1/2 by 1/2 by 4 1/2-inches in size.
+
+Place the flour in a medium bowl and season with the salt and pepper. Place the egg whites in another bowl and beat until frothy, about 30 seconds. Combine the Parmesan and bread crumbs in a third bowl.
+
+Coat the salmon pieces in the seasoned flour and pat to remove any excess flour. Dip the floured salmon in the egg whites and then into the Parmesan mixture, 
+gently pressing the mixture into the fish. Place the breaded salmon pieces on a liberally oiled baking sheet. Drizzle lightly with the olive oil. Bake for 15 to 20 minutes until golden brown.
+
+Mix the mayonnaise, yogurt, Dijon mustard, and parsley (or chives, if using) in a small dipping bowl.
+
+Arrange the fish sticks on a serving platter and serve with the dipping sauce.
+',
+  description: '1 (18-ounce) center-cut salmon fillet, about 9 by 4 inches, skinned
+1/2 cup all-purpose flour
+1/2 teaspoon fine sea salt
+1/4 teaspoon freshly ground black pepper
+3 egg whites
+1 cup grated Parmesan
+1 cup seasoned bread crumbs
+Olive oil, for drizzling
+1/3 cup reduced fat mayonnaise
+1/3 cup lowfat plain yogurt
+1 tablespoon Dijon mustard
+1 tablespoon chopped fresh parsley or chives
+
+',
+  created_at: '2014-04-24 12:44:00.0000014',
+  updated_at: '2014-04-24 12:44:00.0000014',
+  category_id: 4,
+  imagesrc: open('app/assets/images/fishSticks.jpeg')
+  )  
+
+Recipe.create(
+  id: 15,
+  name: 'Crunchy, Oven Baked Chicken Toes',
+  user_id: 6,
+  instructions: 'In a pie pan or other shallow, large dish, pour out the corn flakes. Crush the cereal up with your hands. Mix in bread crumbs, sugar, salt, pepper, and allspice - 
+  your SECRET ingredient. Do not tell anybody what your secret ingredient is - ever! If they ask how you make your special chicken toes, tell them about everything EXCEPT the secret.
+
+Drizzle about 3 tablespoons vegetable oil evenly over the breading, tossing and turning it to mix the oil all through the bread crumbs and crushed-up corn flakes.
+ Have the GH pour the oil out slowly. A vegetable oil bottle has a big opening so, 3
+
+tablespoons will pour out pretty quickly, probably by the time you can count to 5, so watch the GH closely and count really loudly!
+
+Have your GH cut the chicken fingers into toes, 2-inch pieces. Turn the chicken in flour, eggs and then in the special crunchy breading. Arrange the chicken toes on a nonstick baking sheet. 
+Make your GH go and wash their hands. Place the chicken toes in the oven and cook 15 minutes or until crisp and brown all over.
+
+Mix together honey mustard and barbecue sauce in a small bowl. Serve hot chicken toes with honey mustard and barbecue sauce for dipping.
+
+',
+  description: '1 cup corn flakes
+1 cup plain bread crumbs
+2 tablespoons brown sugar
+1 teaspoon salt
+1/2 teaspoon black pepper
+1/2 teaspoon ground allspice - the SECRET ingredient
+3 tablespoons vegetable oil
+1 1/2 pounds chicken breast tenders, 2 packages, cut into 2-inch pieces by GH (Grown-up Helpers)
+1/3 cup all-purpose flour
+2 eggs, beaten
+1/4 cup honey mustard (recommended: Guldens)
+1/4 cup barbecue sauce
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000015',
+  updated_at: '2014-04-24 12:44:00.0000015',
+  category_id: 4,
+  imagesrc: open('app/assets/images/chickenToes.jpeg')
+  )  
+  
+Recipe.create(
+  id: 16,
+  name: 'Light Chicken Caesar Salad',
+  user_id: 6,
+  instructions: 'Make the croutons: Preheat the oven to 350 degrees F. Toss the bread cubes in a large bowl with 1 tablespoon olive oil.
+   Spread on a baking sheet and bake until crisp, tossing halfway through, about 20 minutes.
+
+Meanwhile, make the dressing: Puree the yogurt, 2 tablespoons parmesan, the garlic, anchovies, lemon juice, mustard and 2 tablespoons water in a mini food processor or a blender.
+
+Pound the chicken between 2 pieces of plastic wrap with a heavy skillet until 1/2 inch thick. Brush a rimmed baking sheet with the remaining 1 tablespoon olive oil; 
+add the chicken and season with salt. Brush evenly with 1 tablespoon of the dressing and sprinkle with 2 tablespoons parmesan. Broil, undisturbed, until golden and cooked through, about 5 minutes. 
+Transfer to a cutting board.
+
+Toss the lettuce, croutons and the remaining dressing and 3/4 cup parmesan in a large bowl. Thinly slice the chicken. Divide the salad among bowls, top with the chicken and season with pepper.
+
+
+',
+  description: '4 cups cubed day-old crusty bread (preferably whole wheat)
+2 tablespoons extra-virgin olive oil
+1/2 cup nonfat plain Greek yogurt
+1 cup shredded parmesan cheese (about 2 ounces)
+1 small clove garlic
+2 anchovy fillets
+Juice of 1 lemon
+1 teaspoon dijon mustard
+1 pound skinless, boneless chicken breasts
+Kosher salt
+2 romaine lettuce hearts, chopped
+Freshly ground pepper
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000016',
+  updated_at: '2014-04-24 12:44:00.0000016',
+  category_id: 4,
+  imagesrc: open('app/assets/images/chickenSalad.jpeg')
+  )  
+  
+Recipe.create(
+  id: 17,
+  name: 'Quick and Creamy Fruit Salad',
+  user_id: 6,
+  instructions: 'Put the apples, melon, pineapple, dried cherries, yogurt, cream of coconut and salt in a large bowl and stir.
+
+',
+  description: '2 Granny Smith apples, cored and cut into 1/2-inch chunks
+1 medium honeydew melon, cut into 1/2-inch chunks (about 2 cups)
+1 20 -ounce can pineapple rings in syrup, drained and cut into chunks
+1/2 cup dried cherries
+1/2 cup plain yogurt
+1/2 cup cream of coconut
+Pinch of salt
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000017',
+  updated_at: '2014-04-24 12:44:00.0000017',
+  category_id: 4,
+  imagesrc: open('app/assets/images/fruitSalad.jpeg')
+  )  
+  
+Recipe.create(
+  id: 18,
+  name: 'Oven Fried Chicken',
+  user_id: 6,
+  instructions: 'Preheat oven to 375 degrees F. Lightly spray a baking sheet with olive oil.
+
+Combine the crackers and corn cereal crumbs, sesame seeds, cayenne, and garlic powder in a shallow bowl. Reserve.
+
+In a large bowl, combine egg whites, yogurt, Dijon mustard, and salt. Add the chicken pieces and coat thoroughly with the yogurt mixture.
+
+One at a time, dip the chicken pieces in the cracker mixture, packing crumbs onto chicken. Arrange the chicken on a baking sheet and spray lightly with olive oil cooking spray.
+
+Bake for 45 to 50 minutes, or until juices run clear when chicken is pierced with a knife.
+
+',
+  description: '1/2 sleeve (about 20) whole-grain salted crackers, pulsed in a food processor until fine (about 1/2 cup)
+2 1/2 cups corn cereal flakes, pulsed in a food processor to fine crumbs (about 1/2 cup)
+2 tablespoons sesame seeds
+3/4 teaspoon cayenne pepper
+1/2 teaspoon garlic powder
+2 egg whites
+1 cup lowfat, plain yogurt
+1 tablespoon Dijon mustard
+1/2 teaspoon salt
+Olive oil cooking spray
+4 medium sized skinless chicken breasts and 4 skinless chicken thighs, rinsed and patted dry (about 3 1/2 pounds chicken)
+
+',
+  created_at: '2014-04-24 12:44:00.0000018',
+  updated_at: '2014-04-24 12:44:00.0000018',
+  category_id: 4,
+  imagesrc: open('app/assets/images/ovenFriedChicken.jpeg')
+  )  
+  
+Recipe.create(
+  id: 19,
+  name: 'Garlic Chicken and Potatoes',
+  user_id: 6,
+  instructions: 'Position a rack in the lower third of the oven and preheat to 425 degrees F. Toss the potatoes with 1 tablespoon olive oil, the cumin seeds,
+   3/4 teaspoon salt, and pepper to taste. Spread in a large baking dish and roast until the potatoes begin to brown, 25 to 30 minutes.
+
+Meanwhile, heat the remaining 2 tablespoons olive oil in a small skillet over medium heat. Add the garlic and cook, stirring frequently, until lightly golden, about 2 minutes. 
+Remove from the heat and stir in the brown sugar, lemon juice and red pepper flakes.
+
+Remove the baking dish from the oven, push the potatoes to the sides and arrange the chicken breasts in the middle. Season the chicken with salt and drizzle with the garlic mixture.
+ Return to the oven and bake until the chicken is cooked through and the potatoes are tender, about 20 minutes. Remove from the oven; transfer the chicken to a cutting board and slice.
+  Add the cilantro to the baking dish and toss with the potatoes. Serve the chicken with the potatoes and lemon wedges. Drizzle with the pan juices.
+
+
+',
+  description: '2 pounds small red-skinned potatoes, quartered
+3 tablespoons extra-virgin olive oil
+1/2 teaspoon cumin seeds (optional)
+Kosher salt and freshly ground pepper
+4 cloves garlic, finely chopped
+2 tablespoons packed light brown sugar
+1 lemon (1/2 juiced, 1/2 cut into wedges)
+Pinch of red pepper flakes
+4 skinless, boneless chicken breasts (1 1/2 to 1 3/4 pounds)
+2 tablespoons chopped fresh cilantro or parsley
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000019',
+  updated_at: '2014-04-24 12:44:00.0000019',
+  category_id: 4,
+  imagesrc: open('app/assets/images/chickenAndPotatoes.jpeg')
+  )  
+  
+Recipe.create(
+  id: 20,
+  name: 'Fruit Salsa',
+  user_id: 6,
+  instructions: 'Combine the kiwi, mango, papaya, mint and orange juice in a large bowl. Refrigerate for up to 1 hour before serving.
+
+
+',
+  description: '2 kiwis, peeled and diced
+1 mango, peeled and diced
+1/2 papaya, peeled and diced
+2 tablespoons chopped fresh mint
+1/2 cup orange juice
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000020',
+  updated_at: '2014-04-24 12:44:00.0000020',
+  category_id: 4,
+  imagesrc: open('app/assets/images/fruitSalsa.jpeg')
+  )  
+  
