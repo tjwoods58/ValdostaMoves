@@ -786,3 +786,167 @@ Stir 1 tablespoon water into the remaining yogurt mixture and toss with the arug
   category_id: 3,
   imagesrc: open('app/assets/images/salmonHash.jpeg')
   )  
+
+ Recipe.create(
+  id: 7,
+  name: 'Salmon with Lemon, Capers, and Rosemary',
+  user_id: 6,
+  instructions: 'Brush top and bottom of salmon fillets with olive oil and season with salt, pepper, and rosemary. Place each piece of seasoned salmon on a piece of foil large enough to fold over and seal. Top the each piece of salmon with 2 lemon slices, 1 tablespoon of lemon juice, 2 tablespoons of wine, and 1 teaspoon of capers. Wrap up salmon tightly in the foil packets.
+
+Place a grill pan over medium-high heat or preheat a gas or charcoal grill. Place the foil packets on the hot grill and cook for 10 minutes for a 1-inch thick piece of salmon. Serve in the foil packets.',
+  description: '4 (6-ounce) salmon fillets
+1/4 cup extra-virgin olive oil
+1/2 teaspoon salt
+1/2 teaspoon freshly ground black pepper
+1 tablespoon minced fresh rosemary leaves
+8 lemon slices (about 2 lemons)
+1/4 cup lemon juice (about 1 lemon)
+1/2 cup Marsala wine (or white wine)
+4 teaspoons capers
+4 pieces of aluminum foil',
+  created_at: '2014-04-24 12:44:00.000008',
+  updated_at: '2014-04-24 12:44:00.000008',
+  category_id: 3,
+  imagesrc: open('app/assets/images/lemonCaperSalmon.jpeg')
+  )  
+  
+Recipe.create(
+  id: 8,
+  name: 'Shrimp Gumbo',
+  user_id: 6,
+  instructions: 'Preheat the oven to 350 degrees F.
+
+Place the vegetable oil and flour into a 5 to 6-quart cast iron Dutch oven and whisk together to combine. Place on the middle shelf of the oven, uncovered, and bake for 1 1/2 hours, whisking 2 to 3 times throughout the cooking process.
+
+While the roux is baking, de-head, peel and devein the shrimp. Place the shrimp in a bowl and set in the refrigerator. Place the heads and shells in a 4-quart saucepan along with the 2 quarts of water, set over high heat and bring to a boil. Decrease the heat to low and simmer for 1 hour or until the liquid has reduced to 1-quart. Remove from the heat and strain the liquid into a container, discarding the solids.
+
+Once the roux is done, carefully remove it from the oven and set over medium-high heat. Gently add the onions, celery, green peppers and garlic and cook, moving constantly for 7 to 8 minutes or until the onions begin to turn translucent. Add the tomatoes, salt, black pepper, thyme, cayenne pepper, and bay leaves and stir to combine. Gradually add the shrimp broth while whisking continually. Decrease the heat to low, cover and cook for 35 minutes. Turn off the heat, add the shrimp and sausage and stir to combine. Add the file powder while stirring constantly. Cover and allow to sit for 10 minutes prior to serving. Serve over rice.',
+  description: '4 ounces vegetable oil
+4 ounces all-purpose flour
+1 1/2 pounds raw, whole, head-on medium-sized (31-50 count) shrimp
+2 quarts water
+1 cup diced onion
+1/2 cup diced celery
+1/2 cup diced green peppers
+2 tablespoons minced garlic
+1/2 cup peeled, seeded and chopped tomato
+1 tablespoon kosher salt
+1/2 teaspoon freshly ground black pepper
+1 teaspoon fresh thyme, chopped
+1/4 teaspoon cayenne pepper
+2 bay leaves
+1/2 pound andouille sausage, cut into 1/4-inch pieces and browned
+1 tablespoon file powder',
+  created_at: '2014-04-24 12:44:00.000009',
+  updated_at: '2014-04-24 12:44:00.000009',
+  category_id: 3,
+  imagesrc: open('app/assets/images/shrimpGumbo.jpeg')
+  )  
+  
+Recipe.create(
+  id: 9,
+  name: 'Whole-Wheat Spaghetti with Lemon, Basil, and Salmon',
+  user_id: 6,
+  instructions: 'Bring a large pot of salted water to a boil over high heat. Add the pasta and cook until tender but still firm to the bite, stirring occasionally, about 8 to 10 minutes. Drain pasta and transfer to a large bowl. Add the garlic, extra-virgin olive oil, salt, and pepper. Toss to combine.
+
+Meanwhile, warm the olive oil in a medium skillet over medium-high heat. Season the salmon with salt and pepper. Add the fish to the pan and cook until medium-rare, about 2 minutes per side, depending on the thickness of the fish. Remove the salmon from the pan.
+
+Add the basil, capers, lemon zest, and lemon juice to the spaghetti mixture and toss to combine. Set out 4 serving plates or shallow bowls. Place 1/2 cup spinach in each bowl. Top with 1/4 of the pasta. Top each mound of pasta with a piece of salmon. Serve immediately.',
+  description: '1/2 pound whole-wheat spaghetti pasta
+1 clove garlic, minced
+2 tablespoons extra-virgin olive oil
+1/2 teaspoon salt, plus more for seasoning
+1/2 teaspoon freshly ground black pepper, plus more for seasoning
+1 tablespoon olive oil
+4 (4-ounce) pieces salmon
+1/4 cup chopped fresh basil leaves
+3 tablespoons capers
+1 lemon, zested
+2 tablespoons lemon juice
+2 cups fresh baby spinach leaves',
+  created_at: '2014-04-24 12:44:00.000009',
+  updated_at: '2014-04-24 12:44:00.000009',
+  category_id: 3,
+  imagesrc: open('app/assets/images/spaghettiSalmon.jpeg')
+  )  
+  
+  Recipe.create(
+  id: 10,
+  name: 'Spicy Shrimp Orecchiette',
+  user_id: 6,
+  instructions: 'Bring a large pot of salted water to a boil. Add the pasta and cook as the label directs. Reserve 1 1/2 cups cooking water, then drain.
+
+Meanwhile, heat 2 tablespoons olive oil in a large skillet over medium-high heat. Add the chopped fennel bulb and 1/2 teaspoon salt and cook, stirring occasionally, until golden brown, 6 to 8 minutes. Reduce the heat to medium and add the garlic, tomato paste and red pepper flakes. Cook, stirring, 2 more minutes (add a splash of water if the mixture is sticking). Stir in the tomato, shrimp, 1/2 teaspoon salt and 1 cup of the reserved cooking water. Bring to a simmer and cook, stirring occasionally, until the tomatoes are saucy, about 8 more minutes.
+
+Add the pasta and cheese to the sauce and toss to coat. Drizzle with olive oil, season with salt and add more of the reserved pasta water to loosen, if necessary. Stir in the basil leaves and fennel fronds. Divide among plates.',
+  description: 'Kosher salt
+12 ounces orecchiette pasta
+2 tablespoons extra-virgin olive oil, plus more for drizzling
+1 small bulb fennel, chopped, plus 1 tablespoon chopped fennel fronds
+2 cloves garlic, thinly sliced
+2 tablespoons tomato paste
+1/4 teaspoon red pepper flakes
+1 large tomato, chopped
+1/2 pound medium shrimp, peeled, deveined and roughly chopped 1/2 cup grated parmesan cheese
+1 cup torn fresh basil',
+  created_at: '2014-04-24 12:44:00.0000010',
+  updated_at: '2014-04-24 12:44:00.0000010',
+  category_id: 3,
+  imagesrc: open('app/assets/images/spicyShrimp.jpeg')
+  )  
+
+Recipe.create(
+  id: 11,
+  name: 'Spicy Shrimp Broth',
+  user_id: 6,
+  instructions: 'Mix the yogurt, mustard and dill in a small bowl.
+
+Heat 1 1/2 tablespoons olive oil in a large nonstick skillet over medium-high heat. Add the hash browns, sprinkle with 1/4 teaspoon each salt and pepper, and cook until browned, about 12 minutes. Transfer to a bowl.
+
+Heat the remaining 1/2 tablespoon olive oil in the skillet, then add the onion, bell peppers and 1/4 teaspoon salt; cook until golden, about 8 minutes. Add the salmon and cook, stirring occasionally, until just cooked through, about 3 minutes. Return the hash browns to the skillet to heat through, then remove from the heat and stir in 3 tablespoons of the yogurt mixture. Season with salt and pepper.
+
+Stir 1 tablespoon water into the remaining yogurt mixture and toss with the arugula in a medium bowl. Serve the salmon hash with the arugula salad, and lemon wedges, if desired.',
+  description: '1/4 cup nonfat plain Greek yogurt
+1 tablespoon dijon mustard
+2 tablespoons chopped fresh dill
+2 tablespoons extra-virgin olive oil
+3 cups frozen cubed hash browns
+Kosher salt and freshly ground pepper
+1 red onion, thinly sliced
+2 bell peppers (red and/or green), chopped
+3/4 pound skinless salmon fillet, cut into 1/2-inch pieces
+8 cups baby arugula
+Lemon wedges, for serving (optional)',
+  created_at: '2014-04-24 12:44:00.0000011',
+  updated_at: '2014-04-24 12:44:00.0000011',
+  category_id: 3,
+  imagesrc: open('app/assets/images/spicyShrimpBroth.jpeg')
+  )  
+  
+  Recipe.create(
+  id: 12,
+  name: 'Tilapia With Hash Browns',
+  user_id: 6,
+  instructions: 'Preheat the oven to 425 degrees F. Toss the hash browns with the garlic and 1 teaspoon salt in a bowl. Heat 2 tablespoons olive oil in a large nonstick ovenproof skillet over medium heat. Add the hash browns, flatten with a spatula and cook until the bottom is golden brown, 6 to 8 minutes. Drizzle with 2 tablespoons olive oil. Flip the potato cake and pat it back into shape. Cook until crisp and golden, 6 to 8 minutes.
+
+Meanwhile, mix the olives, tomatoes, roasted peppers, scallions and parsley in a bowl. Cut the fish into 12 pieces and season with the dried herbs, salt and pepper.
+
+Scatter half of the olive mixture over the potato cake and top with the fish. Scatter the remaining olive mixture on top and drizzle with the remaining 1 tablespoon olive oil. Transfer the skillet to the oven and bake until the fish is cooked through, about 12 minutes. Drizzle with olive oil and season with salt. Serve from the skillet.',
+  description: '1 20 -ounce bag frozen shredded hash browns, thawed
+4 cloves garlic, smashed and thinly sliced
+Kosher salt
+5 tablespoons extra-virgin olive oil,
+plus more for drizzling
+1/2 cup pitted Spanish green olives, roughly chopped
+3/4 pound tomatoes, cut into 1-inch pieces
+1/4 cup diced roasted red peppers
+3 scallions, white and light green parts only, chopped
+2 tablespoons chopped fresh parsley
+1 1/2 pounds skinless tilapia fillets
+1 teaspoon herbes de Provence or dried rosemary
+Freshly ground pepper',
+  created_at: '2014-04-24 12:44:00.0000012',
+  updated_at: '2014-04-24 12:44:00.0000012',
+  category_id: 3,
+  imagesrc: open('app/assets/images/tilapiaHashBrowns.jpeg')
+  )  
