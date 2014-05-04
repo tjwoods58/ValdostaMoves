@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="mainbackground">
-<div id="forumsshow">
+<div id="mobileforums">
 <h1 align="text-left"><%= @forum.title %></h1>
 
 <table class="table forum-striped">
@@ -10,8 +10,7 @@
     <th>Last Reply</th>
     <th>User</th>
     <th>Number of Replies</th>
-    <th></th>
-    <th></th>
+
   </tr>
 	<% @forum.topics.each do |topic| %>
   		<tr>
@@ -21,28 +20,22 @@
     
     		<td>
     			<%= topic.posts.find(:last).created_at.strftime("%m / %d / %Y") %>
-    			</br>
-    			<%= topic.posts.find(:last).created_at.strftime("%I:%M %p") %>
+    			
 
     		</td>
     		<td><%= topic.posts.find(:last).user.email %></td>
     		<td>
       			<%= topic.posts.count - 1 %>
     		</td>
-    		<% if can? :manage, User %>
-    		<td><%= link_to 'edit', edit_forum_topic_path(:forum_id => @forum, :id => topic), class: "btn btn-primary" %></td>
-    		<td><%= link_to 'destroy', forum_topic_path(:forum_id =>@forum, :id => topic), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
-    		<% end %>
   		</tr>
 	<% end %>
 </table>
-<% if can? :manage, User %>
-<button type="button" class="btn btn-success"><%= link_to 'New topic',  new_forum_topic_path(@forum) %></button>
-<% end %>
+
 	<!--<button type="button" class="btn btn-success"><!--<%= link_to 'Edit', edit_forum_path(@forum) %></button>-->
-		<%= link_to 'Back', forums_path, class: 'btn btn-primary' %></button>
 </div>
+</br>
+		<%= link_to 'Back', forums_path, class: 'btn btn-primary' %></button>
+
 </div>
 
- 
 

@@ -56,6 +56,7 @@ html, body {
   display:block;
   margin:0;
   padding:0;
+  text-align:center;
   
   .container {
     position: absolute;
@@ -140,6 +141,32 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     width: 67%;
+    font: small-caps 17px/17px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #mobileactivity {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font: small-caps 15px/15px "Times New Roman", serif;
+    text-align: center;
+    color: black;
+    background: beige;
+    border: solid;
+    border-color: black;
+  }
+  #mobileforums {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     font: small-caps 17px/17px "Times New Roman", serif;
     text-align: center;
     color: black;
@@ -506,7 +533,7 @@ html, body {
     font: small-caps 30px/30px "Times New Roman", serif;
     text-align: center;
     color: black;
-    background: #00FF99;
+    background: beige;
     border: solid;
     border-color: black;
     float: left;
@@ -628,6 +655,19 @@ html, body {
     border: solid;
     border-color: black;
 
+    
+  }
+  #gmaps3 {
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 500px;
+    background: beige;
+    border: solid;
+    border-color: black;
+    text-align: center;
     
   }
   #gmaps2 {

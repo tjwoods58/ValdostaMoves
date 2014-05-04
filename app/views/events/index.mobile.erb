@@ -12,6 +12,7 @@
       <th>Click to Show</th>
     </tr>
   </thead>
+  <% @events = Event.all.order("end") %>
   <tbody id="changetable">
   <% @events.each do |event| %>
     <tr>

@@ -18,6 +18,26 @@ Event.create!(
   contactphone: 1234567891,
 )
 Event.create!(
+  title: 'Valdosta Picnic',
+  sponser: 'Valdosta State University',
+  address: '1116 Slater Street Valdosta, GA',
+  description: 'This is going to be a fun time. Food and Drinks included!',
+  allday: false,
+  start: '2014-06-18 13:00:00.000000',
+  end: '2014-06-18 16:00:00.000000', 
+  contactphone: 1234567891,
+)
+Event.create!(
+  title: 'Valdosta Picnic',
+  sponser: 'Valdosta State University',
+  address: '1116 Slater Street Valdosta, GA',
+  description: 'This is going to be a fun time. Food and Drinks included!',
+  allday: false,
+  start: '2014-05-18 13:00:00.000000',
+  end: '2014-05-18 16:00:00.000000', 
+  contactphone: 1234567891,
+)
+Event.create!(
   title: 'Basketball Tournament',
   sponser: 'Atlanta Hawks',
   address: '1000 Peachtree Street Atlanta, GA',
@@ -134,10 +154,49 @@ user = User.create!(
   category: 1
 )
 
-
+Forum.delete_all
+Topic.delete_all
+Post.delete_all
 forum = Forum.create!(title: 'I am a Forum', user: user)
 topic = Topic.create!(title: 'I am a Topic', user: user, forum:forum)
 post = Post.create!(body: 'I am a Post', user: user, topic: topic)
+
+forum = Forum.create!(title: 'I am a Forum2', user: user)
+topic = Topic.create!(title: 'I am a Topic2', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post2', user: user, topic: topic)
+
+forum = Forum.create!(title: 'I am a Forum3', user: user)
+topic = Topic.create!(title: 'I am a Topic3', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post3', user: user, topic: topic)
+
+forum = Forum.create!(title: 'I am a Forum4', user: user)
+topic = Topic.create!(title: 'I am a Topic4', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post4', user: user, topic: topic)
+
+forum = Forum.create!(title: 'I am a Forum5', user: user)
+topic = Topic.create!(title: 'I am a Topic5', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post5', user: user, topic: topic)
+
+forum = Forum.create!(title: 'I am a Forum6', user: user)
+topic = Topic.create!(title: 'I am a Topic6', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post6', user: user, topic: topic)
+
+forum = Forum.create!(title: 'I am a Forum7', user: user)
+topic = Topic.create!(title: 'I am a Topic7', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post7', user: user, topic: topic)
+
+forum = Forum.create!(title: 'I am a Forum8', user: user)
+topic = Topic.create!(title: 'I am a Topic8', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post8', user: user, topic: topic)
+
+forum = Forum.create!(title: 'I am a Forum9', user: user)
+topic = Topic.create!(title: 'I am a Topic9', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post9', user: user, topic: topic)
+
+forum = Forum.create!(title: 'I am a Forum10', user: user)
+topic = Topic.create!(title: 'I am a Topic10', user: user, forum:forum)
+post = Post.create!(body: 'I am a Post10', user: user, topic: topic)
+
 
 Comment.delete_all
 Comment.create!(

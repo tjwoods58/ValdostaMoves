@@ -3,16 +3,16 @@
         $("[data-toggle='tooltip']").tooltip();
     });
 </script>
-<div id= "newevent">
-<p>
+<div id= "mobileheader">
+
   
-  <h3>Report your daily activities and win prizes! The more active you are the better chance you have of winning prizes.</h3>
-</p>
+Report your daily activities and win prizes! The more active you are the better chance you have of winning prizes.
+
 </div>
 
 
 
-<div id="newevent2">
+<div id="mobileactivity">
   <table class="table table-striped">
   <thead>
     <tr>
@@ -20,7 +20,6 @@
       <th>Duration</th>
       <th>User</th>
       <th>Date</th>
-      <th>Time</th>
     </tr>
   </thead>
 
@@ -32,11 +31,6 @@
         <td><%= p.duration %> minutes</td>
         <td><%= p.user.email %> minutes</td>
         <td><%= p.created_at.strftime("%m / %d / %Y") %></td>
-        <td><%= p.created_at.strftime("%I:%M %p") %></td>
-        <td><% if can? :destroy, Activity %>
-    	<%= link_to 'Destroy', p, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
-  		<%end %>
-  		</td>
       </tr>
     <% end %>
   </tbody>
@@ -45,7 +39,7 @@
 
 
 
-<div id="newevent2">
+<div id="mobileactivity">
 <% @user = current_user %>
 <% if @user != nil %>
 <%= form_for Activity.new do |f| %>
@@ -61,7 +55,6 @@
       	
   </p>
   <%= f.submit "Post", class: 'btn btn-success' %>
-  <%= link_to 'Edit', edit_activity_path(@activities), class: 'btn btn-primary' %>
   <%= link_to 'Back', activities_path, class: 'btn btn-primary' %>
 <% end %>
 

@@ -448,13 +448,18 @@
         <th>Event Date</th>
       </tr>
     </thead>
-	  <% @events = Event.all %>
+	  <% @events = Event.all.order("end") %>
+
     <tbody>
+     
+
       <% @events.each do |event| %>
+      <% if event.end > Date.today.to_s %>
         <tr>
           <td><%= event.title %></td>
           <td><%= event.start.strftime("%m / %d / %Y") %></td>
         </tr>
+      <% end %>
       <% end %>
     </tbody>
   </table>
