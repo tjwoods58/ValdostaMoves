@@ -622,12 +622,12 @@ Category.create(
   id: 1,
   name: 'Fishermans Stoup',
   user_id: 6,
-  description: 'For the seafood base: Place the red onion, chile pepper, lemon zest, garlic, parsley, thyme, and bay leaves in a food processor and process ingredients into paste.
+  instructions: 'For the seafood base: Place the red onion, chile pepper, lemon zest, garlic, parsley, thyme, and bay leaves in a food processor and process ingredients into paste.
 
 For the soup base: In a Dutch oven, heat the extra-virgin olive oil and anchovies over medium-high heat, when the anchovies melt into the oil add the seafood base and stir 3 to 4 minutes then add the celery, potatoes, and red pepper and cover the pot 4 to 5 minutes to sweat them out, stirring occasionally. Deglaze the pot with beer. Add tomatoes and chicken stock and bring to a boil, simmer for 20 minutes or until it has reduced by a third, then turn off the heat, cool and store for a make-ahead meal.
 
 To reheat: Reheat over medium-high heat. Crust up and warm bread in a hot oven. When the stoup comes to a boil, fold or nestle the cod and scallops into the liquid, and return to a bubble, cook for 5 to 6 minutes, until the fish is opaque and cooked through, then turn off the heat. Serve immediately with lots of bread for mopping. ',
-  instructions: 'Seafood Base
+  description: 'Seafood Base
 1 medium red onion, coarsely chopped
 1 Fresno chile pepper, chopped
 1 tablespoon fresh lemon zest
@@ -658,7 +658,7 @@ Soup base
   id: 2,
   name: 'Halibut with Pepitas',
   user_id: 6,
-  description: 'In a small, dry skillet over medium-low heat, toast the pepitas lightly. Dont allow them to brown. As soon as you begin to smell them, remove the pan from the heat and transfer to a large plate. Set aside.
+  instructions: 'In a small, dry skillet over medium-low heat, toast the pepitas lightly. Dont allow them to brown. As soon as you begin to smell them, remove the pan from the heat and transfer to a large plate. Set aside.
 
 Preheat the oven to 400 degrees F.
 
@@ -668,7 +668,7 @@ Place the pan in the oven until the fish is cooked through, 7 to 10 minutes. Bas
 
 This is a restaurant-style dish that boasts a lot of flavor thanks to a tomato-basil sauce with bursts of capers and the crunch of toasted pepitas.
  ',
-  instructions: '2 tablespoons pepitas (pumpkin seeds)
+  description: '2 tablespoons pepitas (pumpkin seeds)
 4 6 -ounce halibut fillets
 2 teaspoons kosher salt
 1/2 teaspoon freshly ground black pepper
@@ -689,12 +689,12 @@ This is a restaurant-style dish that boasts a lot of flavor thanks to a tomato-b
   id: 3,
   name: 'Mahi Mahi with Cauliflower',
   user_id: 6,
-  description: 'Preheat the oven to 375 degrees F. Season the fish with salt and pepper. Heat 1 tablespoon butter in a large nonstick skillet over medium-high heat. Sear the fish until golden brown on one side, about 3 minutes. Transfer to a rimmed baking sheet, cooked-side up, and roast in the oven until just cooked through, about 10 minutes.
+  instructions: 'Preheat the oven to 375 degrees F. Season the fish with salt and pepper. Heat 1 tablespoon butter in a large nonstick skillet over medium-high heat. Sear the fish until golden brown on one side, about 3 minutes. Transfer to a rimmed baking sheet, cooked-side up, and roast in the oven until just cooked through, about 10 minutes.
 
 Meanwhile, melt the remaining 3 tablespoons butter in the skillet over medium-high heat. Add the cauliflower and cook, stirring, until golden brown and crisp-tender, about 6 minutes. Add the almonds, raisins, coriander, 1/4 teaspoon salt, and pepper to taste; cook until the almonds are golden, about 2 minutes. Remove from the heat and stir in the lemon juice and parsley.
 
 Divide the fish among plates and serve with the cauliflower and lemon wedges.',
-  instructions: '4 6 -ounce skinless mahi mahi fillets (about 3/4 inch thick)
+  description: '4 6 -ounce skinless mahi mahi fillets (about 3/4 inch thick)
 Kosher salt and freshly ground pepper
 4 tablespoons unsalted butter
 1/2 head cauliflower, florets cut into 1/2-inch pieces
@@ -708,4 +708,81 @@ Lemon wedges, for serving',
   updated_at: '2014-04-24 12:44:00.000005',
   category_id: 3,
   imagesrc: open('app/assets/images/mahiCauliflower.jpeg')
+  )  
+  
+  Recipe.create(
+  id: 4,
+  name: 'Portuguese-Style Fish Stew',
+  user_id: 6,
+  description: '3 tablespoons extra-virgin olive oil
+2 bay leaves
+2 teaspoons paprika (smoked or sweet)
+1 small onion, thinly sliced
+1 small green bell pepper, thinly sliced
+1 14 .5-ounce can diced tomatoes
+1 clove garlic, finely chopped
+1/4 cup chopped fresh cilantro
+Kosher salt and freshly ground pepper
+1 1/2 pounds skinless striped bass, cut into 2-inch chunks
+4 slices crusty bread, toasted',
+  instructions: 'Heat 2 tablespoons olive oil in a medium saucepan over medium-high heat. Add the bay leaves and paprika and cook, stirring, 30 seconds. Add the onion, bell pepper, tomatoes, garlic and 2 tablespoons of the cilantro; season with salt and pepper. Cover and cook until the vegetables are softened, about 10 minutes.
+
+Add 1 cup water and reduce the heat to medium low. Season the fish with salt and pepper, then nestle the pieces among the vegetables in the pan. Cover and simmer until the fish is just cooked through, 5 to 7 minutes.
+
+Divide the stew among bowls. Drizzle with the remaining 1 tablespoon olive oil and sprinkle with the remaining 2 tablespoons cilantro. Serve with the bread.',
+  created_at: '2014-04-24 12:44:00.000006',
+  updated_at: '2014-04-24 12:44:00.000006',
+  category_id: 3,
+  imagesrc: open('app/assets/images/fishStew.jpeg')
+  )  
+  
+Recipe.create(
+  id: 5,
+  name: 'Baked Salmon',
+  user_id: 6,
+  description: '4 (5 ounces each) salmon fillets
+2 teaspoons olive oil plus 2 tablespoons
+Salt and freshly ground black pepper
+3 tomatoes, chopped, or 1 (14-ounce) can chopped tomatoes, drained
+2 chopped shallots
+2 tablespoons fresh lemon juice
+1 teaspoon dried oregano
+1 teaspoon dried thyme',
+  instructions: 'Preheat the oven to 400 degrees F.
+
+Sprinkle salmon with 2 teaspoons olive oil, salt, and pepper. Stir the tomatoes, shallots, 2 tablespoons of oil, lemon juice, oregano, thyme, salt and pepper in a medium bowl to blend.
+
+Place a salmon fillet, oiled side down, atop a sheet of foil. Wrap the ends of the foil to form a spiral shape. Spoon the tomato mixture over the salmon. Fold the sides of the foil over the fish and tomato mixture, covering completely; seal the packets closed. Place the foil packet on a heavy large baking sheet. Repeat until all of the salmon have been individually wrapped in foil and placed on the baking sheet. Bake until the salmon is just cooked through, about 25 minutes. Using a large metal spatula, transfer the foil packets to plates and serve',
+  created_at: '2014-04-24 12:44:00.000007',
+  updated_at: '2014-04-24 12:44:00.000007',
+  category_id: 3,
+  imagesrc: open('app/assets/images/bakedSalmon.jpeg')
+  )  
+  
+   Recipe.create(
+  id: 6,
+  name: 'Salmon Hash',
+  user_id: 6,
+  description: '1/4 cup nonfat plain Greek yogurt
+1 tablespoon dijon mustard
+2 tablespoons chopped fresh dill
+2 tablespoons extra-virgin olive oil
+3 cups frozen cubed hash browns
+Kosher salt and freshly ground pepper
+1 red onion, thinly sliced
+2 bell peppers (red and/or green), chopped
+3/4 pound skinless salmon fillet, cut into 1/2-inch pieces
+8 cups baby arugula
+Lemon wedges, for serving (optional)',
+  instructions: 'Mix the yogurt, mustard and dill in a small bowl.
+
+Heat 1 1/2 tablespoons olive oil in a large nonstick skillet over medium-high heat. Add the hash browns, sprinkle with 1/4 teaspoon each salt and pepper, and cook until browned, about 12 minutes. Transfer to a bowl.
+
+Heat the remaining 1/2 tablespoon olive oil in the skillet, then add the onion, bell peppers and 1/4 teaspoon salt; cook until golden, about 8 minutes. Add the salmon and cook, stirring occasionally, until just cooked through, about 3 minutes. Return the hash browns to the skillet to heat through, then remove from the heat and stir in 3 tablespoons of the yogurt mixture. Season with salt and pepper.
+
+Stir 1 tablespoon water into the remaining yogurt mixture and toss with the arugula in a medium bowl. Serve the salmon hash with the arugula salad, and lemon wedges, if desired.',
+  created_at: '2014-04-24 12:44:00.000007',
+  updated_at: '2014-04-24 12:44:00.000007',
+  category_id: 3,
+  imagesrc: open('app/assets/images/salmonHash.jpeg')
   )  
