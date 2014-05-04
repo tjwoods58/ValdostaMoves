@@ -1714,3 +1714,334 @@ Recipe.create(
   category_id: 1,
   imagesrc: open('app/assets/images/watermelonJuice.jpeg')
   )  
+  
+  Recipe.create(
+  id: 35,
+  name: 'Agnolotti With Artichoke Sauce',
+  user_id: 6,
+  instructions: 'Combine the artichokes, half-and-half, garlic, red pepper flakes and 1/4 teaspoon salt in a large skillet and bring to a 
+  simmer over medium heat. Cover and cook until the artichokes are tender, about 5 minutes. Add the peas and continue to cook, covered, until tender, about 5 more minutes. 
+  Remove from the heat and stir in the lemon zest and juice. Discard the garlic clove.
+
+Meanwhile, bring a large pot of salted water to a boil. Add the agnolotti and cook as the label directs. Reserve 1/2 cup cooking water, then drain the pasta and transfer to the skillet with the sauce.
+
+Add the parmesan to the skillet and gently stir until the pasta is coated. Thin the sauce with some of the reserved cooking water. Stir in the basil.
+
+
+
+
+',
+  description: '1 9 -ounce package frozen artichoke hearts, thawed and coarsely chopped
+1 cup half-and-half
+1 clove garlic, smashed
+1/8 teaspoon red pepper flakes
+Kosher salt
+1 cup frozen peas (do not thaw)
+1 teaspoon finely grated lemon zest
+2 teaspoons fresh lemon juice
+1 pound refrigerated cheese agnolotti (moon-shaped stuffed pasta) or ravioli
+1/4 cup finely grated parmesan cheese
+1/4 cup torn fresh basil leaves
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000035',
+  updated_at: '2014-04-24 12:44:00.0000035',
+  category_id: 2,
+  imagesrc: open('app/assets/images/agnolotti.jpeg')
+  )  
+
+Recipe.create(
+  id: 36,
+  name: 'Buckwheat Noodle Salad',
+  user_id: 6,
+  instructions: 'Whisk together the vinegar, sugar, ginger, honey, tamari, sesame oil, and chili sauce in a large bowl until combined. Slowly whisk in the canola oil until the dressing is emulsified.
+
+Add the noodles, carrot, pepper, cucumber, green onions and cilantro. Gently mix to combine and serve.
+
+
+',
+  description: '1/4 cup plus 2 tablespoons rice vinegar
+1 teaspoon sugar
+2 tablespoons peeled and finely grated fresh ginger
+1 tablespoon honey
+2 tablespoons tamari
+2 teaspoons toasted sesame oil
+2 teaspoons chili sauce (recommended: Sriracha)
+1/4 cup canola oil
+12 ounces buckwheat noodles, cooked according to package directions, rinsed under cold water and drained
+1 carrot, peeled and grated on box grater
+1 red bell pepper, seeded and julienned
+1/4 English cucumber, peeled and grated on a box grater
+3 green onions, thinly sliced
+1/4 cup chopped fresh cilantro leaves
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000036',
+  updated_at: '2014-04-24 12:44:00.0000036',
+  category_id: 2,
+  imagesrc: open('app/assets/images/noodleSalad.jpeg')
+  )  
+
+Recipe.create(
+  id: 37,
+  name: 'Capellini With Spicy Zucchini-Tomato Sauce',
+  user_id: 6,
+  instructions: 'Heat the olive oil in a large skillet over medium heat. Add the garlic and red pepper flakes and cook until the garlic is just golden, about 1 minute. 
+  Crush the tomatoes into the skillet with your hands and add the juice. Add 1/2 teaspoon salt and simmer, stirring occasionally, until the sauce is slightly thickened, about 15 minutes.
+   Add the zucchini and cook until crisp-tender, about 5 minutes. Season with salt.
+
+Meanwhile, bring a large pot of salted water to a boil. Add the capellini and cook as the label directs. Drain and add to the sauce along with the basil; toss to coat. Top with parmesan.
+
+
+',
+  description: '3 tablespoons extra-virgin olive oil
+1 clove garlic, minced
+1/4 teaspoon red pepper flakes
+1 28 -ounce can whole San Marzano tomatoes
+Kosher salt
+1 medium zucchini, cut into small chunks
+1/2 pound capellini
+1/4 cup chopped fresh basil
+Grated parmesan cheese, for topping
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000037',
+  updated_at: '2014-04-24 12:44:00.0000037',
+  category_id: 2,
+  imagesrc: open('app/assets/images/capellini.jpeg')
+  )  
+
+Recipe.create(
+  id: 38,
+  name: 'Charred Tomato Gazpacho',
+  user_id: 6,
+  instructions: 'Preheat a grill or grill pan to medium high. Heat the cumin seeds, coriander seeds and 1/2 cup olive oil in a small
+   skillet over medium-low heat until the seeds are toasted, about 3 minutes. Transfer to a liquid measuring cup. Transfer 3 tablespoons of the spiced 
+   oil and about half of the seeds to a small bowl; reserve for topping.
+
+Put the bread cubes in a bowl, cover with water and let soak 2 minutes. Drain, squeeze dry and set aside.
+
+Mince the garlic, then sprinkle with a pinch of salt and mash it into a paste with the flat side of a knife.
+
+Toss the tomatoes in a bowl with the remaining 1 tablespoon olive oil and grill until charred, about 3 minutes per side. Transfer half each of the charred 
+tomatoes, bread, garlic paste, sugar and vinegar to a blender; add 1/4 teaspoon salt and puree until smooth. With the motor running, add about half of the spiced oil from
+ the measuring cup. Pour the mixture through a fine-mesh sieve into a bowl. Blend the remaining tomatoes, bread, garlic paste, sugar and vinegar with the other half of the spiced oil and 1/4 
+ teaspoon salt, then strain into the bowl. Chill the soup at least 2 hours.
+
+Dice the cucumber and bell pepper. Season the soup with salt and pepper. Ladle into bowls; drizzle with the reserved spiced oil and top with the diced vegetables.
+
+
+
+',
+  description: '1/2 teaspoon cumin seeds
+1/2 teaspoon coriander seeds, lightly crushed
+1/2 cup plus 1 tablespoon extra-virgin olive oil
+1/2 cup crustless white bread cubes
+1 large clove garlic
+Kosher salt
+3 1/4 pounds tomatoes, halved
+1/2 teaspoon sugar
+2 tablespoons sherry vinegar
+1 Kirby cucumber
+1 green bell pepper
+Freshly ground pepper
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000038',
+  updated_at: '2014-04-24 12:44:00.0000038',
+  category_id: 2,
+  imagesrc: open('app/assets/images/gazpacho.jpeg')
+  )  
+  
+  Recipe.create(
+  id: 39,
+  name: 'Chile Cheese Casserole',
+  user_id: 6,
+  instructions: 'Preheat the oven to 375 degrees F. Lightly coat a rectangular 2-quart baking dish with nonstick cooking spray. Coarsely crush the chips by hand and spread half of them 
+  into the bottom of the baking dish.
+
+Whisk the egg whites, eggs, milk, ancho powder, and pepper in a large bowl until well combined. Stir in the chopped chiles, chopped cilantro, and 1/4 cup each of the Cheddar and pepper
+ jack cheeses; pour into the pan. Sprinkle the remaining chips over the egg mixture. Bake until the casserole is set around the edges but a little loose in the center, 20 to 25 minutes.
+
+Sprinkle with the remaining 1/4 cup of each cheese and continue to bake until the cheeses are melted and the casserole is set in the center, about 10 minutes. Let stand 10 minutes. 
+Serve with the salsa and, sour cream, if using. Garnish with whole cilantro leaves.
+
+
+',
+  description: 'Cooking spray
+4 cups baked tortilla chips, 2 1/2 ounces
+6 egg whites
+4 large eggs
+1/4 cup skim milk
+3/4 teaspoon ancho chili powder
+1/8 teaspoon freshly ground black pepper
+1 (4-ounce) can mild chopped green chiles
+1 tablespoon chopped fresh cilantro leaves, plus whole leaves for garnish
+1/2 cup shredded sharp Cheddar cheese, about 2 ounces
+1/2 cup shredded pepper jack cheese, about 2 ounces
+1/2 cup prepared green salsa verde
+Reduced-fat sour cream, optional
+
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000039',
+  updated_at: '2014-04-24 12:44:00.0000039',
+  category_id: 2,
+  imagesrc: open('app/assets/images/casserole.jpeg')
+  )  
+  
+  Recipe.create(
+  id: 40,
+  name: 'Crustless Caprese Quiche',
+  user_id: 6,
+  instructions: 'Preheat the oven to 350 degrees F. Coat a 9-inch deep-sided pie pan with nonstick cooking spray. Evenly sprinkle 2 tablespoons of the breadcrumbs into the pan.
+
+Heat the oil in a large nonstick skillet over medium-low heat. Add the onion and 1/8 teaspoon salt and cover the skillet. Cook, stirring occasionally, until the onions soften without color, about 15 minutes. Stir in the chopped tomatoes and cook for 1 minute. Transfer to a medium bowl and set aside.
+
+Meanwhile, add the eggs, egg whites, ricotta, milk, the remaining 1/3 cup breadcrumbs and 3/4 teaspoon salt to a blender until well combined and smooth. Stir in the sliced basil and the onion-tomato mixture.
+
+Pour the egg mixture into the prepared pie pan. Sprinkle with the mozzarella. Arrange the sliced tomatoes in an overlapping style around the top.
+
+Bake until the eggs are set and the cheese is lightly browned, about 35 minutes. Let stand for 10 minutes to complete the cooking process. Garnish with the fresh basil sprig. Slice into 4 wedges with a sharp knife and serve.
+
+
+',
+  description: 'Nonstick cooking spray
+1/3 cup plus 2 tablespoons whole wheat or other whole grain breadcrumbs
+2 teaspoons extra-virgin olive oil
+1 medium onion, diced
+Kosher salt
+4 plum tomatoes (2 chopped and 2 thinly sliced crosswise)
+2 large eggs plus 2 large egg whites
+1/2 cup part-skim ricotta cheese
+1/2 cup 2-percent milk
+1/4 cup packed fresh basil leaves, thinly sliced, plus 1 sprig for garnish
+4 ounces shredded part-skim mozzarella
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000040',
+  updated_at: '2014-04-24 12:44:00.0000040',
+  category_id: 2,
+  imagesrc: open('app/assets/images/quiche.jpeg')
+  )  
+  
+  
+ Recipe.create(
+  id: 41,
+  name: 'Grilled Ratatouille Salad',
+  user_id: 6,
+  instructions: 'Slice the eggplant into 1/2-inch-thick rounds. Soak in a bowl of lightly salted water, 15 to 20 minutes; drain and squeeze out the excess moisture.
+
+Meanwhile, slice the tomatoes and zucchini into 1/2-inch-thick rounds. Stem and seed the bell pepper; slice the pepper and onion into 1/2-inch-thick rings.
+
+Heat a grill or grill pan to medium high. Brush the vegetables with the olive oil on both sides and season with 1/2 teaspoon salt and pepper to taste. Grill the vegetables (in batches if necessary), turning,
+ until soft and marked, about 6 minutes for the tomatoes, 7 to 8 minutes for the bell pepper, onion and zucchini, and about 10 minutes for the eggplant. Let cool.
+
+Drizzle the vegetables with the vinegar. Divide the zucchini and eggplant among plates and arrange in a circle, overlapping slightly. Top with the bell pepper, tomato and onion. Sprinkle with the basil.
+
+
+',
+  description: '1 small eggplant
+Kosher salt
+3 medium tomatoes
+1 medium zucchini
+1 medium red bell pepper
+1 small red onion
+3 tablespoons extra-virgin olive oil
+Freshly ground pepper
+1 tablespoon plus 2 teaspoons red wine vinegar
+1/2 cup fresh basil leaves, thinly sliced
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000041',
+  updated_at: '2014-04-24 12:44:00.0000041',
+  category_id: 2,
+  imagesrc: open('app/assets/images/ratatouilleSalad.jpeg')
+  )  
+
+ Recipe.create(
+  id: 42,
+  name: 'Orecchiette with Broccoli Rabe Pesto',
+  user_id: 6,
+  instructions: 'Bring a large pot of well-salted water to a boil. Set up a bowl of well-salted ice water. Cook the broccoli rabe in the boiling water for 1 to 2 minutes and 
+  then immediately plunge in the salted ice water. This will prevent the broccoli rabe from being overcooked and will set the lovely green color.
+
+Drain the broccoli rabe and squeeze out any excess water; coarsely chop. Place the broccoli rabe in the bowl of a food processor and puree until it is a coarse paste. Add the
+ pistachios and parmigiano and puree until smooth. Taste and adjust the seasoning; you probably will need more salt. Add the ricotta and pulse until combined. Taste for seasoning once
+  again-it should be full-flavored, slightly bitter and creamy at the same time. Set aside.
+
+Bring a large pot of well-salted water to a boil. (If you are making the pasta right after the pesto, just use the broccoli rabe blanching water.) Cook the pasta 1 minute less
+ than the cooking time on the package.
+
+While the pasta is cooking, place the pesto in a large skillet and add about 1 to 1 1/2 cups of the pasta cooking water; place over medium-high heat. When the pasta is ready, 
+drain and add to the skillet with the pesto. Stir vigorously to combine and cook until the sauce is creamy and heated through, 1 to 2 minutes; add salt to taste. Remove from the heat, 
+add 1 to 2 tablespoons olive oil, if desired, and stir vigorously. Garnish with more parmigiano. Voila!
+
+
+
+',
+  description: '1 bunch broccoli rabe, tough lower stems removed
+1/2 cup pistachios, toasted
+3/4 cup grated parmigiano-reggiano cheese, plus more for garnish
+Kosher salt
+1/4 cup part-skim ricotta cheese
+1/2 pound orecchiette pasta
+High-quality extra-virgin olive oil, for finishing (optional)
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000042',
+  updated_at: '2014-04-24 12:44:00.0000042',
+  category_id: 2,
+  imagesrc: open('app/assets/images/broccoliRabePesto.jpeg')
+  )  
+
+Recipe.create(
+  id: 43,
+  name: 'Spicy Vegan Sloppy Joes',
+  user_id: 6,
+  instructions: 'Pulse the mushrooms in batches in a food processor until finely chopped. Set aside.
+
+Heat the oil in a large nonstick skillet over medium-high heat. Add the onions, 1 tablespoon beer and 1/4 teaspoon salt and cook, stirring frequently, until the onions
+ are lightly browned, about 5 minutes. Add the walnuts and peppers and cook, stirring occasionally, until the peppers are crisp-tender, about 3 minutes. Add the mushrooms, 
+ 3/4 teaspoon black pepper and chipotle powder and cook, stirring frequently, until the mushrooms are just cooked through, about 5 minutes.
+
+Add the remaining beer, the ketchup, tomato paste and 1/8 teaspoon salt and cook while stirring until the sauce is the consistency that you like, about 2 minutes.
+
+Spoon the mixture onto each bun. Serve with toppings if desired.
+
+
+
+',
+  description: '1 pound cremini mushrooms, halved
+1 tablespoon extra-virgin olive oil
+1 large sweet onion, diced
+1 3/4 cups light beer (drink whats left in the bottle)
+Kosher salt
+1/3 cup finely chopped walnuts
+1 small green bell pepper, seeded and diced
+Freshly ground black pepper
+1/2 teaspoon chipotle chile powder
+1/4 cup ketchup
+3 tablespoons tomato paste
+6 whole grain hamburger buns
+Shredded red cabbage or lettuce, pickled jalapeno and scallions, for serving, optional
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000043',
+  updated_at: '2014-04-24 12:44:00.0000043',
+  category_id: 2,
+  imagesrc: open('app/assets/images/sloppyJoe.jpeg')
+  )  
+
