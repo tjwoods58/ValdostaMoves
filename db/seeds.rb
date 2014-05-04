@@ -625,6 +625,14 @@ Category.create(
   imagesrc: open('app/assets/images/chickenTortillaSoup.jpeg')
   )
   
+    Category.create(
+  id: 5,
+  name: 'Desserts',
+  created_at: '2014-04-24 12:44:00.000005',
+  updated_at: '2014-04-24 12:44:00.000005',
+  imagesrc: open('app/assets/images/carrotCupcakes.jpeg')
+  )
+  
   Recipe.delete_all
   Recipe.create(
   id: 1,
@@ -1220,3 +1228,489 @@ Recipe.create(
   imagesrc: open('app/assets/images/fruitSalsa.jpeg')
   )  
   
+  Recipe.create(
+  id: 21,
+  name: 'Carrot Cupcakes',
+  user_id: 6,
+  instructions: 'Preheat the oven to 350 F. Line 12 standard muffin cups with paper cupcake liners.
+
+Sift together the flours, baking soda, salt, cinnamon and nutmeg. In a large stand mixer with the paddle attachment, combine the brown sugar, 
+oil and eggs until well combined. Add the carrots, applesauce and vanilla. Add the dry ingredients and mix until combined. Stir in 1/4 cup of the chopped walnuts.
+
+Divide the batter among the muffin cups. Bake until a toothpick comes out clean, about 20 minutes. Transfer to a wire rack to cool completely.
+
+With an electric mixer, beat together the cream cheese, confectioners sugar and lemon zest until smooth and creamy. Frost the cooled cupcakes 
+and sprinkle with the remaining 2 tablespoons chopped walnuts. Store any leftovers in an airtight container in the refrigerator.)
+
+
+',
+  description: '3/4 cup whole-wheat pastry flour
+1/2 cup all-purpose flour
+1 teaspoon baking soda
+1/4 teaspoon fine salt
+1/2 teaspoon ground cinnamon
+Pinch ground nutmeg
+3/4 cup firmly packed light brown sugar
+1/4 cup canola oil
+2 large eggs
+1 1/2 cups finely shredded carrots (about 2 medium carrots, peeled)
+1/2 cup natural applesauce
+1/2 teaspoon vanilla extract
+1/4 cup plus 2 tablespoons finely chopped walnuts
+4 ounces low-fat cream cheese, such as
+Neufchatel, at room temperature
+3/4 cup confectioners sugar, sifted
+1/2 teaspoon finely grated lemon zest
+
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000021',
+  updated_at: '2014-04-24 12:44:00.0000021',
+  category_id: 5,
+  imagesrc: open('app/assets/images/carrotCupcakes.jpeg')
+  )  
+
+
+Recipe.create(
+  id: 22,
+  name: 'Honey Oatmeal-Raisin Cookies',
+  user_id: 6,
+  instructions: 'Preheat the oven to 350 degrees F. Mist 2 baking sheets with cooking spray. Beat the butter, canola oil, honey, egg, almond butter and vanilla extract in a large bowl with a mixer until combined.
+
+In another bowl, whisk the dry milk, flour, baking soda, cinnamon and salt. Add the flour mixture to the butter mixture and stir to combine. Stir in the oats and raisins.
+
+Scoop tablespoonfuls of batter about 2 inches apart onto the prepared baking sheets. Bake until golden, about 12 minutes. Let the cookies cool 2 minutes on the baking sheets,
+ then transfer to a rack to cool completely. Store in a loosely covered container for up to 3 days.
+
+
+',
+  description: 'Cooking spray
+2 tablespoons unsalted butter, melted
+1/4 cup canola oil
+1/2 cup honey
+1 large egg
+1/4 cup smooth unsalted almond butter
+1/2 teaspoon vanilla extract
+1/4 cup nonfat dry milk
+1 cup whole-wheat pastry flour (or 1/2 cup each all-purpose and whole-wheat flour)
+1/2 teaspoon baking soda
+1/2 teaspoon ground cinnamon
+1/4 teaspoon salt
+1 3/4 cups rolled oats
+1/2 cup raisins
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000022',
+  updated_at: '2014-04-24 12:44:00.0000022',
+  category_id: 5,
+  imagesrc: open('app/assets/images/oatmealRaisinCookies.jpeg')
+  )  
+
+Recipe.create(
+  id: 23,
+  name: 'Double-Chocalate Brownies',
+  user_id: 6,
+  instructions: 'Preheat the oven to 350 degrees. Coat a 9-by-13-inch baking dish with cooking spray.
+
+Melt the chocolate and butter in a heatproof bowl set over a saucepan of barely simmering water, stirring occasionally; do not let the bottom of the bowl touch the water.
+
+Whisk the flour, cocoa, salt and baking soda in a medium bowl. In a large bowl, whisk the eggs and brown sugar until smooth, then add the yogurt, oil and vanilla and whisk to combine. Whisk in the melted chocolate mixture until blended. Add the dry ingredients and mix until just moistened.
+
+Spread the batter in the prepared pan and sprinkle with walnuts, if desired. Bake for 20 to 25 minutes, or until a toothpick inserted in the center comes out with a few moist crumbs. Cool completely in the pan on a rack before slicing.
+
+
+',
+  description: 'Cooking spray
+6 ounces bittersweet chocolate, coarsely chopped
+2 tablespoons unsalted butter
+1 cup whole-grain pastry flour (or 1/2 cup each whole-wheat and all-purpose flours)
+1/4 cup unsweetened cocoa powder
+1/4 teaspoon salt
+1/4 teaspoon baking soda
+4 large eggs
+1 cup packed light brown sugar
+1/2 cup plain low-fat yogurt
+1/4 cup canola oil
+2 teaspoons vanilla extract
+3/4 cup chopped walnuts (optional)
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000023',
+  updated_at: '2014-04-24 12:44:00.0000023',
+  category_id: 5,
+  imagesrc: open('app/assets/images/chocolateBrownies.jpeg')
+  )  
+
+
+Recipe.create(
+  id: 24,
+  name: 'Low-Fat Cheesecake',
+  user_id: 6,
+  instructions: 'Preheat the oven to 350 degrees F. Pulse the graham crackers in a food processor until crumbled. Add 1 to 2 tablespoons water and the butter; pulse
+   until moistened. Wrap the outside of a 9-inch springform pan with foil to prevent leaks. Coat the inside of the pan with cooking spray and press the crumbs onto the bottom. Bake until browned, 
+   about 8 minutes. Let cool, about 10 minutes.
+
+Meanwhile, beat both cream cheeses and the sugar with a mixer on medium-high speed until smooth, 5 minutes, then beat in the sour cream on low. Lightly whisk the 3 egg whites in a bowl, 
+then add to the cheese mixture along with the 2 whole eggs, flour, vanilla and lemon zest. Beat on medium speed until fluffy, 3 minutes. Pour over the crust.
+
+Place the cheesecake in a roasting pan and add enough warm water to come one-quarter of the way up the sides of the springform. Bake until the cake is set but the center still jiggles, 
+about 1 hour 10 minutes. Turn off the oven; keep the cheesecake inside with the door closed for 20 minutes.
+
+Remove the cake from the water bath and transfer to a rack. Run a knife around the edge, then cool completely. Chill until firm, at least 8 hours. Top as desired.
+
+
+',
+  description: '9 whole low-fat cinnamon graham crackers, broken in half
+2 tablespoons unsalted butter, melted
+Cooking spray
+2 8 -ounce packages Neufchatel cream cheese, softened
+2 8 -ounce packages fat-free cream cheese, softened
+1 1/2 cups sugar
+1 cup reduced-fat sour cream
+2 large eggs plus 3 egg whites
+2 tablespoons all-purpose flour
+1 teaspoon vanilla extract
+1 teaspoon finely grated lemon zest
+Assorted toppings
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000024',
+  updated_at: '2014-04-24 12:44:00.0000024',
+  category_id: 5,
+  imagesrc: open('app/assets/images/cheesecake.jpeg')
+  )  
+
+Recipe.create(
+  id: 25,
+  name: 'Cheesecake Brownies',
+  user_id: 6,
+  instructions: 'Position the rack in the lower third of the oven and preheat the oven to 350 degrees F.
+
+Line an 8 by 8-inch baking pan with foil so it hangs over the edges by about 1-inch. Spray with cooking spray.
+
+Cheesecake topping: In a medium bowl and using an electric mixer at medium speed, beat the cream cheese until smooth and creamy, about 1 minute.
+Beat in the sugar and the vanilla until very smooth, 1 to 2 minutes. Beat in the egg until well blended. Set aside.
+
+Brownie layer: Put the chocolate, butter, and oil in a small microwave-safe bowl and heat at 75 percent power for 30 seconds. Stir and microwave
+ again until melted and smooth, about 30 seconds longer. (Alternatively, put the chocolate, butter, and oil in a small heatproof bowl. Bring a small saucepan filled 
+ with 1 inch or so of water to a very slow simmer; set the bowl over, not touching, the water, and stir occasionally, until melted and smooth.)
+
+Combine the flour, cocoa powder, baking powder, salt, and cayenne in a medium bowl.
+
+Combine the brown sugar and granulated sugar in a large bowl. Whisk in the buttermilk, egg whites, and vanilla. Add the chocolate mixture and whisk vigorously 
+until fully incorporated and the batter is thick and glossy. Gradually add the flour mixture and stir just until it disappears.
+
+Reserve 1/2 cup brownie batter and set aside. Scrape the remaining brownie batter into the prepared pan. Pour the cheesecake mixture evenly over top. Drop the 
+reserved brownie batter in large dollops over the topping. Draw the handle of a wooden spoon through the two batters to create a swirled effect.
+
+Bake until the top is just set, 40 to 45 minutes. Let cool completely in the pan on a wire rack. Lift brownies out of the pan by the foil and peel off the foil. 
+Spray a knife with cooking spray and cut into 2-inch squares.
+
+
+
+',
+  description: 'Cooking spray
+Cheesecake topping:
+8 ounces reduced-fat cream cheese (Neufchatel)
+1/3 cup sugar
+1/2 teaspoon vanilla extract
+1 large egg
+Brownie Layer:
+2 ounces semisweet chocolate, coarsely chopped
+3 tablespoons unsalted butter
+2 tablespoons canola oil
+1 cup all-purpose flour
+1/2 cup unsweetened Dutch-process cocoa powder
+1 teaspoon baking powder
+1/2 teaspoon fine sea salt
+Pinch cayenne pepper
+3/4 cup packed dark brown sugar
+1/4 cup granulated sugar
+1/2 cup lowfat buttermilk
+2 large egg whites
+2 teaspoons vanilla extract
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000025',
+  updated_at: '2014-04-24 12:44:00.0000025',
+  category_id: 5,
+  imagesrc: open('app/assets/images/cheesecakeBrownies.jpeg')
+  )  
+
+Recipe.create(
+  id: 26,
+  name: 'Angel Food Cake',
+  user_id: 6,
+  instructions: 'Preheat oven to 350 degrees F.
+
+In a food processor spin sugar about 2 minutes until it is superfine. Sift half of the sugar with the salt the cake flour, setting the remaining sugar aside.
+
+In a large bowl, use a balloon whisk to thoroughly combine egg whites, water, orange extract, and cream of tartar. After 2 minutes, switch to a hand mixer. Slowly sift the reserved sugar, beating continuously at medium speed. Once you have achieved medium peaks, sift enough of the flour mixture in to dust the top of the foam. Using a spatula fold in gently. Continue until all of the flour mixture is incorporated.
+
+Carefully spoon mixture into an ungreased tube pan. Bake for 35 minutes before checking for doneness with a wooden skewer. (When inserted halfway between the inner and outer wall, the skewer should come out dry).
+
+Cool upside down on cooling rack for at least an hour before removing from pan.
+
+
+
+',
+  description: '1 3/4 cups sugar
+1/4 teaspoon salt
+1 cup cake flour, sifted
+12 egg whites (the closer to room temperature the better)
+1/3 cup warm water
+1 teaspoon orange extract, or extract of your choice
+1 1/2 teaspoons cream of tartar
+
+
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000026',
+  updated_at: '2014-04-24 12:44:00.0000026',
+  category_id: 5,
+  imagesrc: open('app/assets/images/angelFoodCake.jpeg')
+  )  
+
+Recipe.create(
+  id: 27,
+  name: 'Marbled Banana Bread',
+  user_id: 6,
+  instructions: 'Preheat the oven to 350 degrees F. Lightly mist a 9-by-5-inch metal loaf pan with nonstick cooking spray and dust well with all-purpose flour
+   to cover the pan completely, tapping out the excess.
+
+Put the chocolate in a medium microwave-safe bowl and microwave on high in 30-second intervals, stirring, until melted and smooth, 1 minute to 1 minute 30 seconds. 
+Set aside to cool slightly while preparing the batter.
+
+Combine the bananas and sugar in a large bowl and mash with a potato masher or fork until mostly smooth with just a few small pieces of banana left. Add the oil and eggs 
+and stir until combined. Using a wooden spoon or rubber spatula, mix in both flours, the baking powder, baking soda and salt. Stir in the buttermilk and vanilla.
+
+Stir 1 cup batter into the melted chocolate. Fill the loaf pan with half the banana batter and then half the chocolate batter. Repeat the layers and gently swirl together 
+using a spoon or knife. Bake until golden brown on top and a toothpick inserted in the center comes out clean, about 45 minutes.
+
+Cool in the pan 15 minutes, and then turn out onto a wire rack to cool completely. Serve warm or at room temperature.
+
+
+',
+  description: 'Nonstick cooking spray
+3/4 cup all-purpose flour, plus extra for dusting the pan
+2 ounces bittersweet chocolate, chopped
+2 medium very ripe bananas
+2/3 cup sugar
+1/4 cup canola oil
+2 large eggs
+3/4 cup white whole wheat flour
+1 1/2 teaspoons baking powder
+1/2 teaspoon baking soda
+1/2 teaspoon kosher salt
+1/2 cup buttermilk
+1 teaspoon vanilla extract
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000027',
+  updated_at: '2014-04-24 12:44:00.0000027',
+  category_id: 5,
+  imagesrc: open('app/assets/images/bananaBread.jpeg')
+  )  
+
+Recipe.create(
+  id: 28,
+  name: 'Chewy Gluten Free Cookies',
+  user_id: 6,
+  instructions: 'Melt the butter in a heavy-bottom medium saucepan over low heat. Once melted, pour into the bowl of a stand mixer.
+
+In a medium bowl, sift together the rice flour, cornstarch, tapioca flour, xantham gum, salt and baking soda. Set aside.
+
+Add both of the sugars to the bowl with the butter and using the paddle attachment, cream together on medium speed for 1 minute. Add the whole egg, 
+egg yolk, milk and vanilla extract and mix until well combined. Slowly incorporate the flour mixture until thoroughly combined. Add the chocolate chips and stir to combine.
+
+Chill the dough in the refrigerator until firm, approximately 1 hour.
+
+Preheat the oven to 375 degrees F.
+
+Shape the dough into 2-ounce balls and place on parchment-lined baking sheets, 6 cookies per sheet. Bake for 14 minutes, rotating the pans after 7
+ minutes for even baking. Remove from the oven and cool the cookies on the pans for 2 minutes. Move the cookies to a wire rack and cool completely. Store cooked cookies in an airtight container.
+
+
+
+
+',
+  description: '8 ounces unsalted butter
+11 ounces brown rice flour, approximately 2 cups
+1 1/4 ounces cornstarch, approximately 1/4 cup
+1/2 -ounce tapioca flour, approximately 2 tablespoons
+1 teaspoon xanthan gum
+1 teaspoon kosher salt
+1 teaspoon baking soda
+2 ounces sugar, approximately 1/4 cup
+10 ounces light brown sugar, approximately 1 1/4 cups
+1 whole egg
+1 egg yolk
+2 tablespoons whole milk
+1 1/2 teaspoons vanilla extract
+12 ounces semisweet chocolate chips
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000028',
+  updated_at: '2014-04-24 12:44:00.0000028',
+  category_id: 5,
+  imagesrc: open('app/assets/images/glutenFreeCookies.jpeg')
+  )  
+
+Recipe.create(
+  id: 29,
+  name: 'Chewy Gluten Free Cookies',
+  user_id: 6,
+  instructions: 'Mist a 5-to-6-quart slow cooker with nonstick cooking spray. Mix the coconut water, coconut milk, 1 1/2 cups water, sugar, vanilla and salt in the bowl of the slow cooker until the sugar is dissolved. Stir in the rice and cook on high 4 hours or low for 5 to 6 hours.
+
+Uncover, stir well and let stand 15 minutes. Transfer to a large bowl and stir in the butter. Continue to cool, stirring, until warm. Stir in the lime zest. Serve warm or chill until cold. Top as desired.
+
+
+
+',
+  description: 'Nonstick cooking spray
+3 cups coconut water
+One 13.5-ounce can lite coconut milk
+1/2 cup sugar
+1 tablespoon vanilla extract
+1/2 teaspoon kosher salt
+1 1/4 cups short grain brown rice
+2 tablespoons unsalted butter, cut into small pieces
+1 teaspoon finely grated lime zest
+Suggested toppings: diced fresh or dried mango and pineapple, fresh or frozen and thawed raspberries, toasted shaved coconut chips, chopped crystallized ginge
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000029',
+  updated_at: '2014-04-24 12:44:00.0000029',
+  category_id: 5,
+  imagesrc: open('app/assets/images/brownRicePudding.jpeg')
+  )  
+
+Recipe.create(
+  id: 30,
+  name: 'Rise and Shine Juice',
+  user_id: 6,
+  instructions: 'Pass the spinach, apples, carrots, celery, lemon juice and ginger through a juice maker, according to the manufacturers directions. Pour the juice into 2 ice-filled glasses and serve
+
+
+',
+  description: '5 to 6 ounces baby spinach leaves, rinsed
+2 apples, halved and cored
+2 medium carrots, scrubbed
+2 celery sticks
+1/2 large lemon
+One 2-inch piece ginger, peeled
+Ice
+
+',
+  created_at: '2014-04-24 12:44:00.0000030',
+  updated_at: '2014-04-24 12:44:00.0000030',
+  category_id: 1,
+  imagesrc: open('app/assets/images/shineJuice.jpeg')
+  )  
+  
+  Recipe.create(
+  id: 31,
+  name: 'Kale Juice',
+  user_id: 6,
+  instructions: 'Pass all of the ingredients through a juice maker according to the manufacturers directions. Pour into glasses and serve.
+
+
+',
+  description: '1 1/2 pounds kale
+2 medium carrots, scrubbed
+2 medium apples (such as Fuji or Honeycrisp), halved and cored
+1 small lemon, peeled
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000031',
+  updated_at: '2014-04-24 12:44:00.0000031',
+  category_id: 1,
+  imagesrc: open('app/assets/images/kaleJuice.jpeg')
+  )  
+
+Recipe.create(
+  id: 32,
+  name: 'Mean Green Juice',
+  user_id: 6,
+  instructions: 'Peel the cucumbers, saving the peels. Grate cucumber flesh on a box grater. In a medium saucepan, bring sugar and water to a boil. 
+  When sugar dissolves, add the grated cucumber and simmer until cucumber is tender, about 10 minutes. Remove from heat and let cool slightly.
+
+In a blender, puree reserved cucumber peel and cucumber syrup until smooth. Line a strainer with cheese cloth over a bowl. Strain cucumber mixture. 
+Gather cheesecloth in 1 hand to squeeze out all of the juice. Chill until cool, about 1 hour. Serve in glasses over ice.
+
+
+
+',
+  description: '2 English cucumbers
+3/4 cup sugar
+2 cups water
+Special equipment: cheesecloth
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000032',
+  updated_at: '2014-04-24 12:44:00.0000032',
+  category_id: 1,
+  imagesrc: open('app/assets/images/meanGreenJuice.jpeg')
+  )  
+  
+
+
+Recipe.create(
+  id: 33,
+  name: 'Super Green Juice',
+  user_id: 6,
+  instructions: 'Juice, in this order, the lemons, apples, lettuce, cucumber and greens, following your juicers specific settings 
+  for each. Stir in the chia seeds if using and let soak for 5 minutes. Serve the juice immediately over ice, if desired.
+
+
+
+',
+  description: '1 to 2 large, juicy lemons, peel and pith removed
+1 medium Granny Smith apple, peeled and cored
+2 romaine lettuce leaves
+1/2 large cucumber, washed
+1 cup loosely-packed hearty greens, such as spinach or kale
+1 tablespoon chia seeds, optional
+
+',
+  created_at: '2014-04-24 12:44:00.0000033',
+  updated_at: '2014-04-24 12:44:00.0000033',
+  category_id: 1,
+  imagesrc: open('app/assets/images/superGreenJuice.jpeg')
+  )  
+  
+Recipe.create(
+  id: 34,
+  name: 'Watermelon Juice',
+  user_id: 6,
+  instructions: 'In a blender puree the about half the watermelon with 8 ice cubes. Slowly add half the lemon soda to the blender. Pour into glasses. Repeat with the remaining ingredients.
+
+
+
+',
+  description: '1/2 seedless watermelon (about 6 to 7 pounds), cut into cubes
+16 ice cubes
+1 liter lemon-flavored soda
+
+
+',
+  created_at: '2014-04-24 12:44:00.0000034',
+  updated_at: '2014-04-24 12:44:00.0000034',
+  category_id: 1,
+  imagesrc: open('app/assets/images/watermelonJuice.jpeg')
+  )  
