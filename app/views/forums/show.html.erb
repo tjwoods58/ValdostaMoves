@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <div class="mainbackground">
 <div id="forumsshow">
@@ -37,7 +36,7 @@
 	<% end %>
 </table>
 <% if can? :manage, User %>
-<button type="button" class="btn btn-success"><%= link_to 'New topic',  new_forum_topic_path(@forum) %></button>
+<%= link_to 'New topic',  new_forum_topic_path(@forum), class: "btn btn-success" %>
 <% end %>
 	<!--<button type="button" class="btn btn-success"><!--<%= link_to 'Edit', edit_forum_path(@forum) %></button>-->
 		<%= link_to 'Back', forums_path, class: 'btn btn-primary' %></button>

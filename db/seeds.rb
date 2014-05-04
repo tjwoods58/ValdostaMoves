@@ -8,33 +8,33 @@
 # user = User.first 
 Event.delete_all
 Event.create!(
-  title: 'Valdosta Picnic',
+  title: 'Valdosta Baseball Game',
   sponser: 'Valdosta State University',
   address: '1116 Slater Street Valdosta, GA',
-  description: 'This is going to be a fun time. Food and Drinks included!',
-  allday: false,
-  start: '2014-04-18 13:00:00.000000',
-  end: '2014-04-18 16:00:00.000000', 
-  contactphone: 1234567891,
-)
-Event.create!(
-  title: 'Valdosta Picnic',
-  sponser: 'Valdosta State University',
-  address: '1116 Slater Street Valdosta, GA',
-  description: 'This is going to be a fun time. Food and Drinks included!',
-  allday: false,
-  start: '2014-06-18 13:00:00.000000',
-  end: '2014-06-18 16:00:00.000000', 
-  contactphone: 1234567891,
-)
-Event.create!(
-  title: 'Valdosta Picnic',
-  sponser: 'Valdosta State University',
-  address: '1116 Slater Street Valdosta, GA',
-  description: 'This is going to be a fun time. Food and Drinks included!',
+  description: 'Bring money for food and drinks.',
   allday: false,
   start: '2014-05-18 13:00:00.000000',
   end: '2014-05-18 16:00:00.000000', 
+  contactphone: 1234567891,
+)
+Event.create!(
+  title: 'Valdosta Football',
+  sponser: 'Valdosta State University',
+  address: '1116 Slater Street Valdosta, GA',
+  description: 'Bring red or blue jersey if you want to play :)',
+  allday: false,
+  start: '2014-05-12 13:00:00.000000',
+  end: '2014-05-12 16:00:00.000000', 
+  contactphone: 1234567891,
+)
+Event.create!(
+  title: 'Valdosta Picnic',
+  sponser: 'Valdosta State University',
+  address: '1116 Slater Street Valdosta, GA',
+  description: 'This is going to be a fun time. Food and Drinks included!',
+  allday: false,
+  start: '2014-05-02 13:00:00.000000',
+  end: '2014-05-02 16:00:00.000000', 
   contactphone: 1234567891,
 )
 Event.create!(
@@ -43,8 +43,8 @@ Event.create!(
   address: '1000 Peachtree Street Atlanta, GA',
   description: 'Fun pick up basketball games!',
   allday: false,
-  start: '2014-04-28 8:00:00.000000',
-  end: '2014-04-28 20:00:00.000000', 
+  start: '2014-05-28 8:00:00.000000',
+  end: '2014-05-28 20:00:00.000000', 
   contactphone: 1234567891,
 )
 Event.create!(
@@ -53,8 +53,8 @@ Event.create!(
   address: '2000 Main Street New York, NY',
   description: 'Get ready to run!',
   allday: false,
-  start: '2014-04-22 7:00:00.000000',
-  end: '2014-04-22 14:00:00.000000', 
+  start: '2014-05-22 7:00:00.000000',
+  end: '2014-05-22 14:00:00.000000', 
   contactphone: 1234567891,
 )
 Event.create!(
@@ -63,8 +63,8 @@ Event.create!(
   address: '1000 Hollywood Drive Los Angeles, CA',
   description: 'Surf boards provided!',
   allday: false,
-  start: '2014-05-02 8:00:00.000000',
-  end: '2014-05-02 16:00:00.000000', 
+  start: '2014-05-04 8:00:00.000000',
+  end: '2014-05-04 16:00:00.000000', 
   contactphone: 1234567891,
 )
 Event.create!(
@@ -79,13 +79,13 @@ Event.create!(
 )
 
 Event.create!(
-  title: 'Hey this is a past event',
+  title: 'Cornhole',
   sponser: 'Valdosta State Univerity',
   address: 'Valdosta State University, GA',
-  description: 'Why look in the past?',
+  description: 'Come on out',
   allday: false,
-  start: '2014-04-07 17:00:00.000000',
-  end: '2014-04-07 22:00:00.000000', 
+  start: '2014-05-07 17:00:00.000000',
+  end: '2014-05-07 22:00:00.000000', 
   contactphone: 1234567891,
 )
 
@@ -157,45 +157,56 @@ user = User.create!(
 Forum.delete_all
 Topic.delete_all
 Post.delete_all
-forum = Forum.create!(title: 'I am a Forum', user: user)
-topic = Topic.create!(title: 'I am a Topic', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post', user: user, topic: topic)
+forum = Forum.create!(title: 'Workout Programs', user: user)
+topic = Topic.create!(title: 'P90X', user: user, forum:forum)
+post = Post.create!(body: 'I did P90X and got great results!', user: user, topic: topic)
+post = Post.create!(body: 'I tried it out, but I had to stop because it was too hard', user: user, topic: topic)
+post = Post.create!(body: 'If you can stay motivated, this can change your life!', user: user, topic: topic)
 
-forum = Forum.create!(title: 'I am a Forum2', user: user)
-topic = Topic.create!(title: 'I am a Topic2', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post2', user: user, topic: topic)
+topic = Topic.create!(title: 'P90X 2', user: user, forum:forum)
+post = Post.create!(body: 'I have done P90X and this is a bit more intense.', user: user, topic: topic)
+post = Post.create!(body: 'I was wondering if this was worth the money?', user: user, topic: topic)
+post = Post.create!(body: 'This is definately worth the money if you stay motivated.', user: user, topic: topic)
 
-forum = Forum.create!(title: 'I am a Forum3', user: user)
-topic = Topic.create!(title: 'I am a Topic3', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post3', user: user, topic: topic)
+topic = Topic.create!(title: 'P90X 3', user: user, forum:forum)
+post = Post.create!(body: 'This is a version of P90X that uses workouts that are shorter! It works great if you stay motivated.', user: user, topic: topic)
+post = Post.create!(body: 'I recommend this workout for people who do not have much time.', user: user, topic: topic)
 
-forum = Forum.create!(title: 'I am a Forum4', user: user)
-topic = Topic.create!(title: 'I am a Topic4', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post4', user: user, topic: topic)
+topic = Topic.create!(title: 'Insanity', user: user, forum:forum)
+post = Post.create!(body: 'This workout is more cardio and will help you burn fat very quickly!', user: user, topic: topic)
+post = Post.create!(body: 'Yes, this workout changed my life! I lost 100 pounds doing this!', user: user, topic: topic)
 
-forum = Forum.create!(title: 'I am a Forum5', user: user)
-topic = Topic.create!(title: 'I am a Topic5', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post5', user: user, topic: topic)
+topic = Topic.create!(title: '21 Day Fix', user: user, forum:forum)
+post = Post.create!(body: 'I am wondering if I should try this, it sounds short and easy!', user: user, topic: topic)
+post = Post.create!(body: 'Nothing is going to be easy, you are going to have to work at it.', user: user, topic: topic)
 
-forum = Forum.create!(title: 'I am a Forum6', user: user)
-topic = Topic.create!(title: 'I am a Topic6', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post6', user: user, topic: topic)
+topic = Topic.create!(title: 'TurboFire', user: user, forum:forum)
+post = Post.create!(body: 'Does anyone know if this workout works?', user: user, topic: topic)
+post = Post.create!(body: 'Yes, I do it now and it works great!', user: user, topic: topic)
 
-forum = Forum.create!(title: 'I am a Forum7', user: user)
-topic = Topic.create!(title: 'I am a Topic7', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post7', user: user, topic: topic)
 
-forum = Forum.create!(title: 'I am a Forum8', user: user)
-topic = Topic.create!(title: 'I am a Topic8', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post8', user: user, topic: topic)
+topic = Topic.create!(title: 'Post Your Workouts and Comments Here!', user: user, forum:forum)
+post = Post.create!(body: 'Which is the best of these workouts above?', user: user, topic: topic)
+post = Post.create!(body: 'It all depends on what results you want and what activities you do now. Do some research before investing in any workout and check with your doc.', user: user, topic: topic)
 
-forum = Forum.create!(title: 'I am a Forum9', user: user)
-topic = Topic.create!(title: 'I am a Topic9', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post9', user: user, topic: topic)
 
-forum = Forum.create!(title: 'I am a Forum10', user: user)
-topic = Topic.create!(title: 'I am a Topic10', user: user, forum:forum)
-post = Post.create!(body: 'I am a Post10', user: user, topic: topic)
+forum = Forum.create!(title: 'Losing Fat', user: user)
+topic = Topic.create!(title: 'How to Lose Fat Fast!', user: user, forum:forum)
+post = Post.create!(body: 'I recommend eating low fat foods and high protein foods and working out! Works great for me!', user: user, topic: topic)
+post = Post.create!(body: 'Yes, I agree and also drink a lot of water.', user: user, topic: topic)
+
+topic = Topic.create!(title: 'Calorie Counting 101', user: user, forum:forum)
+post = Post.create!(body: 'Counting calories is important in losing fat!', user: user, topic: topic)
+post = Post.create!(body: 'Yes, counting calories is essential because you need to eat your daily calorie intake to not gain weight.', user: user, topic: topic)
+
+forum = Forum.create!(title: 'Post Your Own Articles!', user: user)
+topic = Topic.create!(title: 'Post Your Articles Here!', user: user, forum:forum)
+
+
+forum = Forum.create!(title: 'Events', user: user)
+topic = Topic.create!(title: 'Best Events', user: user, forum:forum)
+post = Post.create!(body: 'Come here to discuss the best events you have attended!', user: user, topic: topic)
+post = Post.create!(body: 'I went to the picnic that was sponsored by VSU! It was amazing, I highly recommend events sponsored by then for the future!', user: user, topic: topic)
 
 
 Comment.delete_all

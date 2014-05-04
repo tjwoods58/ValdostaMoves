@@ -32,7 +32,8 @@
   	</tr>
   <% end %>
 </table>
-<% if can? :manage, User %>
+<% @user = current_user %>
+<% if @user != nil %>
 <%= link_to 'Reply', reply_forum_topic_path(:forum_id=>@forum, :id=>@topic), class: "btn btn-success"%> 
 <% end %>
 		<%= link_to 'Back', forum_path(:id=> @topic.forum_id), class: 'btn btn-primary' %>
