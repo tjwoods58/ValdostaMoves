@@ -121,7 +121,7 @@
         <td><%= event.description %></td>
         <td><%= event.start.strftime("%m / %d / %Y") %></td>
         <td><%= event.start.strftime("%I:%M %p") %></td>
-        <td><%= link_to 'Show', event, class: 'btn btn-info' %></td>
+        <td><%= link_to 'Show', event, class: 'btn btn-info', 'data-no-turbolink' => true %></td>
         
         <% if can? :manage, User %>
         <td><%= link_to 'Edit', edit_event_path(event), class: 'btn btn-primary' %></td>

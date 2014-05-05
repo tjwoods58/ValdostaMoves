@@ -13,6 +13,24 @@
       <th>Recipe Image</th>	
       <th>Name</th>
       <th>Added by</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+      <tr text-size="85em">
+      
+      	<td style="width:200px;"><%= link_to image_tag(@recipe.imagesrc, class: 'list_image'), category_recipe_path(@category, @recipe), 'data-no-turbolink' => true %></td>
+        <td><%= @recipe.name %></td>
+        <td><%= @recipe.user.email %></td>
+        
+      </tr>
+
+  </tbody>
+  </table>
+  
+  <table class="table table-bordered">
+  <thead>
+    <tr>
       <th>Ingredients</th>
       <th>Instructions</th>
       <th>Rating</th>
@@ -23,9 +41,6 @@
   <tbody>
       <tr text-size="85em">
       
-      	<td style="width:200px;"><%= link_to image_tag(@recipe.imagesrc, class: 'list_image'), category_recipe_path(@category, @recipe), 'data-no-turbolink' => true %></td>
-        <td><%= @recipe.name %></td>
-        <td><%= @recipe.user.email %></td>
         <td><%= @recipe.description %></td>
         <td><%= @recipe.instructions %></td>
         <td><%= rating_for @recipe, "recipe", 'data-no-turbolink' => true %></td>
