@@ -605,7 +605,7 @@ Comment.create!(
 
 Category.delete_all
 Category.create(
-  id: 1,
+ 
   name: 'Juicing Recipes',
   created_at: '2014-04-24 12:44:00.000000',
   updated_at: '2014-04-24 12:44:00.000000',
@@ -613,7 +613,7 @@ Category.create(
   )
   
   Category.create(
-  id: 2,
+  
   name: 'Vegetarian Recipes',
   created_at: '2014-04-24 12:44:00.000002',
   updated_at: '2014-04-24 12:44:00.000002',
@@ -621,7 +621,7 @@ Category.create(
   )
   
   Category.create(
-  id: 3,
+ 
   name: 'Healthy Fish Recipes',
   created_at: '2014-04-24 12:44:00.000003',
   updated_at: '2014-04-24 12:44:00.000003',
@@ -629,7 +629,7 @@ Category.create(
   )
   
   Category.create(
-  id: 4,
+  
   name: 'Recipes for the Kids',
   created_at: '2014-04-24 12:44:00.000004',
   updated_at: '2014-04-24 12:44:00.000004',
@@ -637,7 +637,7 @@ Category.create(
   )
   
     Category.create(
-  id: 5,
+  
   name: 'Desserts',
   created_at: '2014-04-24 12:44:00.000005',
   updated_at: '2014-04-24 12:44:00.000005',
@@ -646,7 +646,7 @@ Category.create(
   
   Recipe.delete_all
   Recipe.create(
-  id: 1,
+  
   name: 'Fishermans Stoup',
   user_id: 6,
   instructions: 'For the seafood base: Place the red onion, chile pepper, lemon zest, garlic, parsley, thyme, and bay leaves in a food processor and process ingredients into paste.
@@ -682,7 +682,7 @@ Soup base
   )  
 
   Recipe.create(
-  id: 2,
+  
   name: 'Halibut with Pepitas',
   user_id: 6,
   instructions: 'In a small, dry skillet over medium-low heat, toast the pepitas lightly. Dont allow them to brown. As soon as you begin to smell them, remove the pan from the heat and transfer to a large plate. Set aside.
@@ -713,7 +713,7 @@ This is a restaurant-style dish that boasts a lot of flavor thanks to a tomato-b
   )  
   
   Recipe.create(
-  id: 3,
+  
   name: 'Mahi Mahi with Cauliflower',
   user_id: 6,
   instructions: 'Preheat the oven to 375 degrees F. Season the fish with salt and pepper. Heat 1 tablespoon butter in a large nonstick skillet over medium-high heat. Sear the fish until golden brown on one side, about 3 minutes. Transfer to a rimmed baking sheet, cooked-side up, and roast in the oven until just cooked through, about 10 minutes.
@@ -738,7 +738,7 @@ Lemon wedges, for serving',
   )  
   
   Recipe.create(
-  id: 4,
+  
   name: 'Portuguese-Style Fish Stew',
   user_id: 6,
   description: '3 tablespoons extra-virgin olive oil
@@ -764,7 +764,7 @@ Divide the stew among bowls. Drizzle with the remaining 1 tablespoon olive oil a
   )  
   
 Recipe.create(
-  id: 5,
+  
   name: 'Baked Salmon',
   user_id: 6,
   description: '4 (5 ounces each) salmon fillets
@@ -787,7 +787,7 @@ Place a salmon fillet, oiled side down, atop a sheet of foil. Wrap the ends of t
   )  
   
    Recipe.create(
-  id: 6,
+  
   name: 'Salmon Hash',
   user_id: 6,
   description: '1/4 cup nonfat plain Greek yogurt
@@ -815,7 +815,7 @@ Stir 1 tablespoon water into the remaining yogurt mixture and toss with the arug
   )  
 
  Recipe.create(
-  id: 7,
+  
   name: 'Salmon with Lemon, Capers, and Rosemary',
   user_id: 6,
   instructions: 'Brush top and bottom of salmon fillets with olive oil and season with salt, pepper, and rosemary. Place each piece of seasoned salmon on a piece of foil large enough to fold over and seal. Top the each piece of salmon with 2 lemon slices, 1 tablespoon of lemon juice, 2 tablespoons of wine, and 1 teaspoon of capers. Wrap up salmon tightly in the foil packets.
@@ -838,7 +838,7 @@ Place a grill pan over medium-high heat or preheat a gas or charcoal grill. Plac
   )  
   
 Recipe.create(
-  id: 8,
+  
   name: 'Shrimp Gumbo',
   user_id: 6,
   instructions: 'Preheat the oven to 350 degrees F.
@@ -871,7 +871,7 @@ Once the roux is done, carefully remove it from the oven and set over medium-hig
   )  
   
 Recipe.create(
-  id: 9,
+  
   name: 'Whole-Wheat Spaghetti with Lemon, Basil, and Salmon',
   user_id: 6,
   instructions: 'Bring a large pot of salted water to a boil over high heat. Add the pasta and cook until tender but still firm to the bite, stirring occasionally, about 8 to 10 minutes. Drain pasta and transfer to a large bowl. Add the garlic, extra-virgin olive oil, salt, and pepper. Toss to combine.
@@ -898,7 +898,7 @@ Add the basil, capers, lemon zest, and lemon juice to the spaghetti mixture and 
   )  
   
   Recipe.create(
-  id: 10,
+  
   name: 'Spicy Shrimp Orecchiette',
   user_id: 6,
   instructions: 'Bring a large pot of salted water to a boil. Add the pasta and cook as the label directs. Reserve 1 1/2 cups cooking water, then drain.
@@ -923,7 +923,7 @@ Add the pasta and cheese to the sauce and toss to coat. Drizzle with olive oil, 
   )  
 
 Recipe.create(
-  id: 11,
+  
   name: 'Spicy Shrimp Broth',
   user_id: 6,
   instructions: 'Mix the yogurt, mustard and dill in a small bowl.
@@ -951,7 +951,7 @@ Lemon wedges, for serving (optional)',
   )  
   
   Recipe.create(
-  id: 12,
+  
   name: 'Tilapia With Hash Browns',
   user_id: 6,
   instructions: 'Preheat the oven to 425 degrees F. Toss the hash browns with the garlic and 1 teaspoon salt in a bowl. Heat 2 tablespoons olive oil in a large nonstick ovenproof skillet over medium heat. Add the hash browns, flatten with a spatula and cook until the bottom is golden brown, 6 to 8 minutes. Drizzle with 2 tablespoons olive oil. Flip the potato cake and pat it back into shape. Cook until crisp and golden, 6 to 8 minutes.
@@ -979,7 +979,7 @@ Freshly ground pepper',
   )  
 
 Recipe.create(
-  id: 13,
+
   name: 'Chicken Tortilla Soup',
   user_id: 6,
   instructions: 'Place the chicken, tomatoes (and juices), beans, broth, water, onion, garlic, jalapeno, cumin, and chili powder in a slow cooker. Cover and cook on high for
@@ -1009,7 +1009,7 @@ Juice of 1/2 lemon
   )  
   
   Recipe.create(
-  id: 14,
+  
   name: 'Parmesan Fish Sticks',
   user_id: 6,
   instructions: 'Preheat the oven to 450 degrees F.
@@ -1047,7 +1047,7 @@ Olive oil, for drizzling
   )  
 
 Recipe.create(
-  id: 15,
+
   name: 'Crunchy, Oven Baked Chicken Toes',
   user_id: 6,
   instructions: 'In a pie pan or other shallow, large dish, pour out the corn flakes. Crush the cereal up with your hands. Mix in bread crumbs, sugar, salt, pepper, and allspice - 
@@ -1087,7 +1087,7 @@ Mix together honey mustard and barbecue sauce in a small bowl. Serve hot chicken
   )  
   
 Recipe.create(
-  id: 16,
+
   name: 'Light Chicken Caesar Salad',
   user_id: 6,
   instructions: 'Make the croutons: Preheat the oven to 350 degrees F. Toss the bread cubes in a large bowl with 1 tablespoon olive oil.
@@ -1125,7 +1125,7 @@ Freshly ground pepper
   )  
   
 Recipe.create(
-  id: 17,
+
   name: 'Quick and Creamy Fruit Salad',
   user_id: 6,
   instructions: 'Put the apples, melon, pineapple, dried cherries, yogurt, cream of coconut and salt in a large bowl and stir.
@@ -1148,7 +1148,7 @@ Pinch of salt
   )  
   
 Recipe.create(
-  id: 18,
+
   name: 'Oven Fried Chicken',
   user_id: 6,
   instructions: 'Preheat oven to 375 degrees F. Lightly spray a baking sheet with olive oil.
@@ -1182,7 +1182,7 @@ Olive oil cooking spray
   )  
   
 Recipe.create(
-  id: 19,
+
   name: 'Garlic Chicken and Potatoes',
   user_id: 6,
   instructions: 'Position a rack in the lower third of the oven and preheat to 425 degrees F. Toss the potatoes with 1 tablespoon olive oil, the cumin seeds,
@@ -1218,7 +1218,7 @@ Pinch of red pepper flakes
   )  
   
 Recipe.create(
-  id: 20,
+ 
   name: 'Fruit Salsa',
   user_id: 6,
   instructions: 'Combine the kiwi, mango, papaya, mint and orange juice in a large bowl. Refrigerate for up to 1 hour before serving.
@@ -1240,7 +1240,7 @@ Recipe.create(
   )  
   
   Recipe.create(
-  id: 21,
+ 
   name: 'Carrot Cupcakes',
   user_id: 6,
   instructions: 'Preheat the oven to 350 F. Line 12 standard muffin cups with paper cupcake liners.
@@ -1285,7 +1285,7 @@ Neufchatel, at room temperature
 
 
 Recipe.create(
-  id: 22,
+
   name: 'Honey Oatmeal-Raisin Cookies',
   user_id: 6,
   instructions: 'Preheat the oven to 350 degrees F. Mist 2 baking sheets with cooking spray. Beat the butter, canola oil, honey, egg, almond butter and vanilla extract in a large bowl with a mixer until combined.
@@ -1322,7 +1322,7 @@ Scoop tablespoonfuls of batter about 2 inches apart onto the prepared baking she
   )  
 
 Recipe.create(
-  id: 23,
+
   name: 'Double-Chocalate Brownies',
   user_id: 6,
   instructions: 'Preheat the oven to 350 degrees. Coat a 9-by-13-inch baking dish with cooking spray.
@@ -1359,7 +1359,7 @@ Spread the batter in the prepared pan and sprinkle with walnuts, if desired. Bak
 
 
 Recipe.create(
-  id: 24,
+
   name: 'Low-Fat Cheesecake',
   user_id: 6,
   instructions: 'Preheat the oven to 350 degrees F. Pulse the graham crackers in a food processor until crumbled. Add 1 to 2 tablespoons water and the butter; pulse
@@ -1399,7 +1399,7 @@ Assorted toppings
   )  
 
 Recipe.create(
-  id: 25,
+
   name: 'Cheesecake Brownies',
   user_id: 6,
   instructions: 'Position the rack in the lower third of the oven and preheat the oven to 350 degrees F.
@@ -1458,7 +1458,7 @@ Pinch cayenne pepper
   )  
 
 Recipe.create(
-  id: 26,
+
   name: 'Angel Food Cake',
   user_id: 6,
   instructions: 'Preheat oven to 350 degrees F.
@@ -1493,7 +1493,7 @@ Cool upside down on cooling rack for at least an hour before removing from pan.
   )  
 
 Recipe.create(
-  id: 27,
+
   name: 'Marbled Banana Bread',
   user_id: 6,
   instructions: 'Preheat the oven to 350 degrees F. Lightly mist a 9-by-5-inch metal loaf pan with nonstick cooking spray and dust well with all-purpose flour
@@ -1535,7 +1535,7 @@ Cool in the pan 15 minutes, and then turn out onto a wire rack to cool completel
   )  
 
 Recipe.create(
-  id: 28,
+
   name: 'Chewy Gluten Free Cookies',
   user_id: 6,
   instructions: 'Melt the butter in a heavy-bottom medium saucepan over low heat. Once melted, pour into the bowl of a stand mixer.
@@ -1580,7 +1580,7 @@ Shape the dough into 2-ounce balls and place on parchment-lined baking sheets, 6
   )  
 
 Recipe.create(
-  id: 29,
+
   name: 'Chewy Gluten Free Cookies',
   user_id: 6,
   instructions: 'Mist a 5-to-6-quart slow cooker with nonstick cooking spray. Mix the coconut water, coconut milk, 1 1/2 cups water, sugar, vanilla and salt in the bowl of the slow cooker until the sugar is dissolved. Stir in the rice and cook on high 4 hours or low for 5 to 6 hours.
@@ -1610,7 +1610,7 @@ Suggested toppings: diced fresh or dried mango and pineapple, fresh or frozen an
   )  
 
 Recipe.create(
-  id: 30,
+
   name: 'Rise and Shine Juice',
   user_id: 6,
   instructions: 'Pass the spinach, apples, carrots, celery, lemon juice and ginger through a juice maker, according to the manufacturers directions. Pour the juice into 2 ice-filled glasses and serve
@@ -1633,7 +1633,7 @@ Ice
   )  
   
   Recipe.create(
-  id: 31,
+
   name: 'Kale Juice',
   user_id: 6,
   instructions: 'Pass all of the ingredients through a juice maker according to the manufacturers directions. Pour into glasses and serve.
@@ -1654,7 +1654,7 @@ Ice
   )  
 
 Recipe.create(
-  id: 32,
+
   name: 'Mean Green Juice',
   user_id: 6,
   instructions: 'Peel the cucumbers, saving the peels. Grate cucumber flesh on a box grater. In a medium saucepan, bring sugar and water to a boil. 
@@ -1682,7 +1682,7 @@ Special equipment: cheesecloth
 
 
 Recipe.create(
-  id: 33,
+ 
   name: 'Super Green Juice',
   user_id: 6,
   instructions: 'Juice, in this order, the lemons, apples, lettuce, cucumber and greens, following your juicers specific settings 
@@ -1706,7 +1706,7 @@ Recipe.create(
   )  
   
 Recipe.create(
-  id: 34,
+  
   name: 'Watermelon Juice',
   user_id: 6,
   instructions: 'In a blender puree the about half the watermelon with 8 ice cubes. Slowly add half the lemon soda to the blender. Pour into glasses. Repeat with the remaining ingredients.
@@ -1727,7 +1727,7 @@ Recipe.create(
   )  
   
   Recipe.create(
-  id: 35,
+
   name: 'Agnolotti With Artichoke Sauce',
   user_id: 6,
   instructions: 'Combine the artichokes, half-and-half, garlic, red pepper flakes and 1/4 teaspoon salt in a large skillet and bring to a 
@@ -1763,7 +1763,7 @@ Kosher salt
   )  
 
 Recipe.create(
-  id: 36,
+
   name: 'Buckwheat Noodle Salad',
   user_id: 6,
   instructions: 'Whisk together the vinegar, sugar, ginger, honey, tamari, sesame oil, and chili sauce in a large bowl until combined. Slowly whisk in the canola oil until the dressing is emulsified.
@@ -1796,7 +1796,7 @@ Add the noodles, carrot, pepper, cucumber, green onions and cilantro. Gently mix
   )  
 
 Recipe.create(
-  id: 37,
+
   name: 'Capellini With Spicy Zucchini-Tomato Sauce',
   user_id: 6,
   instructions: 'Heat the olive oil in a large skillet over medium heat. Add the garlic and red pepper flakes and cook until the garlic is just golden, about 1 minute. 
@@ -1827,7 +1827,7 @@ Grated parmesan cheese, for topping
   )  
 
 Recipe.create(
-  id: 38,
+
   name: 'Charred Tomato Gazpacho',
   user_id: 6,
   instructions: 'Preheat a grill or grill pan to medium high. Heat the cumin seeds, coriander seeds and 1/2 cup olive oil in a small
@@ -1870,7 +1870,7 @@ Freshly ground pepper
   )  
   
   Recipe.create(
-  id: 39,
+
   name: 'Chile Cheese Casserole',
   user_id: 6,
   instructions: 'Preheat the oven to 375 degrees F. Lightly coat a rectangular 2-quart baking dish with nonstick cooking spray. Coarsely crush the chips by hand and spread half of them 
@@ -1909,7 +1909,7 @@ Reduced-fat sour cream, optional
   )  
   
   Recipe.create(
-  id: 40,
+
   name: 'Crustless Caprese Quiche',
   user_id: 6,
   instructions: 'Preheat the oven to 350 degrees F. Coat a 9-inch deep-sided pie pan with nonstick cooking spray. Evenly sprinkle 2 tablespoons of the breadcrumbs into the pan.
@@ -1947,7 +1947,7 @@ Kosher salt
   
   
  Recipe.create(
-  id: 41,
+
   name: 'Grilled Ratatouille Salad',
   user_id: 6,
   instructions: 'Slice the eggplant into 1/2-inch-thick rounds. Soak in a bowl of lightly salted water, 15 to 20 minutes; drain and squeeze out the excess moisture.
@@ -1981,7 +1981,7 @@ Freshly ground pepper
   )  
 
  Recipe.create(
-  id: 42,
+ 
   name: 'Orecchiette with Broccoli Rabe Pesto',
   user_id: 6,
   instructions: 'Bring a large pot of well-salted water to a boil. Set up a bowl of well-salted ice water. Cook the broccoli rabe in the boiling water for 1 to 2 minutes and 
@@ -2018,7 +2018,7 @@ High-quality extra-virgin olive oil, for finishing (optional)
   )  
 
 Recipe.create(
-  id: 43,
+
   name: 'Spicy Vegan Sloppy Joes',
   user_id: 6,
   instructions: 'Pulse the mushrooms in batches in a food processor until finely chopped. Set aside.
