@@ -451,7 +451,7 @@
         <th>Event Date</th>
       </tr>
     </thead>
-	  <% @events = Event.all.order("end") %>
+	  <% @events = Event.all %>
     <tbody>
       <% @events.each do |event| %>
             <% if event.end > Date.today.to_s %>

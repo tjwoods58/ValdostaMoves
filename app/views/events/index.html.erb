@@ -112,7 +112,7 @@
       <th>Start Time</th>
     </tr>
   </thead>
-<% @events = Event.all.order("end") %>
+<% @events = Event.all %>
   <tbody id="changetable">
     <% @events.each do |event| %>
       <tr>
