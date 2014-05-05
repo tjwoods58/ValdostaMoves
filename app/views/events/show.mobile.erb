@@ -34,46 +34,7 @@
 </table>
 </div>
 <br>
-<div id="mobileheader">
-    Event Rating & Comments
-</div> 
-<% if @event.end < Date.today.to_s %>
 
-<div id="normalmobile">
-  <p>
-  	Use 5-Star Rating Scale to Rate Event:
-  </p>
-  <p>
-  	<%= rating_for @event, "rating", :star => 5 %>
-  	</br>
-  	<p>*Must Be Signed in to Rate.</p>
-  </p>
-</div>
-<div id="normalmobile">
-	<%= form_for @comment do |f| %>
-  <%= f.hidden_field :event_id, value: @event.id %>
-  <p>
-    <%= f.label :"comment on the event" %>
-  </p>
-  <p>
-    <%= f.text_area :comment%>
-  </p>
-  <%= f.submit "Post" %>
-<% end %>
-<% else %>
-<div id="normalmobile">
-	<%= form_for @comment do |f| %>
-  <%= f.hidden_field :event_id, value: @event.id %>
-  <p>
-    <%= f.label :"comment on the event" %>
-  </p>
-  <p>
-    <%= f.text_area :comment%>
-  </p>
-  <%= f.submit "Post" %>
-<% end %>
-<% end %>
-</div>
 <div id="mobilecomments">
 <table class="table table-striped">
   <thead>
