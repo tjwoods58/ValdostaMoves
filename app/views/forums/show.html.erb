@@ -15,7 +15,7 @@
 	<% @forum.topics.each do |topic| %>
   		<tr>
     		<td>
-      			<%= link_to topic.title, forum_topic_path(:forum_id => @forum, :id => topic) %>
+      			<div id="listing-topics"><%= link_to topic.title, forum_topic_path(:forum_id => @forum, :id => topic) %></div>
     		</td>
     
     		<td>

@@ -92,11 +92,13 @@ section {
   margin-top: 20px;
   }
   
+  html, body {
+  background-color: #5F5F5F;
+}
 
 #mainbackground {
 
   background-color: #5F5F5F;
-  
   
   .container {
     position: absolute;
@@ -253,15 +255,20 @@ section {
 
 #eventbtn {
   float: left;
-  margin-left: 7%;
+  margin-left: 6.5%;
   margin-top: 2%;
 }
 
 #twitterbtn {
   float: left;
-  margin-left: 63%;
+  margin-left: 27%;
   margin-top: 2%;
+}
 
+#tourbtn {
+  float: left;
+  margin-left: 24%;
+  margin-top: 2.25%;
 }
 #eventbtnmobile {
   float: center;
@@ -285,3 +292,15 @@ section {
     border: solid;
     border-color: black;
   }
+  
+.popover-title{
+    font-weight: bold;
+    border-width:medium;
+    background-color: lightgrey;
+}
+
+.popover-content{
+  
+  background: lightyellow;
+  font: "Times New Roman", serif; 
+}
