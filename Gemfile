@@ -38,6 +38,7 @@ gem 'omniauth-twitter'
 gem 'omniauth-linkedin'
 gem 'omniauth-google-oauth2'
 gem "introjs-rails"
+gem 'impressionist'
 
 gem 'cancan'
 

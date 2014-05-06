@@ -82,7 +82,11 @@ GEM
     hashie (2.0.5)
     high_voltage (2.1.0)
     hike (1.2.3)
+    httpclient (2.3.4.1)
     i18n (0.6.9)
+    impressionist (1.5.1)
+      httpclient (~> 2.2)
+      nokogiri (~> 1.5)
     introjs-rails (0.5.0)
       sass-rails (>= 3.2)
       thor (~> 0.14)
@@ -102,12 +106,15 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_portile (0.5.3)
     minitest (4.7.5)
     mobylette (3.5)
       actionpack (>= 3.0)
     multi_json (1.9.2)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    nokogiri (1.6.1-x86-mingw32)
+      mini_portile (~> 0.5.0)
     oauth (0.4.7)
     oauth2 (0.9.3)
       faraday (>= 0.8, < 0.10)
@@ -226,6 +233,7 @@ DEPENDENCIES
   geocoder
   gmaps4rails
   high_voltage
+  impressionist
   introjs-rails
   jbuilder (~> 1.2)
   jquery-rails

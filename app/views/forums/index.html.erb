@@ -6,6 +6,7 @@
     <th>Forum</th>
     <th>Creator</th>
     <th>Topic Counts</th>
+    <th>Forum Views</th>
     <th></th>
     <th></th>
   </tr>
@@ -15,6 +16,7 @@
        	<td><%= link_to forum.title, forum %></td>
         <td><%= forum.user.email %></td>
         <td><%= forum.topics.count %></td>
+        <td><%= forum.impressionist_count %></td>
         <% if can? :manage, User %>
         <td><%= link_to 'Edit', edit_forum_path(forum),  class: 'btn btn-primary' %></td>
         <td><%= link_to 'Destroy', forum, method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-danger'  %></td>

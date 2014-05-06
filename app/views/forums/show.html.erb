@@ -9,6 +9,7 @@
     <th>Last Reply</th>
     <th>User</th>
     <th>Number of Replies</th>
+    <th>Topic Views</th>
     <th></th>
     <th></th>
   </tr>
@@ -28,6 +29,7 @@
     		<td>
       			<%= topic.posts.count - 1 %>
     		</td>
+    		<td><%= topic.impressionist_count %></td>
     		<% if can? :manage, User %>
     		<td><%= link_to 'edit', edit_forum_topic_path(:forum_id => @forum, :id => topic), class: "btn btn-primary" %></td>
     		<td><%= link_to 'destroy', forum_topic_path(:forum_id =>@forum, :id => topic), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>

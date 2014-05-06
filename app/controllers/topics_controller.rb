@@ -1,6 +1,7 @@
 class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
   before_filter :load_forum
+  impressionist actions: [:show]
 
   # GET /topics
   # GET /topics.json
