@@ -200,7 +200,18 @@ post = Post.create!(body: 'Counting calories is important in losing fat!', user:
 post = Post.create!(body: 'Yes, counting calories is essential because you need to eat your daily calorie intake to not gain weight.', user: user, topic: topic)
 
 forum = Forum.create!(title: 'Post Your Own Articles!', user: user)
-topic = Topic.create!(title: 'Post Your Articles Here!', user: user, forum:forum)
+topic = Topic.create!(title: 'Post Your Event Comments Here!', user: user, forum:forum)
+post = Post.create!(body: 'My event is going to be so rad dude!', user: user, topic: topic)
+post = Post.create!(body: 'My event is so much better dude!', user: user, topic: topic)
+
+topic = Topic.create!(title: 'Post Your Nutrition Comments Here!', user: user, forum:forum)
+post = Post.create!(body: 'My nutrition is going to be so rad dude!', user: user, topic: topic)
+post = Post.create!(body: 'My nutrition is so much better dude!', user: user, topic: topic)
+
+topic = Topic.create!(title: 'Post Your Activity Comments Here!', user: user, forum:forum)
+post = Post.create!(body: 'My activity is going to be so rad dude!', user: user, topic: topic)
+post = Post.create!(body: 'My activity is so much better dude!', user: user, topic: topic)
+
 
 
 forum = Forum.create!(title: 'Events', user: user)

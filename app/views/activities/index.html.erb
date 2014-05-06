@@ -30,7 +30,7 @@
       	
         <td><%= p.posts %></td>
         <td><%= p.duration %> minutes</td>
-        <td><%= p.user.email %> minutes</td>
+        <td><%= p.user.email %></td>
         <td><%= p.created_at.strftime("%m / %d / %Y") %></td>
         <td><%= p.created_at.strftime("%I:%M %p") %></td>
         <td><% if can? :destroy, Activity %>
